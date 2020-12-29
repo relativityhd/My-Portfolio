@@ -5,6 +5,6 @@ applications:
   buildpacks:
     - https://github.com/cloudfoundry/staticfile-buildpack.git
   routes:
-    - route: portfolio.tobiashoelzer.eu-de.mybluemix.net
+    - route: tobiashoelzer-portfolio.eu-de.mybluemix.net
   memory: 256M
   FORCE_HTTPS: true
