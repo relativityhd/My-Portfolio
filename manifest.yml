@@ -4,7 +4,8 @@ applications:
   path: ./dist
   buildpacks:
     - https://github.com/cloudfoundry/staticfile-buildpack.git
-  random-route: true
+  routes:
+    - tobiashoelzer.eu-de.mybluemix.net/portfolio
   memory: 256M
   env:
   FORCE_HTTPS: true
