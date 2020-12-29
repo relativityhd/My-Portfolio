@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Deploy to IBM Cloud Foundry
-        uses: IBM/cloudfoundry-deploy@master
+        uses: ./.github/actions/cloud-Foundry-deploy
         with:
           IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
           IBM_CLOUD_CF_API: ${{ secrets.IBM_CLOUD_CF_API }}
