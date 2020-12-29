@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <AppUpdate />
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,6 +8,17 @@
     <router-view />
   </div>
 </template>
+
+<script>
+import AppUpdate from './components/AppUpdate'
+
+export default {
+  name: 'App',
+  components: {
+    AppUpdate
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

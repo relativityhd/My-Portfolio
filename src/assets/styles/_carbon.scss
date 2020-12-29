@@ -1,0 +1,6 @@
+@import '~@carbon/themes/scss/themes.scss';
+$carbon--theme: $carbon--theme--g90;
+// Theme can be changed with a custom color palette, like in CCT
+@include carbon--theme();
+@import '~carbon-components/css/carbon-components.css';
+@import '~carbon-components/scss/globals/scss/styles.scss';

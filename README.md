@@ -16,6 +16,9 @@ $ npm run build
 
 #Lints and fixes files
 $ npm run lint
+
+# Generate PWA Icons
+npx vue-pwa-asset-generator -a {512x512_png_source | svg_source} [-o {output_folder}]
 ```
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
