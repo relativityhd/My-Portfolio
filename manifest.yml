@@ -1,6 +1,9 @@
 ---
 applications:
 - name: my-portfolio
-  memory: 512M
-  instances: 1
+  path: ./dist
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
   random-route: true
+  memory: 256M
+  env:
+  FORCE_HTTPS: true
