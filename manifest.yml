@@ -4,8 +4,8 @@ applications:
   path: ./dist
   buildpacks:
     - https://github.com/cloudfoundry/staticfile-buildpack.git
-  routes:
-    - tobiashoelzer.eu-de.mybluemix.net/portfolio
+  domain: eu-de.mybluemix.net
+  host: portfolio.tobiashoelzer
   memory: 256M
   env:
   FORCE_HTTPS: true
