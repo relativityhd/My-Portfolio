@@ -8,15 +8,26 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Gallery'
+    }
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/profile',
+    name: 'Profile',
+    component: () => import('../views/Profile.vue'),
+    meta: {
+      title: 'Profile'
+    }
+  },
+  {
+    path: '/imprint',
+    name: 'Imprint',
+    component: () => import('../views/Imprint.vue'),
+    meta: {
+      title: 'Imprint'
+    }
   }
 ]
 
@@ -24,6 +35,11 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = `Tobias Hölzer - ${to.meta.title || 'Portfolio'}`
+  next()
 })
 
 export default router
