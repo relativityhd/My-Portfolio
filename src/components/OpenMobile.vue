@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!isMobile">
+  <div v-if="!$store.state.isMobile">
     <cv-modal ref="mobileModal" :close-aria-label="$t('close-aria-label')" size="small">
       <template slot="label">Scan the QR Code</template>
       <template slot="title">Open on mobile</template>
@@ -18,11 +18,6 @@
 <script>
 export default {
   name: 'OpenModal',
-  data() {
-    return {
-      isMobile: window.mobileAndTabletCheck()
-    }
-  },
   methods: {
     openQRModal() {
       this.$refs.mobileModal.show()
