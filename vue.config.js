@@ -1,4 +1,9 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+
 module.exports = {
+  configureWebpack: {
+    plugins: [new BundleAnalyzerPlugin()]
+  },
   pluginOptions: {
     i18n: {
       locale: 'en',
