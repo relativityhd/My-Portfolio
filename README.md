@@ -41,14 +41,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## My Work Projects
 
+- Interest Validator
 - Watson4PublicTenders (intern)
 - Watson4PGMP (intern)
 - Swarm Visualization (not working yet)
-
-## My Artwork
-
-- Icons (One Shot muss weg)
-- YouTube
 
 ## My Other Work
 

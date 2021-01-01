@@ -10,23 +10,34 @@
         :date="p.date"
         :github="p.github"
         :link="p.link"
-        :text="p.text"
         :tags="p.tags"
+      />
+      <File
+        v-for="f in files"
+        :key="f.name"
+        :name="f.name"
+        :code="f.code"
+        :date="f.date"
+        :link="f.link"
+        :tags="f.tags"
       />
     </div>
   </div>
 </template>
 
 <script>
+import File from '../components/Files'
+import files from '../assets/data/files.json'
 import Project from '../components/Projects'
 import projects from '../assets/data/projects.json'
 
 export default {
   name: 'Home',
-  components: { Project },
+  components: { Project, File },
   data: () => {
     return {
-      projects
+      projects,
+      files
     }
   }
 }
