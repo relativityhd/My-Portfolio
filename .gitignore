@@ -21,3 +21,6 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Precompiled CSS for Carbon
+src/assets/styles/_carbon-precompile.css
