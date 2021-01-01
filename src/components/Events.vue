@@ -1,22 +1,33 @@
 <template>
-  <div class="file-item">
-    <cv-link class="file-icon file-link" :href="link" target="_blank">
-      <FileIcon />
+  <div class="event-item">
+    <cv-link class="event-icon event-link" :href="link" target="_blank">
+      <EventIcon />
     </cv-link>
-    <div class="file-info">
-      <p>{{ dateStart ? `${$luxon(dateStart)} - ${$luxon(date)}` : $luxon(date) }}</p>
+    <div class="event-info">
+      <p>
+        {{
+          $luxon(date, {
+            input: {
+              format: 'yyyy-MM-dd'
+            },
+            output: {
+              format: 'dd MMM yyyy'
+            }
+          })
+        }}
+      </p>
     </div>
-    <div class="file-body">
-      <h3 class="file-name">
-        <a class="file-link" :href="link" target="_blank">{{ $t(`Files.${code}.name`) }}</a>
+    <div class="event-body">
+      <h3 class="event-name">
+        <a class="event-link" :href="link" target="_blank">{{ $t(`Events.${code}.name`) }}</a>
       </h3>
-      <p>{{ $t(`Files.${code}.text`) }}</p>
+      <p>{{ $t(`Events.${code}.text`) }}</p>
     </div>
   </div>
 </template>
 
 <script>
-import FileIcon from '@carbon/icons-vue/es/document/32'
+import EventIcon from '@carbon/icons-vue/es/star/32'
 
 export default {
   props: {
@@ -24,15 +35,14 @@ export default {
     code: String,
     preview: String,
     date: String,
-    dateStart: String,
     link: String
   },
-  components: { FileIcon }
+  components: { EventIcon }
 }
 </script>
 
 <style lang="scss">
-.file-item::before {
+.event-item::before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -43,7 +53,7 @@ export default {
   background-color: $ui-02;
 }
 
-.file-item {
+.event-item {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -52,7 +62,7 @@ export default {
   margin-left: 16px;
 }
 
-.file-icon {
+.event-icon {
   position: relative;
   z-index: 1;
   display: flex;
@@ -68,7 +78,7 @@ export default {
   border: 4px solid $ui-background;
 }
 
-.file-info {
+.event-info {
   position: relative;
   z-index: 1;
   display: flex;
@@ -81,46 +91,37 @@ export default {
   gap: 8px;
 }
 
-.file-body {
+.event-body {
   margin-top: -52px;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.file-link {
+.event-link {
   color: $text-01 !important;
   text-decoration: none;
 }
 
-.file-link img {
+.event-link img {
   width: 100%;
 }
 
-.file-link:hover {
+.event-link:hover {
   opacity: 0.5;
 }
 
-@keyframes colorWheel180 {
-  0% {
-    filter: hue-rotate(180deg);
-  }
-  100% {
-    filter: hue-rotate(540deg);
-  }
-}
-
-.file-name::after {
+.event-name::after {
   content: '';
   display: block;
   width: 100%;
   height: 3px;
   background: linear-gradient(90deg, #4dc9e6, #210cac);
-  -webkit-animation: colorWheel180 60s infinite;
-  animation: colorWheel180 60s infinite;
+  -webkit-animation: colorWheel 60s infinite;
+  animation: colorWheel 60s infinite;
 }
 
-.file-name {
+.event-name {
   margin-bottom: 16px;
 }
 </style>
