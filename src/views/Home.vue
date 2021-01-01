@@ -2,10 +2,14 @@
   <div class="home">
     <OpenMobile class="mobile-button" />
     <div class="filter">
-      <cv-checkbox label="Show files" value="showFiles" v-model="filter.showFiles"> </cv-checkbox>
-      <cv-checkbox label="Show projects" value="showProjects" v-model="filter.showProjects"> </cv-checkbox>
-      <cv-checkbox label="Show events" value="showEvents" v-model="filter.showEvents"> </cv-checkbox>
-      <cv-checkbox label="Only important" value="showOnlyImportant" v-model="filter.showOnlyImportant"> </cv-checkbox>
+      <cv-checkbox :label="$t('filters.showProjects')" value="showProjects" v-model="filter.showProjects"></cv-checkbox>
+      <cv-checkbox :label="$t('filters.showFiles')" value="showFiles" v-model="filter.showFiles"> </cv-checkbox>
+      <cv-checkbox :label="$t('filters.showEvents')" value="showEvents" v-model="filter.showEvents"> </cv-checkbox>
+      <cv-checkbox
+        :label="$t('filters.onlyImportant')"
+        value="showOnlyImportant"
+        v-model="filter.showOnlyImportant"
+      ></cv-checkbox>
     </div>
     <div class="gallery">
       <div v-for="i in filteredItems" :key="i.name">
