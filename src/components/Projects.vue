@@ -6,12 +6,7 @@
     <div class="project-info">
       <p>{{ dateStart ? `${$luxon(dateStart)} - ${$luxon(date)}` : $luxon(date) }}</p>
       <cv-link class="project-link" :href="github" target="_blank">
-        <img
-          src="../assets/images/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png"
-          alt="Projects.github-alt"
-          height="24"
-          width="24"
-        />
+        <GitIcon />
       </cv-link>
     </div>
     <div class="project-body">
@@ -31,6 +26,7 @@
 
 <script>
 import ProjectIcon from '@carbon/icons-vue/es/roadmap/32'
+import GitIcon from '@carbon/icons-vue/es/logo--github/32'
 
 export default {
   props: {
@@ -43,7 +39,7 @@ export default {
     link: String,
     tags: Array
   },
-  components: { ProjectIcon }
+  components: { ProjectIcon, GitIcon }
 }
 </script>
 
