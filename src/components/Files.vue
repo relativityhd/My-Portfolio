@@ -116,7 +116,7 @@ export default {
   content: '';
   display: block;
   width: 100%;
-  height: 5px;
+  height: 3px;
   background: linear-gradient(90deg, #4dc9e6, #210cac);
   -webkit-animation: colorWheel 60s infinite;
   animation: colorWheel 60s infinite;

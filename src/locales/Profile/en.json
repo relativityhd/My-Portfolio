@@ -1,0 +1,19 @@
+{
+  "profile-pic-alt": "Picture of myself",
+  "job": "Coorperate Student for Data Science @ IBM",
+  "lives": "Stuttgart, Germany",
+  "age": "Years old",
+  "welcome": "Hey. I am Tobias, a german programmer and future computer scientist. Currently I am studying business informatics for data science and working @ IBM.",
+  "middleSchool": {
+    "title": "Middle School",
+    "text": "At the Age of 15 I began to program in school. I started with a simple Scissors-Paper-Rock game in Python 2 and developed it to an nice usable command line game: 'Scissors-Paper-Rock-Lizzard-Spock' like the game in the TV sitcom Big-Bang-Theory. After my first game I worked together with a friend of mine on simple encryption algorithms and developed new ones. They aren't very secure but it was very fun."
+  },
+  "highSchool": {
+    "title": "High School",
+    "text": "TODO"
+  },
+  "university": {
+    "title": "Coorperate Student @ IBM",
+    "text": "TODO"
+  }
+}
