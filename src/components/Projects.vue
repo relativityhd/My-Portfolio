@@ -4,7 +4,7 @@
       <ProjectIcon />
     </cv-link>
     <div class="project-info">
-      <p>{{ date }}</p>
+      <p>{{ dateStart ? `${$luxon(dateStart)} - ${$luxon(date)}` : $luxon(date) }}</p>
       <cv-link class="project-link" :href="github" target="_blank">
         <img
           src="../assets/images/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png"
@@ -22,7 +22,7 @@
         <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" />
       </a>
       <div class="project-tags">
-        <cv-tag v-for="tag in tags" :key="tag" :label="tag" kind="grey"></cv-tag>
+        <cv-tag v-for="tag in tags" :key="tag" :label="tag" kind="gray"></cv-tag>
       </div>
       <p>{{ $t(`Projects.${code}.text`) }}</p>
     </div>
@@ -38,6 +38,7 @@ export default {
     code: String,
     preview: String,
     date: String,
+    dateStart: String,
     github: String,
     link: String,
     tags: Array

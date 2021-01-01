@@ -4,7 +4,7 @@
       <FileIcon />
     </cv-link>
     <div class="file-info">
-      <p>{{ date }}</p>
+      <p>{{ dateStart ? `${$luxon(dateStart)} - ${$luxon(date)}` : $luxon(date) }}</p>
     </div>
     <div class="file-body">
       <h3 class="file-name">
@@ -24,6 +24,7 @@ export default {
     code: String,
     preview: String,
     date: String,
+    dateStart: String,
     github: String,
     link: String,
     tags: Array
