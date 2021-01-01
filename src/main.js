@@ -3,7 +3,6 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
-import './assets/styles/_carbon-precompile.css'
 import i18n from './i18n'
 import VueLuxon from 'vue-luxon'
 

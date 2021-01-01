@@ -40,6 +40,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import './assets/styles/_carbon-precompile.css';
+
+html,
+body {
+  background-color: $ui-background;
+  color: $text-01;
+}
+
 #app-view {
   margin-top: calc(48px + 24px);
   min-height: calc(100vh - 48px - 24px);
