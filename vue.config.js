@@ -22,10 +22,10 @@ module.exports = {
   },
   pwa: {
     name: 'My Portfolio',
-    themeColor: '#3f51b5',
-    msTileColor: '#3f51b5',
+    themeColor: '#161616',
+    msTileColor: '#161616',
     appleMobileWebAppCapable: 'yes',
-    appleMobileWebAppStatusBarStyle: '#3f51b5',
+    appleMobileWebAppStatusBarStyle: '#161616',
     workboxPluginMode: 'InjectManifest',
     workboxOptions: {
       swSrc: './src/sw.js',
