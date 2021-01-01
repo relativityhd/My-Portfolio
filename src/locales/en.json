@@ -1,3 +1,7 @@
 {
-  "imprint-message": "Because I am german and the website is also hosted in Germany, the following imprint is only in german."
+  "imprint-message": "Because I am german and the website is also hosted in Germany, the following imprint is only in german.",
+  "show-mobile": "Open on mobile",
+  "qr-code-modal": "My Portfolio is also available as an 'Progressive Web App', that means you can install it on your mobile phone!",
+  "close-aria-label": "Close",
+  "qr-code-alt": "QR Code"
 }
