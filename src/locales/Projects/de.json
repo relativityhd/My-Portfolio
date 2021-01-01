@@ -1,0 +1,7 @@
+{
+  "SNA": {
+    "name": "Tobis Twitter Netzwerk",
+    "text": "Dies ist ein Projekt welches ich im Zuge des Kurses 'Social Network Analysis' zusammen mit Christopher Lohse durchgeführt habe. Wir haben uns die Frage gestellt: 'Welche Twitter Accounts beeinflussen meinen Feed am meisten?'. Um diese Frage zu beantworten haben wir Methoden der Social Network Analyse benutzt. In diesem Projekt erweiterte ich meine Kentnisse in Python und Jupyter Notebook und lernte zusätzlich noch die Methoden der Social Network Analyse kennen.",
+    "alt": "Social Network Graph"
+  }
+}
