@@ -28,7 +28,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 - My Homepage (GitLab@IBM, Hosted @IBM, must be moved to GitHub)
 - Portfolio (GitHub, Hosted @IBM)
-- Social Network Analysis (GitHub, Hosted by Christopher)
+- Social Network Analysis
 - Cupboard Configuration Tool (GitHub, Hosted @IBM, fehlende API)
 - React Presentation (GitHub, Pages, nicht funktionierende Demo)
 - Rust Integrations for Node Benchmarks (GitHub, nicht gehostet, nicht vollständig, Artikel fehlen)
@@ -40,6 +40,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - J&T Cryptions
 - Cryptions (nicht auf GitHub, nicht gehostet)
 - Simon Clicks (nicht auf GitHub, nicht gehostet, Hintergrund muss gehardcoded werden)
+- Platzhitsch (nicht auf GitHub, hosted @IBM)
 
 ## My Work Projects
 
