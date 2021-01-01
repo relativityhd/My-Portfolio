@@ -3,5 +3,10 @@
     "name": "Tobis Twitter Network",
     "text": "This is a project about My Twitter Network. I worked on this project together with Christopher Lohse. The question we asked ourselves was: 'Which people (accounts) are influencing Tobis Feed the most?'. To answer this question we used methods of the Social Network Analysis. In this project I increased my Python skills and learned how to create a Social Network Analysis.",
     "alt": "Social Network Graph"
+  },
+  "MyHome": {
+    "name": "My Homepage",
+    "text": "I build my Homepage to apply for an apprenticeship @ IBM. Gladly i got the job, maybe my Homepage has helped my a little bit out here. On my Homepage I present myself to everybode out there. I also wrote an own Blog-Engine and some articles on it. To build an own Homepage was great, I learned a lot about Web Development. Since I also hosted it on my Raspberry Pi and later on the IBM Cloud I also learned about the importance of Cloud Development.",
+    "alt": "Screenshot of my Homepage"
   }
 }

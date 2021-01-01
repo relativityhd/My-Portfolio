@@ -8,5 +8,15 @@
     "link": "https://dev.christopherlohse.de/SocialNetworkAnalysis/",
     "tags": ["Social Network Analysis", "Twitter Crawler", "Python", "Pandas"],
     "important": true
+  },
+  {
+    "name": "My Homepage",
+    "code": "MyHome",
+    "preview": "my-homepage.png",
+    "date": "2018-09",
+    "github": "https://github.com/relativityhd/My-Homepage",
+    "link": "https://tobiashoelzer.dynu.net/",
+    "tags": ["Website", "NodeJS", "Material Design", "IBM Cloud"],
+    "important": true
   }
 ]
