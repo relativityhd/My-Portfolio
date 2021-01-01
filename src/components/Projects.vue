@@ -25,7 +25,8 @@
 </template>
 
 <script>
-import { CvLink, CvTag } from '@carbon/vue'
+import { CvLink } from '@carbon/vue/src/components/cv-link'
+import { CvTag } from '@carbon/vue/src/components/cv-tag'
 import ProjectIcon from '@carbon/icons-vue/es/roadmap/32'
 import GitIcon from '@carbon/icons-vue/es/logo--github/32'
 

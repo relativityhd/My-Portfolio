@@ -46,7 +46,7 @@ import Project from '../components/Projects'
 import projects from '../assets/data/projects.json'
 import Event from '../components/Events'
 import events from '../assets/data/events.json'
-import { CvCheckbox } from '@carbon/vue'
+import { CvCheckbox } from '@carbon/vue/src/components/cv-checkbox'
 
 export default {
   name: 'Home',

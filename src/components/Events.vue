@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { CvLink } from '@carbon/vue'
+import { CvLink } from '@carbon/vue/src/components/cv-link'
 import EventIcon from '@carbon/icons-vue/es/star/32'
 
 export default {

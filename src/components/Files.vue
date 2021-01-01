@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { CvLink } from '@carbon/vue'
+import { CvLink } from '@carbon/vue/src/components/cv-link'
 import FileIcon from '@carbon/icons-vue/es/document/32'
 
 export default {

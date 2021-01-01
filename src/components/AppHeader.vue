@@ -51,6 +51,7 @@
 
 <script>
 import Translate20 from '@carbon/icons-vue/es/translate/20'
+
 import {
   CvHeader,
   CvHeaderMenuButton,
@@ -66,7 +67,7 @@ import {
   CvSwitcher,
   CvSwitcherItem,
   CvSwitcherItemLink
-} from '@carbon/vue'
+} from '@carbon/vue/src/components/cv-ui-shell'
 
 export default {
   name: 'AppHeader',

@@ -16,7 +16,9 @@
 </template>
 
 <script>
-import { CvModal, CvButton } from '@carbon/vue'
+import { CvModal } from '@carbon/vue/src/components/cv-modal'
+import { CvButton } from '@carbon/vue/src/components/cv-button'
+
 export default {
   name: 'OpenModal',
   components: { CvModal, CvButton },
