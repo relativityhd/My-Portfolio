@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!isMobile">
+  <div v-if="!$store.state.isMobile">
     <cv-modal ref="mobileModal" :close-aria-label="$t('close-aria-label')" size="small">
       <template slot="label">Scan the QR Code</template>
       <template slot="title">Open on mobile</template>
@@ -16,13 +16,12 @@
 </template>
 
 <script>
+import { CvModal } from '@carbon/vue/src/components/cv-modal'
+import { CvButton } from '@carbon/vue/src/components/cv-button'
+
 export default {
   name: 'OpenModal',
-  data() {
-    return {
-      isMobile: window.mobileAndTabletCheck()
-    }
-  },
+  components: { CvModal, CvButton },
   methods: {
     openQRModal() {
       this.$refs.mobileModal.show()

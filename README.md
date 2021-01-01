@@ -7,6 +7,7 @@ My personal Portfolio / Business Homepage. Made with ♥ and Vue.js
 ``` bash
 # Install Dependencies
 $ npm install
+$ npm run sass:precompile
 
 # Compiles and hot-reloads for development
 $ npm run serve

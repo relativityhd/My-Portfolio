@@ -52,9 +52,42 @@
 <script>
 import Translate20 from '@carbon/icons-vue/es/translate/20'
 
+import {
+  CvHeader,
+  CvHeaderMenuButton,
+  CvSkipToContent,
+  CvHeaderName,
+  CvHeaderNav,
+  CvHeaderMenuItem,
+  CvHeaderGlobalAction,
+  CvSideNav,
+  CvSideNavItems,
+  CvSideNavLink,
+  CvHeaderPanel,
+  CvSwitcher,
+  CvSwitcherItem,
+  CvSwitcherItemLink
+} from '@carbon/vue/src/components/cv-ui-shell'
+
 export default {
   name: 'AppHeader',
-  components: { Translate20 },
+  components: {
+    CvHeader,
+    CvHeaderMenuButton,
+    CvSkipToContent,
+    CvHeaderName,
+    CvHeaderNav,
+    CvHeaderMenuItem,
+    CvHeaderGlobalAction,
+    CvSideNav,
+    CvSideNavItems,
+    CvSideNavLink,
+    CvHeaderPanel,
+    CvSwitcher,
+    CvSwitcherItem,
+    CvSwitcherItemLink,
+    Translate20
+  },
   data() {
     let links = [
       { name: 'App.home', to: '/' },

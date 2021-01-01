@@ -109,7 +109,7 @@ export default {
 
 .profile-social a:hover,
 .profile-emails a:hover {
-  color: $hover-primary !important;
+  opacity: 0.5 !important;
 }
 
 .profile-welcome::after {

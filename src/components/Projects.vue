@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import { CvLink } from '@carbon/vue/src/components/cv-link'
+import { CvTag } from '@carbon/vue/src/components/cv-tag'
 import ProjectIcon from '@carbon/icons-vue/es/roadmap/32'
 import GitIcon from '@carbon/icons-vue/es/logo--github/32'
 
@@ -39,7 +41,7 @@ export default {
     link: String,
     tags: Array
   },
-  components: { ProjectIcon, GitIcon }
+  components: { CvLink, CvTag, ProjectIcon, GitIcon }
 }
 </script>
 
