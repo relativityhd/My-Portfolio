@@ -70,7 +70,6 @@ export default {
 
 .file-info {
   position: relative;
-  z-index: 1;
   display: flex;
   height: 32px;
   margin: 16px;
@@ -82,6 +81,7 @@ export default {
 }
 
 .file-body {
+  z-index: 1;
   margin-top: -4px;
   margin-left: 20px;
   display: flex;
