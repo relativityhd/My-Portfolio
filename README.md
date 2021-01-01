@@ -36,6 +36,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - Mello (nicht auf GitHub, nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
 - Password Generator (nicht auf GitHub, nicht gehostet, muss Tim angepasst werden)
 - Scissors Paper Rock (nicht auf GitHub, nicht gehostet)
+- J&T Cryptions
 - Cryptions (nicht auf GitHub, nicht gehostet)
 - Simon Clicks (nicht auf GitHub, nicht gehostet, Hintergrund muss gehardcoded werden)
 

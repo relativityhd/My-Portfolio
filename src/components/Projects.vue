@@ -104,15 +104,6 @@ export default {
   flex-direction: column;
 }
 
-@keyframes colorWheel {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
-
 .project-link {
   color: $text-01 !important;
   text-decoration: none;
@@ -130,7 +121,7 @@ export default {
   content: '';
   display: block;
   width: 100%;
-  height: 5px;
+  height: 3px;
   background: linear-gradient(90deg, #4dc9e6, #210cac);
   -webkit-animation: colorWheel 60s infinite;
   animation: colorWheel 60s infinite;

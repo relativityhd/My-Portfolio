@@ -43,9 +43,18 @@ export default {
 #app-view {
   margin-top: calc(48px + 24px);
   min-height: calc(100vh - 48px - 24px);
-  padding-bottom: 250px;
+  padding-bottom: 20px;
 }
 .bx--number--mobile input[type='number'] {
   width: 100% !important;
+}
+
+@keyframes colorWheel {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 </style>
