@@ -139,6 +139,7 @@ export default {
 .project-tags {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 4px;
