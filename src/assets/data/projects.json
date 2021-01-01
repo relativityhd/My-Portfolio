@@ -6,6 +6,7 @@
     "date": "2020-11",
     "github": "https://github.com/ChristopherLohse/SocialNetworkAnalysis",
     "link": "https://dev.christopherlohse.de/SocialNetworkAnalysis/",
-    "tags": ["Social Network Analysis", "Twitter Crawler", "Python", "Pandas"]
+    "tags": ["Social Network Analysis", "Twitter Crawler", "Python", "Pandas"],
+    "important": true
   }
 ]

@@ -1,7 +1,12 @@
 <template>
   <div class="home">
+    <div class="filter">
+      <cv-checkbox label="Show files" value="showFiles" v-model="filter.showFiles"> </cv-checkbox>
+      <cv-checkbox label="Show projects" value="showProjects" v-model="filter.showProjects"> </cv-checkbox>
+      <cv-checkbox label="Only important" value="showOnlyImportant" v-model="filter.showOnlyImportant"> </cv-checkbox>
+    </div>
     <div class="gallery">
-      <div v-for="i in items" :key="i.name">
+      <div v-for="i in filteredItems" :key="i.name">
         <Project
           v-if="i.type === 'project'"
           :name="i.name"
@@ -54,13 +59,44 @@ export default {
         return aTs <= bTs
       })
     return {
-      items
+      items,
+      filter: {
+        showFiles: true,
+        showProjects: true,
+        showOnlyImportant: false
+      }
+    }
+  },
+  computed: {
+    filteredItems: function() {
+      return this.items.filter(i => {
+        return (
+          ((i.type === 'file' && this.filter.showFiles) || (i.type === 'project' && this.filter.showProjects)) &&
+          ((this.filter.showOnlyImportant && i.important) || !this.filter.showOnlyImportant)
+        )
+      })
     }
   }
 }
 </script>
 
 <style lang="scss">
+.filter {
+  width: 98%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.filter div {
+  max-width: 180px;
+}
+
 .gallery {
   width: 98%;
   max-width: 800px;
