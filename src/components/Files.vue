@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import { CvLink } from '@carbon/vue'
 import FileIcon from '@carbon/icons-vue/es/document/32'
 
 export default {
@@ -27,7 +28,7 @@ export default {
     dateStart: String,
     link: String
   },
-  components: { FileIcon }
+  components: { CvLink, FileIcon }
 }
 </script>
 

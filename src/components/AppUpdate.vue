@@ -18,8 +18,11 @@
 </template>
 
 <script>
+import { CvModal } from '@carbon/vue'
+
 export default {
   name: 'AppUpdate',
+  components: { CvModal },
   data() {
     return {
       refreshing: false,

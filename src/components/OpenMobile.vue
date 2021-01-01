@@ -16,8 +16,10 @@
 </template>
 
 <script>
+import { CvModal, CvButton } from '@carbon/vue'
 export default {
   name: 'OpenModal',
+  components: { CvModal, CvButton },
   methods: {
     openQRModal() {
       this.$refs.mobileModal.show()
