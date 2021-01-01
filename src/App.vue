@@ -1,44 +1,51 @@
 <template>
   <div id="app">
+    <AppHeader />
     <AppUpdate />
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <router-view id="app-view" />
   </div>
 </template>
 
 <script>
+import AppHeader from './components/AppHeader'
 import AppUpdate from './components/AppUpdate'
 
 export default {
   name: 'App',
   components: {
+    AppHeader,
     AppUpdate
+  },
+  methods: {
+    onResize() {
+      this.$store.commit('viewChange')
+    },
+    setLang() {
+      if (process.env.NODE_ENV !== 'production') return
+
+      let lang = navigator.language || navigator.userLanguage
+      lang = lang.split('-')[0]
+      this.$store.dispatch('setLang', lang)
+    }
+  },
+  mounted() {
+    window.addEventListener('resize', this.onResize)
+    this.setLang()
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('resize', this.onResize)
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+#app-view {
+  margin-top: calc(48px + 24px);
+  min-height: calc(100vh - 48px - 24px);
+  padding-bottom: 250px;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.bx--number--mobile input[type='number'] {
+  width: 100% !important;
 }
 </style>

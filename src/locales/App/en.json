@@ -1,4 +1,8 @@
 {
+  "skipto": "Skipto",
+  "home": "Gallery",
+  "profile": "Profile",
+  "imprint": "Imprint",
   "close": "Close",
   "update": {
     "label": "New Update available!",

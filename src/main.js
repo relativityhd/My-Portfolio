@@ -7,7 +7,17 @@ import CarbonComponentsVue from '@carbon/vue/src/index'
 import './assets/styles/_carbon-precompile.css'
 import { CarbonIconsVue } from '@carbon/icons-vue'
 import i18n from './i18n'
+import VueLuxon from 'vue-luxon'
 
+Vue.use(VueLuxon, {
+  input: {
+    zone: 'utc',
+    format: 'yyyy-MM'
+  },
+  output: {
+    format: 'MMM yyyy'
+  }
+})
 Vue.use(CarbonIconsVue, { components: [] })
 Vue.use(CarbonComponentsVue)
 

@@ -22,3 +22,38 @@ npx vue-pwa-asset-generator -a {512x512_png_source | svg_source} [-o {output_fol
 ```
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## My Private Projects
+
+- My Homepage (GitLab@IBM, Hosted @IBM, must be moved to GitHub)
+- Portfolio (GitHub, Hosted @IBM)
+- Social Network Analysis (GitHub, Hosted by Christopher)
+- Cupboard Configuration Tool (GitHub, Hosted @IBM, fehlende API)
+- React Presentation (GitHub, Pages, nicht funktionierende Demo)
+- Rust Integrations for Node Benchmarks (GitHub, nicht gehostet, nicht vollständig, Artikel fehlen)
+- Airlines Visualisation (GitHub, Pages, MaterialIO ist broken)
+- Veintiuno (GitHub, nicht gehostet, muss teilweise übersetzt werden)
+- Mello (nicht auf GitHub, nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
+- Password Generator (nicht auf GitHub, nicht gehostet, muss Tim angepasst werden)
+- Scissors Paper Rock (nicht auf GitHub, nicht gehostet)
+- Cryptions (nicht auf GitHub, nicht gehostet)
+- Simon Clicks (nicht auf GitHub, nicht gehostet, Hintergrund muss gehardcoded werden)
+
+## My Work Projects
+
+- Interest Validator
+- Watson4PublicTenders (intern)
+- Watson4PGMP (intern)
+- Swarm Visualization (not working yet)
+
+## My Other Work
+
+- 1. Praxisarbeit
+- 5. Pk (Präsi & Doc)
+- MSA Präsi
+
+## Important Documents
+
+- Lebenslauf / CV
+- Abiturzeugnis
+- Biber Wettbewerb
