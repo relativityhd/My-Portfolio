@@ -1,10 +1,15 @@
 <template>
   <div class="home">
+    <OpenMobile class="mobile-button" />
     <div class="filter">
-      <cv-checkbox label="Show files" value="showFiles" v-model="filter.showFiles"> </cv-checkbox>
-      <cv-checkbox label="Show projects" value="showProjects" v-model="filter.showProjects"> </cv-checkbox>
-      <cv-checkbox label="Show events" value="showEvents" v-model="filter.showEvents"> </cv-checkbox>
-      <cv-checkbox label="Only important" value="showOnlyImportant" v-model="filter.showOnlyImportant"> </cv-checkbox>
+      <cv-checkbox :label="$t('filters.showProjects')" value="showProjects" v-model="filter.showProjects"></cv-checkbox>
+      <cv-checkbox :label="$t('filters.showFiles')" value="showFiles" v-model="filter.showFiles"> </cv-checkbox>
+      <cv-checkbox :label="$t('filters.showEvents')" value="showEvents" v-model="filter.showEvents"> </cv-checkbox>
+      <cv-checkbox
+        :label="$t('filters.onlyImportant')"
+        value="showOnlyImportant"
+        v-model="filter.showOnlyImportant"
+      ></cv-checkbox>
     </div>
     <div class="gallery">
       <div v-for="i in filteredItems" :key="i.name">
@@ -34,17 +39,17 @@
 </template>
 
 <script>
+import OpenMobile from '../components/OpenMobile'
 import File from '../components/Files'
 import files from '../assets/data/files.json'
 import Project from '../components/Projects'
 import projects from '../assets/data/projects.json'
 import Event from '../components/Events'
 import events from '../assets/data/events.json'
-console.log('--DEBUG  ~ file: Home.vue ~ line 43 ~ events', events)
 
 export default {
   name: 'Home',
-  components: { Project, File, Event },
+  components: { OpenMobile, Project, File, Event },
   data: () => {
     const items = files
       .map(f => {
@@ -68,7 +73,6 @@ export default {
         const bTs = +new Date(b.date)
         return aTs <= bTs
       })
-    console.log(items)
     return {
       items,
       filter: {
@@ -95,6 +99,11 @@ export default {
 </script>
 
 <style lang="scss">
+.mobile-button {
+  display: flex;
+  justify-content: center;
+}
+
 .filter {
   width: 98%;
   max-width: 800px;
