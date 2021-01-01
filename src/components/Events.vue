@@ -92,10 +92,16 @@ export default {
 }
 
 .event-body {
-  margin-top: -52px;
+  margin-top: -4px;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .event-body {
+    margin-top: -52px;
+  }
 }
 
 .event-link {

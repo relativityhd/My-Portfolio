@@ -82,10 +82,16 @@ export default {
 }
 
 .file-body {
-  margin-top: -52px;
+  margin-top: -4px;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .file-body {
+    margin-top: -52px;
+  }
 }
 
 .file-link {

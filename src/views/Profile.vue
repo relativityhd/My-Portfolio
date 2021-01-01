@@ -82,6 +82,11 @@ export default {
   gap: 10px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-info {
+  min-width: 300px;
 }
 
 .profile-pic {
