@@ -117,14 +117,23 @@ export default {
   opacity: 0.5;
 }
 
+@keyframes colorWheel90 {
+  0% {
+    filter: hue-rotate(90deg);
+  }
+  100% {
+    filter: hue-rotate(450deg);
+  }
+}
+
 .project-name::after {
   content: '';
   display: block;
   width: 100%;
   height: 3px;
   background: linear-gradient(90deg, #4dc9e6, #210cac);
-  -webkit-animation: colorWheel 60s infinite;
-  animation: colorWheel 60s infinite;
+  -webkit-animation: colorWheel90 60s infinite;
+  animation: colorWheel90 60s infinite;
 }
 
 .project-name {

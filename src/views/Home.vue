@@ -3,6 +3,7 @@
     <div class="filter">
       <cv-checkbox label="Show files" value="showFiles" v-model="filter.showFiles"> </cv-checkbox>
       <cv-checkbox label="Show projects" value="showProjects" v-model="filter.showProjects"> </cv-checkbox>
+      <cv-checkbox label="Show events" value="showEvents" v-model="filter.showEvents"> </cv-checkbox>
       <cv-checkbox label="Only important" value="showOnlyImportant" v-model="filter.showOnlyImportant"> </cv-checkbox>
     </div>
     <div class="gallery">
@@ -25,8 +26,8 @@
           :date="i.date"
           :dateStart="i.dateStart"
           :link="i.link"
-          :tags="i.tags"
         />
+        <Event v-else-if="i.type === 'event'" :name="i.name" :code="i.code" :date="i.date" :link="i.link" />
       </div>
     </div>
   </div>
@@ -37,10 +38,13 @@ import File from '../components/Files'
 import files from '../assets/data/files.json'
 import Project from '../components/Projects'
 import projects from '../assets/data/projects.json'
+import Event from '../components/Events'
+import events from '../assets/data/events.json'
+console.log('--DEBUG  ~ file: Home.vue ~ line 43 ~ events', events)
 
 export default {
   name: 'Home',
-  components: { Project, File },
+  components: { Project, File, Event },
   data: () => {
     const items = files
       .map(f => {
@@ -53,16 +57,24 @@ export default {
           return p
         })
       )
+      .concat(
+        events.map(e => {
+          e.type = 'event'
+          return e
+        })
+      )
       .sort((a, b) => {
         const aTs = +new Date(a.date)
         const bTs = +new Date(b.date)
         return aTs <= bTs
       })
+    console.log(items)
     return {
       items,
       filter: {
         showFiles: true,
         showProjects: true,
+        showEvents: true,
         showOnlyImportant: false
       }
     }
@@ -71,7 +83,9 @@ export default {
     filteredItems: function() {
       return this.items.filter(i => {
         return (
-          ((i.type === 'file' && this.filter.showFiles) || (i.type === 'project' && this.filter.showProjects)) &&
+          ((i.type === 'file' && this.filter.showFiles) ||
+            (i.type === 'project' && this.filter.showProjects) ||
+            (i.type === 'event' && this.filter.showEvents)) &&
           ((this.filter.showOnlyImportant && i.important) || !this.filter.showOnlyImportant)
         )
       })
