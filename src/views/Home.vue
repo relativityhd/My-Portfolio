@@ -11,6 +11,7 @@
         :github="p.github"
         :link="p.link"
         :text="p.text"
+        :tags="p.tags"
       />
     </div>
   </div>

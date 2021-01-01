@@ -1,12 +1,10 @@
 <template>
   <div class="project-item">
-    <div class="project-icon">
+    <cv-link class="project-icon project-link" :href="link" target="_blank">
       <ProjectIcon />
-    </div>
+    </cv-link>
     <div class="project-info">
-      <cv-link class="project-link" :href="link" target="_blank">
-        <WebsiteIcon />
-      </cv-link>
+      <p>{{ date }}</p>
       <cv-link class="project-link" :href="github" target="_blank">
         <img
           src="../assets/images/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png"
@@ -15,14 +13,17 @@
           width="24"
         />
       </cv-link>
-      <p>{{ date }}</p>
     </div>
     <div class="project-body">
-      <a :href="link" target="_blank">
-        <h1 class="project-name project-link">{{ $t(`Projects.${code}.name`) }}</h1>
+      <h1 class="project-name">
+        <a class="project-link" :href="link" target="_blank">{{ $t(`Projects.${code}.name`) }}</a>
+      </h1>
+      <a class="project-link" :href="link" target="_blank">
+        <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" />
       </a>
-
-      <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" />
+      <div class="project-tags">
+        <cv-tag v-for="tag in tags" :key="tag" :label="tag" kind="grey"></cv-tag>
+      </div>
       <p>{{ $t(`Projects.${code}.text`) }}</p>
     </div>
   </div>
@@ -30,7 +31,6 @@
 
 <script>
 import ProjectIcon from '@carbon/icons-vue/es/roadmap/32'
-import WebsiteIcon from '@carbon/icons-vue/es/link/32'
 
 export default {
   props: {
@@ -39,9 +39,10 @@ export default {
     preview: String,
     date: String,
     github: String,
-    link: String
+    link: String,
+    tags: Array
   },
-  components: { ProjectIcon, WebsiteIcon }
+  components: { ProjectIcon }
 }
 </script>
 
@@ -90,7 +91,7 @@ export default {
   margin: 16px;
   margin-top: -47px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-shrink: 0;
   gap: 8px;
 }
@@ -116,6 +117,14 @@ export default {
   text-decoration: none;
 }
 
+.project-link img {
+  width: 100%;
+}
+
+.project-link:hover {
+  opacity: 0.5;
+}
+
 .project-name::after {
   content: '';
   display: block;
@@ -128,5 +137,15 @@ export default {
 
 .project-name {
   margin-bottom: 16px;
+}
+
+.project-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 </style>
