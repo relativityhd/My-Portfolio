@@ -51,8 +51,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## My Other Work
 
 - #1. Praxisarbeit
-- 5. Pk (Präsi & Doc)
-- MSA Präsi
+- #5. Pk (Präsi & Doc)
+- #MSA Präsi
 
 ## Important Documents
 
