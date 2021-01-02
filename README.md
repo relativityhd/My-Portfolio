@@ -26,20 +26,20 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## My Private Projects
 
-- #My Homepage
-- #Portfolio
-- #Social Network Analysis
-- #React Presentation (falsch verlinkte Demo)
-- #Cupboard Configuration Tool (fehlende API)
-- Rust Integrations for Node Benchmarks (GitHub, nicht gehostet, nicht vollständig, Artikel fehlen)
-- #Airlines Visualisation
-- Veintiuno (GitHub, nicht gehostet, es gibt eine documentation!)
-- Mello (nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
-- #Password Generator (muss für Tim angepasst werden)
-- #Scissors Paper Rock
-- #Cryptions
-- #Simon Clicks
-- Platzhitsch (nicht auf GitHub, hosted @IBM)
+- My Homepage
+- Portfolio
+- Social Network Analysis
+- React Presentation (falsch verlinkte Demo)
+- Cupboard Configuration Tool (fehlende API)
+- #Rust Integrations for Node Benchmarks (GitHub, nicht gehostet, nicht vollständig, Artikel fehlen)
+- Airlines Visualisation
+- #Veintiuno (GitHub, nicht gehostet, es gibt eine documentation!)
+- #Mello (nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
+- Password Generator (muss für Tim angepasst werden)
+- Scissors Paper Rock
+- Cryptions
+- Simon Clicks
+- #Platzhitsch (nicht auf GitHub, hosted @IBM)
 
 ## My Work Projects
 
@@ -50,7 +50,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## My Other Work
 
-- 1. Praxisarbeit
+- #1. Praxisarbeit
 - 5. Pk (Präsi & Doc)
 - MSA Präsi
 

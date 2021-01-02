@@ -13,5 +13,12 @@
     "date": "2017-05",
     "dateStart": "2017-03",
     "link": "./docs/scissors-paper-rock.zip"
+  },
+  {
+    "name": "5. Pk",
+    "code": "5PK",
+    "date": "2019-03",
+    "dateStart": "2018-11",
+    "link": "./docs/5pk.zip"
   }
 ]

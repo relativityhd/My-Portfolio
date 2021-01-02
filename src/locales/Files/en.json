@@ -6,5 +6,9 @@
   "SSP": {
     "name": "Scissors Paper Rock",
     "text": "This is my very first Software Project. In 10th grade in school we had the job to programm a simple scissors paper rock game in Python (2!). To program this made so much fun that I added more and more functionality in my freetime to it, e.g. I added the entities Lizzard and Spock to it so it became the Scissors Paper Rock Lizzard Spock from the TV Show Big Bang Theory. It should still work with Python Version 2.6. I think that without this project I wouldn't be there where I am today."
+  },
+  "5PK": {
+    "name": "5. Examcomponent",
+    "text": "The 5. Pk is part of the Berliner Abitur. The students must hold a presentation infront of a comitee. This is my presentation about Technocracy vs Democracy."
   }
 }
