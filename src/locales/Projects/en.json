@@ -33,5 +33,10 @@
     "name": "Mello",
     "text": "Mello was my first big project. In 11th class we had the task to create a software idea und implement it. Myself and my collegues Robert Cuzio, Kevin Komm and Hannah Boldt created together a Social Media Website and called it 'Mello'. The functionality of the website could be increased with modules, we created a simple framework without knowing it! This is also what our code base looks like today! We also created the complete Design from scratch. The 'docs' folder of the repository contains a project documentation and presentation.",
     "alt": "Screenshot of Mello"
+  },
+  "21": {
+    "name": "Veintiuno Game",
+    "text": "Why it is called Veintiuno? I don't know. We just called it so. Together with Moritz Scheele, Nicole Günter, Philipp Wussow, Ole Ofterdinger, Nina Warneke and Christopher Lohse I developed this little game as an exam project. This was the first time I used a frontend Framework like React.",
+    "alt": "Screenshot of the Veintiuno Landing Page"
   }
 }

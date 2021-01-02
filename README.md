@@ -33,11 +33,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - #Cupboard Configuration Tool (fehlende API)
 - Rust Integrations for Node Benchmarks (GitHub, nicht gehostet, nicht vollständig, Artikel fehlen)
 - #Airlines Visualisation
-- Veintiuno (GitHub, nicht gehostet, muss teilweise übersetzt werden, hab keine rechte drauf)
+- Veintiuno (GitHub, nicht gehostet, es gibt eine documentation!)
 - Mello (nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
 - Password Generator (nicht auf GitHub, nicht gehostet, muss Tim angepasst werden)
-- Scissors Paper Rock (nicht auf GitHub, nicht gehostet)
-- J&T Cryptions
+- Scissors Paper Rock (nicht auf GitHub, nicht gehostet, als file!)
+- J&T Cryptions (als file?)
 - Cryptions (nicht auf GitHub, nicht gehostet)
 - Simon Clicks (nicht auf GitHub, nicht gehostet, Hintergrund muss gehardcoded werden)
 - Platzhitsch (nicht auf GitHub, hosted @IBM)
