@@ -79,5 +79,30 @@
     "link": "tbd",
     "tags": ["React", "Design", "Game", "Java", "SocketIO", "Material Design"],
     "important": true
+  },
+  {
+    "name": "Simon clicks",
+    "code": "Click",
+    "preview": "simon-clicks.png",
+    "date": "2018-07",
+    "link": "/src/simon-clicks.html",
+    "tags": ["Design", "Game", "JS"]
+  },
+  {
+    "name": "Password Generator",
+    "code": "PW",
+    "preview": "pw.png",
+    "date": "2017-12",
+    "link": "/src/pw.html",
+    "tags": ["Security", "Material Design", "Crypto"],
+    "important": true
+  },
+  {
+    "name": "Cryptions",
+    "code": "Cryptions",
+    "preview": "cryptions.png",
+    "date": "2017-07",
+    "link": "/src/cryption.html",
+    "tags": ["Security", "Material Design", "Crypto"]
   }
 ]

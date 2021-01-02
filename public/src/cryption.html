@@ -1,0 +1,845 @@
+<html>
+  <head>
+    <title>Cryption byTobi</title>
+    <link rel="icon" href="https://material.io/tools/icons/static/ic_icons_192px_light.svg">
+    <!-- All necessary modules -->
+    <meta http-equiv="Content-Type" content="text/html charset=utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <style>
+    html{
+      font-family: Roboto;
+    }
+    body{
+      min-height: 80%;
+    }
+    #output{
+      margin-top: 100px;
+      margin-left: 100px;
+      margin-right: 100px;
+      text-align: center;
+      overflow-x: auto;
+    }
+    .mdl-grid{
+      min-width: 600px;
+      width: 40%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .overline{
+      font-size: 24px;
+      color: rgb(63, 81, 181);
+    }
+  </style>
+  <body>
+    <h1 id="output">Go Crypting!</h1>
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="input">
+          <label class="mdl-textfield__label" for="input">Input</label>
+        </div>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="key">
+          <label class="mdl-textfield__label" for="key">Key</label>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-grid" id="methods">
+      <div class="mdl-cell mdl-cell--4-col overline">
+        Method
+      </div>
+    </div>
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--6-col">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="encrypt()">
+          <i class="material-icons">lock</i>Encrypt
+        </button>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="decrypt()">
+          <i class="material-icons">lock_open</i>Decrypt
+        </button>
+      </div>
+    </div>
+    
+    <script>
+      /* ======================================================================
+      ===================Wichtige Funktionen erklärt===========================
+      =======================================================================*/
+      
+      /*
+       *
+       * Material Desing Vorlagen: getmdl.io/components
+       *
+       * someXXX ist eine Variable. String oder Number sind Befehlsdatenbanken.
+       *
+       * Number.isInteger(someVar) -> false/true
+       * Prüft ob eine Variable vom Typ Integer ist
+       *
+       * parseInt(someString) -> Int/NaN (NaN=="Not a Number")
+       * Versucht aus einem String Zahlen rauszupicken.
+       *
+       * someString.charCodeAt(somePositionInt) -> Int
+       * gibt den Ascii-Code eines sich an einer bestimmten Stelle eines Strings
+       * befindenden Zeichens aus. Siehe Ascii-Tablle.
+       *
+       * String.fromCharCode(someIntBetween0and125) -> Char
+       * gibt aus einer Zahl das dazugehörige Ascii-Zeichen zurück.
+       * 
+       * Math.round(someFloat) -> Int
+       * rundet eine Zahl ab oder auf.
+       *
+       * $('#someID')[0] -> DOM-Element
+       * macht das gleiche wie: document.getElementById('someID')
+       *
+       */
+      
+      /* ======================================================================
+      ===================Helpers Funktionen===============================================
+      =======================================================================*/
+      
+      // Der Key soll zum Integer werden, damit man mit ihm rechnen kann.
+      function get_key(oldkey) {
+        var key=0
+        // Wenn der geparsete key ein Integer ist: alles supi
+        if (Number.isInteger(parseInt(oldkey))) {
+          key=parseInt(oldkey)
+        }else{
+          // Sonst wird einfach für jeden Char im key der asciicode genommen und addiert
+          for (var i=0;i<oldkey.length;i++) {
+            key+=oldkey.charCodeAt(i)
+          }
+        }
+        return key
+      }
+      
+      
+      // Ein String wird in gleich große Teile geteilt.
+      function chunkString(str, length) {
+        return str.match(new RegExp('.{1,' + length + '}', 'g'));
+      }
+      
+      
+      // -------------------------------------------------------------------------------------------------------------------Cryption
+      
+      /* ======================================================================
+      =============================Ceasar======================================
+      =======================================================================*/
+      function ceasar_encrypt(word, inpkey) {
+        var crypt=""
+        var letter=""
+        var key=get_key(inpkey)
+        
+        // Jeder Buchstabe des Wortes wird einzelnd verändert
+        for (var i=0;i<word.length;i++) {
+          letter=word[i]
+          // Der Asciicode vom alten Buchstaben wird mit dem key addiert
+          var asciicode=letter.charCodeAt(0)+key
+          //Wenn die Ascii Zahl nicht im "Scope" ist, wird sie wieder an den Anfang/Ende gebracht
+          while (asciicode<32) {
+            asciicode+=93
+          }
+          while (asciicode>125) {
+            asciicode-=93
+          }
+          // Dem Wort wird der neue Buchstabe aus dem Asciicode hinzugefügt
+          crypt+=String.fromCharCode(asciicode)
+        }
+        return crypt
+      }
+      
+      
+      function ceasar_decrypt(word, inpkey) {
+        var crypt=""
+        var letter=""
+        var key=get_key(inpkey)
+      
+        for (var i=0;i<word.length;i++) {
+          letter=word[i]
+          // Alles bleibt gleich außer dieser Schritt: - anstatt +
+          var asciicode=letter.charCodeAt(0)-key
+          while (asciicode<32) {
+            asciicode+=93
+          }
+          while (asciicode>125) {
+            asciicode-=93
+          }
+          crypt+=String.fromCharCode(asciicode)
+        }
+        return crypt
+      }
+      
+      /* ======================================================================
+      ============================="LetInt"======================================
+      =======================================================================*/
+      
+      // Whatever 'letind' means, I didn't remember. Maybe 'Letter Index' or smth.
+      function letind_encrypt(word, inpkey) {
+        var crypt=""
+        var letter=""
+        var n=1
+        var key=get_key(inpkey)
+        
+        // Jeder Buchstabe des Wortes wird einzelnd verändert
+        for (var i=0;i<word.length;i++) {
+          letter=word[i]
+          // Der Asciicode vom alten Buchstaben wird mit dem (key*n) addiert
+          // Dabei ist n die Summe aller vorherigen Ascii-CharCodes und 1.
+          var asciicode=letter.charCodeAt(0)+(key*n)
+          //Wenn die Ascii Zahl nicht im "Scope" ist, wird sie wieder an den Anfang/Ende gebracht
+          while (asciicode<32) {
+            asciicode+=93
+          }
+          while (asciicode>125) {
+            asciicode-=93
+          }
+          // Dem Wort wird der neue Buchstabe aus dem Asciicode hinzugefügt
+          crypt+=String.fromCharCode(asciicode)
+          n+=letter.charCodeAt(0)
+        }
+        return crypt
+      }
+      
+      
+      function letind_decrypt(word, inpkey) {
+        var crypt=""
+        var letter=""
+        var n=1
+        var key=get_key(inpkey)
+        
+        for (var i=0;i<word.length;i++) {
+          letter=word[i]
+          // Alles bleibt gleich außer dieser Schritt: - anstatt +
+          var asciicode=letter.charCodeAt(0)-(key*n)
+          while (asciicode<32) {
+            asciicode+=93
+          }
+          while (asciicode>125) {
+            asciicode-=93
+          }
+          crypt+=String.fromCharCode(asciicode)
+          // Und hier wird der entschlüsselte Asciicode anstatt genommen,
+          // da n ja vorher auch immer nur entschlüsselt addiert wurde.
+          n+=asciicode
+        }
+        return crypt
+      }
+      
+      /* ======================================================================
+      ==========================JnT-Cryption===================================
+      =======================================================================*/
+      
+      // JnT -> by Janina and Tobias.
+      function JnT_encrypt(word, inpkey) {
+        var crypt=""
+        var letter=""
+        var n
+        var key=get_key(inpkey)
+        
+        // Jeder Buchstabe des Wortes wird einzelnd verändert
+        for (var i=0;i<word.length;i++) {
+          letter=word[i]
+          // Der Asciicode vom alten Buchstaben wird mit dem (key*n) addiert
+          // Dabei ist n die Länge des bisher encrypteten Wortes +1.
+          n=i+1
+          var asciicode=letter.charCodeAt(0)+(key*n)
+          //Wenn die Ascii Zahl nicht im "Scope" ist, wird sie wieder an den Anfang/Ende gebracht
+          while (asciicode<32) {
+            asciicode+=93
+          }
+          while (asciicode>125) {
+            asciicode-=93
+          }
+          // Dem Wort wird der neue Buchstabe aus dem Asciicode hinzugefügt
+          crypt+=String.fromCharCode(asciicode)
+        }
+        return crypt
+      }
+      
+      
+      function JnT_decrypt(word, inpkey) {
+        var crypt=""
+        var letter=""
+        var n
+        var key=get_key(inpkey)
+        
+        for (var i=0;i<word.length;i++) {
+          letter=word[i]
+          n=i+1
+          // Alles bleibt gleich außer dieser Schritt: - anstatt +
+          var asciicode=letter.charCodeAt(0)-(key*n)
+          while (asciicode<32) {
+            asciicode+=93
+          }
+          while (asciicode>125) {
+            asciicode-=93
+          }
+          crypt+=String.fromCharCode(asciicode)
+        }
+        return crypt
+      }
+      
+      /* ======================================================================
+      ==========================PlayFair=======================================
+      ===www.mathe.tu-freiberg.de/~hebisch/cafe/kryptographie/playfair.html====
+      =======================================================================*/
+      
+      function PlayFair_encrypt(word, inpkey) {
+        var crypt=""
+        var wordstr=""
+        var keystr=""
+        var doublechars=[]
+        var keyrows=[]
+        var keycolumns=[]
+        var i
+        
+        // Die Key-Tabelle erstellen
+        // Der Input Schlüssel wird durchgegangen / gefiltert
+        for (i=0;i<inpkey.length;i++) {
+          /* Wenn der Buchstabe (lowerCase) noch nicht im keystr enthalten ist UND
+           * Es auch wirklich ein Buchstabe (lowerCase) ist (Ascii Spektrum 97-122) UND
+           * der Buchstabe nicht J ist
+           * Dann wird der Buchstabe dem keystr hinzugefügt
+           */
+          if (!keystr.includes(inpkey.toLowerCase()[i]) &&
+              inpkey.toLowerCase().charCodeAt(i)>96 &&
+              inpkey.toLowerCase().charCodeAt(i)<123 &&
+              inpkey.toLowerCase()[i]!="j") {
+            keystr+=inpkey.toLowerCase()[i]
+          }
+        }
+        // Das Alphabet (lowerCase) wird durchgegangen
+        for (i=122;i>96;i--) {
+          /* Wenn der Buchstabe (lowerCase) noch nicht im keystr enthalten ist UND
+           * der Buchstabe nicht J ist
+           * Dann wird der Buchstabe dem keystr hinzugefügt
+           */
+          if (!keystr.includes(String.fromCharCode(i)) &&
+              String.fromCharCode(i)!="j") {
+            keystr+=String.fromCharCode(i)
+          }
+        }
+        /* Es wird in jedes Feld ein Buchstaben eingetragen
+         * Dafür wird ein zwei Dimensionales Array (5x5) erstellt
+         * Zum einfachem Bearbeiten, werden zwei dieser Arrays erstellt,
+         * eines für Zeilen, eines für Spalten. Beide weisen jedoch den
+         * gleichen Inhalt auf, lediglich anders angeordnet.
+         */
+        for (i=0;i<5;i++) {
+          keyrows.push([])
+          keycolumns.push([])
+        }
+        for (var zeile=0;zeile<5;zeile++) {
+          for (var spalte=0;spalte<5;spalte++) {
+            keyrows[zeile].push(keystr[zeile*5+spalte])
+            keycolumns[spalte].push(keystr[zeile*5+spalte])
+          }
+        }
+        
+        // Die Buchstaben Paare erstellen
+        // Filter für die Buchstaben
+        for (i=0;i<word.length;i++) {
+          /* Wenn es wirklich ein Buchstabe (lowerCase) ist (Ascii Spektrum 97-122) UND
+           * der Buchstabe nicht J ist
+           * Dann wird der Buchstabe dem keystr hinzugefügt
+           * Wenn der Buchstabe J ist, wird stattdessen ein I hinzugefügt
+           */
+          if (word.toLowerCase().charCodeAt(i)>96 &&
+              word.toLowerCase().charCodeAt(i)<123 &&
+              word.toLowerCase()[i]!="j") {
+            wordstr+=word.toLowerCase()[i]
+          }else if (word.toLowerCase()[i]=="j") {
+            wordstr+="i"
+          }
+          /* Bei jedem zweiten Buchstaben wird geschaut, ob der nächste
+           * der gleiche Buchstabe ist. Wenn ja, dann wird dazwischen ein großes
+           * "X" gemacht.
+           */
+          if ((wordstr.length%2)!=0 && word.toLowerCase()[i]==word.toLowerCase()[i+1]) {
+            wordstr+="x"
+          } 
+        }
+        if ((wordstr.length%2)!=0) {
+          wordstr+="x"
+        }
+        // Aus dem gefiltertem Wort werden Paare erstellt
+        for (i=0;i<wordstr.length;i++) {
+          doublechars.push(wordstr[i]+wordstr[(i+=1)])
+        }
+        
+        /* Nun haben wir folgende Variablen mit wir weiterarbeiten:
+         *  - crypt -> Leerer String -> ""
+         *  - doublechars -> Array aus Double Strings -> ["XX"]
+         *  - keyrows -> 5x5 2D-Array -> [[],[],[],[],[]]
+         *  - keycolumns -> 5x5 2D-Array -> [[],[],[],[],[]]
+         */
+        
+        // Alle "Bigramme" werden durchgegangen
+        doublechars.forEach(function(doublchar) {
+          var isSameRow=false
+          var isSameColumn=false
+          var secret=""
+          var rowFirstChar,
+              rowSecondChar,
+              columnFirstChar,
+              columnSecondChar
+              
+          
+          keyrows.forEach(function(row) {
+            if (row.includes(doublchar[0])&&row.includes(doublchar[1])) {
+              isSameRow=true
+              rowFirstChar=keyrows.indexOf(row)
+              rowSecondChar=keyrows.indexOf(row)
+            }else if (row.includes(doublchar[0])) {
+              rowFirstChar=keyrows.indexOf(row)
+            }else if (row.includes(doublchar[1])) {
+              rowSecondChar=keyrows.indexOf(row)
+            }
+          })
+          
+          keycolumns.forEach(function(column) {
+            if (column.includes(doublchar[0])&&column.includes(doublchar[1])) {
+              isSameColumn=true
+              columnFirstChar=keycolumns.indexOf(column)
+              columnSecondChar=keycolumns.indexOf(column)
+            }else if (column.includes(doublchar[0])) {
+              columnFirstChar=keycolumns.indexOf(column)
+            }else if (column.includes(doublchar[1])) {
+              columnSecondChar=keycolumns.indexOf(column)
+            }
+          })
+          
+          /* Erste Regel trifft zu wenn:
+           * Beide Buchstaben in der gleichen Zeile sind
+           */
+          if (isSameRow) {
+            columnFirstChar++
+            columnSecondChar++
+            while (columnFirstChar>=5) {
+              columnFirstChar-=5
+            }
+            while (columnSecondChar>=5) {
+              columnSecondChar-=5
+            }
+            crypt+=keyrows[rowFirstChar][columnFirstChar]
+            crypt+=keyrows[rowSecondChar][columnSecondChar]
+          }
+          /* Zweite Regel trifft zu wenn:
+           * Beide Buchstaben in der gleichen Spalte sind
+           */
+          else if (isSameColumn) {
+            rowFirstChar++
+            rowSecondChar++
+            while (rowFirstChar>=5) {
+              rowFirstChar-=5
+            }
+            while (rowSecondChar>=5) {
+              rowSecondChar-=5
+            }
+            crypt+=keyrows[rowFirstChar][columnFirstChar]
+            crypt+=keyrows[rowSecondChar][columnSecondChar]
+          }
+          /* Dritte Regel trifft sonst zu
+           */
+          else{
+            crypt+=keyrows[rowFirstChar][columnSecondChar]
+            crypt+=keyrows[rowSecondChar][columnFirstChar]
+          }
+        })
+        
+        return crypt
+      }
+      
+      
+      function PlayFair_decrypt(word, inpkey) {
+        var crypt=""
+        var wordstr=""
+        var keystr=""
+        var doublechars=[]
+        var keyrows=[]
+        var keycolumns=[]
+        var i
+        
+        for (i=0;i<inpkey.length;i++) {
+          if (!keystr.includes(inpkey.toLowerCase()[i]) &&
+              inpkey.toLowerCase().charCodeAt(i)>96 &&
+              inpkey.toLowerCase().charCodeAt(i)<123 &&
+              inpkey.toLowerCase()[i]!="j") {
+            keystr+=inpkey.toLowerCase()[i]
+          }
+        }
+        for (i=122;i>96;i--) {
+          if (!keystr.includes(String.fromCharCode(i)) &&
+              String.fromCharCode(i)!="j") {
+            keystr+=String.fromCharCode(i)
+          }
+        }
+        for (i=0;i<5;i++) {
+          keyrows.push([])
+          keycolumns.push([])
+        }
+        for (var zeile=0;zeile<5;zeile++) {
+          for (var spalte=0;spalte<5;spalte++) {
+            keyrows[zeile].push(keystr[zeile*5+spalte])
+            keycolumns[spalte].push(keystr[zeile*5+spalte])
+          }
+        }
+
+        for (i=0;i<word.length;i++) {
+          if (word.toLowerCase().charCodeAt(i)>96 &&
+              word.toLowerCase().charCodeAt(i)<123 &&
+              word.toLowerCase()[i]!="j") {
+            wordstr+=word.toLowerCase()[i]
+          }else if (word.toLowerCase()[i]=="j") {
+            wordstr+="i"
+          }
+          if ((wordstr.length%2)!=0 && word.toLowerCase()[i]==word.toLowerCase()[i+1]) {
+            wordstr+="x"
+          } 
+        }
+        if ((wordstr.length%2)!=0) {
+          wordstr+="x"
+        }
+        for (i=0;i<wordstr.length;i++) {
+          doublechars.push(wordstr[i]+wordstr[(i+=1)])
+        }
+        
+        doublechars.forEach(function(doublchar) {
+          var isSameRow=false
+          var isSameColumn=false
+          var secret=""
+          var rowFirstChar,
+              rowSecondChar,
+              columnFirstChar,
+              columnSecondChar
+              
+          
+          keyrows.forEach(function(row) {
+            if (row.includes(doublchar[0])&&row.includes(doublchar[1])) {
+              isSameRow=true
+              rowFirstChar=keyrows.indexOf(row)
+              rowSecondChar=keyrows.indexOf(row)
+            }else if (row.includes(doublchar[0])) {
+              rowFirstChar=keyrows.indexOf(row)
+            }else if (row.includes(doublchar[1])) {
+              rowSecondChar=keyrows.indexOf(row)
+            }
+          })
+          
+          keycolumns.forEach(function(column) {
+            if (column.includes(doublchar[0])&&column.includes(doublchar[1])) {
+              isSameColumn=true
+              columnFirstChar=keycolumns.indexOf(column)
+              columnSecondChar=keycolumns.indexOf(column)
+            }else if (column.includes(doublchar[0])) {
+              columnFirstChar=keycolumns.indexOf(column)
+            }else if (column.includes(doublchar[1])) {
+              columnSecondChar=keycolumns.indexOf(column)
+            }
+          })
+          if (isSameRow) {
+            columnFirstChar--
+            columnSecondChar--
+            while (columnFirstChar<0) {
+              columnFirstChar+=5
+            }
+            while (columnSecondChar<0) {
+              columnSecondChar+=5
+            }
+            crypt+=keyrows[rowFirstChar][columnFirstChar]
+            crypt+=keyrows[rowSecondChar][columnSecondChar]
+          }else if (isSameColumn) {
+            rowFirstChar--
+            rowSecondChar--
+            while (rowFirstChar<0) {
+              rowFirstChar+=5
+            }
+            while (rowSecondChar<0) {
+              rowSecondChar+=5
+            }
+            crypt+=keyrows[rowFirstChar][columnFirstChar]
+            crypt+=keyrows[rowSecondChar][columnSecondChar]
+          }else{
+            crypt+=keyrows[rowFirstChar][columnSecondChar]
+            crypt+=keyrows[rowSecondChar][columnFirstChar]
+          }
+        })
+        
+        return crypt
+      }
+      
+      /* ======================================================================
+      ==========================Transposition==================================
+      =======================================================================*/
+      
+      // Funktioniert nicht richtig!!!
+      function transposition_encrypt(word, inpkey) {
+        var crypt=""
+        var key=get_key(inpkey)
+        
+        if (key<=word.length) {
+          for (var j=0;j<key;j++) {
+            var str=""
+            for (var i=j;i<word.length;i+=key) {
+              str+=word[i]
+            }
+            crypt+=str
+          }
+          return crypt
+        }else {
+          return "Key to heavy"
+        }
+      }
+      
+      function transposition_decrypt(word, inpkey) {
+        var crypt=""
+        var key=get_key(inpkey)
+        
+        if (key<=word.length) {
+          var chunkSize=Math.round(word.length/key)
+          var chunks=chunkString(word, chunkSize)
+          for (var j=0;j<chunkSize;j++) {
+            for (var i=0;i<key;i++) {
+              if (chunks[i][j]) {
+                crypt+=chunks[i][j]
+              }
+            }
+          }
+          return crypt
+        }else{
+          return "Key to heavy"
+        }
+      }
+      
+      /* ======================================================================
+      ==========================Vigenere=======================================
+      =======================================================================*/
+      
+      function vigenere_encrypt(word, inpkey) {
+        var key=inpkey
+        var crypt=""
+        
+        for (var i=0;i<word.length;i++) {
+          var asciicode=word.charCodeAt(i)+key.charCodeAt(i%key.length)
+          while (asciicode<32) {
+            asciicode+=93
+          }
+          while (asciicode>125) {
+            asciicode-=93
+          }
+          crypt+=String.fromCharCode(asciicode)
+        }
+        
+        return crypt
+      }
+      
+      
+      function vigenere_decrypt(word, inpkey) {
+        var key=inpkey
+        var crypt=""
+        
+        for (var i=0;i<word.length;i++) {
+          var asciicode=word.charCodeAt(i)-key.charCodeAt(i%key.length)
+          while (asciicode<32) {
+            asciicode+=93
+          }
+          while (asciicode>125) {
+            asciicode-=93
+          }
+          crypt+=String.fromCharCode(asciicode)
+        }
+        
+        return crypt
+      }
+      
+      /* ======================================================================
+      ==========================Xor============================================
+      =======================================================================*/
+      
+      function xor_encrypt(inpword, inpkey) {
+        var key=""
+        var word=""
+        var crypt=""
+        // key to bin
+        for (var i=0;i<inpkey.length;i++) {
+          key+=(inpkey.charCodeAt(i)).toString(2).padStart(8, "0")
+        }
+        // word to bin
+        for (var i=0;i<inpword.length;i++) {
+          word+=(inpword.charCodeAt(i)).toString(2).padStart(8, "0")
+        }
+        // get the crypt
+        for (var i=0;i<word.length;i++) {
+          if (word[i]==key[i%key.length]) {
+            crypt+="1"
+          }else {
+            crypt+="0"
+          }
+          if (i%8==7) {
+            crypt+=" "
+          }
+        }
+        return crypt
+      }
+      
+      function xor_decrypt(inpword, inpkey) {
+        inpword=inpword.replace(/ /g, '')
+        var key=""
+        var word=""
+        var crypt=""
+        // key to bin
+        for (var i=0;i<inpkey.length;i++) {
+          key+=(inpkey.charCodeAt(i)).toString(2).padStart(8, "0")
+        }
+        // get the crypt
+        for (var i=0;i<inpword.length;i++) {
+          if (inpword[i]==key[i%key.length]) {
+            word+="1"
+          }else {
+            word+="0"
+          }
+        }
+        for (var i=0;i<word.length;i+=8) {
+          var sub=word.substr(i,8)
+          var ascii=parseInt(sub, 2)
+          crypt+=String.fromCharCode(ascii)
+        }
+        return crypt
+      }
+      
+      /* ======================================================================
+      ==========================RSA============================================
+      =======================================================================*/
+      
+      var privateKey=35
+      var myPublicKeys=[11, 221]
+      
+      function rsa_encrypt(inpword, inpkeys) {
+        var crypt=""
+        var word=get_key(inpword)
+        crypt=Math.pow(word, myPublicKeys[0])%myPublicKeys[1]
+        return crypt
+        
+      }
+      
+      function rsa_decrypt(inpword, inpkeys) {
+        var publicKeys=inpkeys.split(",")
+        console.log(publicKeys)
+        var crypt=""
+        var word=get_key(inpword)
+        if (publicKeys[0]&&publicKeys[1]) {
+          crypt=Math.pow(word, parseInt(privateKey))%parseInt(publicKeys[1])
+        }
+        return crypt
+      }
+      
+      // -------------------------------------------------------------------------------------------------------------------Cryption
+      
+      /* ======================================================================
+      ===========================Unit Test=====================================
+      =======================================================================*/
+      
+      function run_tests() {
+        // Ceasar ("hello", 1)
+        console.log("This should be 'hello': ", ceasar_decrypt(ceasar_encrypt("hello", "1"), 1))
+        // Letind ("hello", 1)
+        console.log("This should be 'hello': ", letind_decrypt(letind_encrypt("hello", "1"), 1))
+        // JnT ("hello", 1)
+        console.log("This should be 'hello': ", JnT_decrypt(JnT_encrypt("hello", "1"), 1))
+        // PlayFair ("Dieser Klartext ist jetzt zu verschluesseln", "wheatstone")
+        console.log("This should be 'BLWNAUIKZKWAQWPYYBAWYANRUHXZFADLWNNWDU': ", PlayFair_encrypt("DIESER KLARTEXT IST JETZT ZU VERSCHLUESSELN", "WHEATSTONE"))
+        // PlayFair ("hello", "TobisPlayFair")
+        console.log("This should be 'hello', maybe with some 'x' 's between: ", PlayFair_decrypt(PlayFair_encrypt("Hello", "TobisPlayFair"), "TobisPlayFair"))
+        // Transposition ("hello", 2)
+        console.log("This should be 'hello': ", transposition_decrypt(transposition_encrypt("hello", "2"), 2))
+        // Vigenere ("hello", "key")
+        console.log("This should be 'hello': ", vigenere_decrypt(vigenere_encrypt("hello", "key"), "key"))
+        // Binary ("hello", "key")
+        console.log("This should be 'hello': ", xor_decrypt(xor_encrypt("hello", "key"), "key"))
+      }
+      //run_tests()
+      
+      
+      /* ======================================================================
+      =========================================================================
+      ===============View==View==View==View==View==View========================
+      =========================================================================
+      =======================================================================*/
+      
+      // Alle Verschlüsselungen aus diesem Script.
+      // Aufbau: ["Funktionsname ohne en/decrypt", "Name der Verschlüsselung", "Beschreibung"]
+      var cryptions=[["ceasar", "Ceasar", "Simple Chiffre. <br> Input and Key can be anything."],
+                    ["letind", "LetInd", "Simple Chiffre. <br> Input and Key can be anything."],
+                    ["JnT", "Janina and Tobi", "Simple Chiffre. <br> Input and Key can be anything."],
+                    ["PlayFair", "PlayFair", "Complex Chiffre. <br> Input and Key can only be letters."],
+                    ["transposition", "Tobis Transposition", "Simple Chiffre <br> Works NOT correctly."],
+                    ["vigenere", "Vigenére", "Older Chiffre. <br> Input and Key can be anything."],
+                    ["xor", "Binary", "Binary Chiffre. <br> Input and Key can be anything. <br> For decrypt Input can be only <br> a sequence of 1 and / or 0."],
+                    ["rsa", "RSA", "Super Chiffre. <br> TODO"]]
+      // Dem "wrapper" wird jede Verschlüsselung einzeln hinzugefügt.
+      // Das ganze in Material Design, deswegen so "kompliziert".
+      var methods_wrapper=$('#methods')[0]
+      for (var i=0;i<cryptions.length;i++) {
+        methods_wrapper.innerHTML+='\
+          <div class="mdl-cell mdl-cell--4-col">\
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-'+i+'" id="l'+i+'">\
+              <input type="radio" id="option-'+i+'" class="mdl-radio__button" name="method" value="'+cryptions[i][0]+'">\
+              <span class="mdl-radio__label">'+cryptions[i][1]+'</span>\
+            </label>\
+            <div class="mdl-tooltip" for="l'+i+'">\
+              '+cryptions[i][2]+'\
+            </div>\
+          </div>'
+      }
+      
+      // Event Handler. Es wird die ausgewählte Verschlüsselung erfasst und ausgeführt.
+      function encrypt() {
+        var input=$('#input')[0].value
+        var key=$('#key')[0].value
+        var selectedMethod
+        var methods=$("[name='method']")
+        for (var i=0;i<methods.length;i++) {
+          if (methods[i].checked==true) {
+            selectedMethod=methods[i].value
+            break
+          }
+        }
+        var crypt=window[(selectedMethod+"_encrypt")](input, key)
+        if (crypt=="") {
+          $('#output')[0].textContent="Something went wrong"
+        }else{
+          $('#output')[0].textContent=crypt
+        }
+      }
+      
+      // Event Handler. Es wird die ausgewählte Verschlüsselung erfasst und ausgeführt.
+      function decrypt() {
+        var input=$('#input')[0].value
+        var key=$('#key')[0].value
+        var selectedMethod
+        var methods=$("[name='method']")
+        for (var i=0;i<methods.length;i++) {
+          if (methods[i].checked==true) {
+            selectedMethod=methods[i].value
+            break
+          }
+        }
+        var crypt=window[(selectedMethod+"_decrypt")](input, key)
+        if (crypt=="") {
+          $('#output')[0].textContent="Something went wrong"
+        }else{
+          $('#output')[0].textContent=crypt
+        }
+      }
+      
+    </script>
+  </body>
+</html>

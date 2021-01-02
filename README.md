@@ -35,11 +35,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - #Airlines Visualisation
 - Veintiuno (GitHub, nicht gehostet, es gibt eine documentation!)
 - Mello (nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
-- Password Generator (nicht auf GitHub, nicht gehostet, muss Tim angepasst werden)
+- #Password Generator (muss für Tim angepasst werden)
 - Scissors Paper Rock (nicht auf GitHub, nicht gehostet, als file!)
 - J&T Cryptions (als file?)
-- Cryptions (nicht auf GitHub, nicht gehostet)
-- Simon Clicks (nicht auf GitHub, nicht gehostet, Hintergrund muss gehardcoded werden)
+- #Cryptions
+- #Simon Clicks
 - Platzhitsch (nicht auf GitHub, hosted @IBM)
 
 ## My Work Projects
