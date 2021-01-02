@@ -8,5 +8,10 @@
     "name": "Meine Homepage",
     "text": "Meine Homepage habe entwickelt um mich mit ihrer Hilfe bei IBM für ein Duales Studium zu bewerben. Zum Glück habe ich den Job auch bekommen, vielleicht hat mir die Homepage dabei geholfen. Auf meiner Homepage stelle ich mich selbst der weiten Welt vor. Einen eigenen Blog habe ich dort auch, welchen ich selbst geschrieben habe. Die Website zu entwickeln war großartig, ich habe sehr viel über Webentwicklung lernen können. Außerdem konnte ich viel über Cloudentwicklung lernen, da ich die Homepage zuerst auf meinem Raspberry Pi und später auf der IBM Cloud gehostet habe.",
     "alt": "Screenshot meiner Homepage"
+  },
+  "ReactPrasi": {
+    "name": "React Präsentation",
+    "text": "Meine Freunde Christopher Lohse, Philipp Wussow und ich haben diese Seite als Webseite für eine Präsentation über das Framework React entwickelt. Wir wollten zeigen wie einfach es mit Frameworks ist eine gutaussehende Website zu entwickeln.",
+    "alt": "Screenshot der Präsentation"
   }
 }

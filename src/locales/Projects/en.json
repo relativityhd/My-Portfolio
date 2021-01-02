@@ -8,5 +8,10 @@
     "name": "My Homepage",
     "text": "I build my Homepage to apply for an apprenticeship @ IBM. Gladly i got the job, maybe my Homepage has helped my a little bit out here. On my Homepage I present myself to everybode out there. I also wrote an own Blog-Engine and some articles on it. To build an own Homepage was great, I learned a lot about Web Development. Since I also hosted it on my Raspberry Pi and later on the IBM Cloud I also learned about the importance of Cloud Development.",
     "alt": "Screenshot of my Homepage"
+  },
+  "ReactPrasi": {
+    "name": "React Presentation",
+    "text": "For a presentation about the React Framework in class me and my friends Christopher Lohse, Philipp Wussow created this website which should show the class how easy it is to create a good looking website.",
+    "alt": "Screenshot of the Presentation"
   }
 }
