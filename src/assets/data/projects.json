@@ -39,5 +39,14 @@
     "link": "https://cablecard-cct.eu-de.mybluemix.net/",
     "tags": ["Vue", "Carbon Components", "PWA", "i18n", "l10n", "3D Visualization"],
     "important": true
+  },
+  {
+    "name": "Flights Dashboard",
+    "code": "DSVIZ",
+    "preview": "ds-viz.png",
+    "date": "2020-05",
+    "github": "https://github.com/relativityhd/ds_visualisation",
+    "link": "https://relativityhd.github.io/ds_visualisation/",
+    "tags": ["Data Science", "Visualization", "Material Design", "Plotly"]
   }
 ]

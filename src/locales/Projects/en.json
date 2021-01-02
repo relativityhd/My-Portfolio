@@ -18,5 +18,10 @@
     "name": "Cupboard Configuration Tool (CCT)",
     "text": "I developed the CCT together with my friends Christopher Lohse, Philipp Wussow, Ole Ofterdinger and Amon Schneider. This project was a project-simulation in class. Our teachers played as our customers and hired us to develop a Web-Shop for them. I nearly finished my road to be a full-stack web developer with this project. I learned a lot of new technologies like i18n or PWA.",
     "alt": "Screenshot of the CCT"
+  },
+  "DSVIZ": {
+    "name": "Flights Dashboard",
+    "text": "I developed this dashboard together with Philipp Wussow for a class exam. The dashboard takes data from 2015 american flights and visualize it. This was the first project where I visualized a map.",
+    "alt": "Screenshot of the Dahboards"
   }
 }

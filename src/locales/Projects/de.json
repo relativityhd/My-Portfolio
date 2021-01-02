@@ -18,5 +18,10 @@
     "name": "Cupboard Configuration Tool (CCT)",
     "text": "Den CCT habe ich zusammen mit meinen Freunden Christopher Lohse, Philipp Wussow, Ole Ofterdinger und Amon Schneider entwickelt. Dieses Projekt entstant im Zuge einer Projektsimulation. Bei dieser Simulation hatten verschiedene Teams aus dem Kurs die Aufgabe einen Online-Shop zu entwickeln unter weiteren verschiedenen Bedingungen. Zum Beispiel, dass unsere Dozenten für die Projektdauer in die Kundenrolle wechselten. In diesem Projekt vervollständigte ich mein Wissen über Webentwicklung durch das erlernen neuer Technologieen wie zum Beispiel i18n oder PWA.",
     "alt": "Screenshot des CCTs"
+  },
+  "DSVIZ": {
+    "name": "Flights Dashboard",
+    "text": "Zusammen mit Philipp Wussow habe ich dieses kleine Dashboard entwickelt, welches auf die Flugdaten aus Amerika im Jahre 2015 zugreift. Das Dashboard entstand im Zuge des Kurses 'Data Science Visualizations' als Prüfungsabgabe. Hier lernte ich vorallem mit Karten-Visualisierungen umzugehen.",
+    "alt": "Screenshot des Dahboards"
   }
 }

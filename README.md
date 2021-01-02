@@ -26,11 +26,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## My Private Projects
 
-- My Homepage
+- #My Homepage
 - Portfolio (GitHub, Hosted @IBM)
-- Social Network Analysis
-- React Presentation (falsch verlinkte Demo)
-- Cupboard Configuration Tool (fehlende API)
+- #Social Network Analysis
+- #React Presentation (falsch verlinkte Demo)
+- #Cupboard Configuration Tool (fehlende API)
 - Rust Integrations for Node Benchmarks (GitHub, nicht gehostet, nicht vollständig, Artikel fehlen)
 - Airlines Visualisation (GitHub, Pages, MaterialIO ist broken)
 - Veintiuno (GitHub, nicht gehostet, muss teilweise übersetzt werden)
