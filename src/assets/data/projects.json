@@ -57,5 +57,16 @@
     "github": "https://github.com/relativityhd/My-Portfolio",
     "link": "https://tobiashoelzer-portfolio.eu-de.mybluemix.net/",
     "tags": ["Vue", "Carbon Components", "i18n", "Design"]
+  },
+  {
+    "name": "Mello",
+    "code": "Mello",
+    "preview": "mello.png",
+    "date": "2018-06",
+    "dateStart": "2018-03",
+    "github": "https://github.com/relativityhd/mello-fork",
+    "link": "tbd",
+    "tags": ["NodeJS", "Design", "Social Media", "First Big Project"],
+    "important": true
   }
 ]

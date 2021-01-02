@@ -28,5 +28,10 @@
     "name": "My Portfolio",
     "text": "Since my Homepage isn't build for business only purpose it isn't always the best choice to show it for job applications. Therefore I build this portfolio.",
     "alt": "Screenshot of my Portfolios"
+  },
+  "Mello": {
+    "name": "Mello",
+    "text": "Mello was my first big project. In 11th class we had the task to create a software idea und implement it. Myself and my collegues Robert Cuzio, Kevin Komm and Hannah Boldt created together a Social Media Website and called it 'Mello'. The functionality of the website could be increased with modules, we created a simple framework without knowing it! This is also what our code base looks like today! We also created the complete Design from scratch. The 'docs' folder of the repository contains a project documentation and presentation.",
+    "alt": "Screenshot of Mello"
   }
 }

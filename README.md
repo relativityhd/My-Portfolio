@@ -34,7 +34,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - Rust Integrations for Node Benchmarks (GitHub, nicht gehostet, nicht vollständig, Artikel fehlen)
 - #Airlines Visualisation
 - Veintiuno (GitHub, nicht gehostet, muss teilweise übersetzt werden, hab keine rechte drauf)
-- Mello (nicht auf GitHub, nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
+- Mello (nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
 - Password Generator (nicht auf GitHub, nicht gehostet, muss Tim angepasst werden)
 - Scissors Paper Rock (nicht auf GitHub, nicht gehostet)
 - J&T Cryptions
