@@ -27,13 +27,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## My Private Projects
 
 - #My Homepage
-- #Portfolio (GitHub, Hosted @IBM)
+- #Portfolio
 - #Social Network Analysis
 - #React Presentation (falsch verlinkte Demo)
 - #Cupboard Configuration Tool (fehlende API)
 - Rust Integrations for Node Benchmarks (GitHub, nicht gehostet, nicht vollständig, Artikel fehlen)
-- #Airlines Visualisation (GitHub, Pages, MaterialIO ist broken)
-- Veintiuno (GitHub, nicht gehostet, muss teilweise übersetzt werden)
+- #Airlines Visualisation
+- Veintiuno (GitHub, nicht gehostet, muss teilweise übersetzt werden, hab keine rechte drauf)
 - Mello (nicht auf GitHub, nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
 - Password Generator (nicht auf GitHub, nicht gehostet, muss Tim angepasst werden)
 - Scissors Paper Rock (nicht auf GitHub, nicht gehostet)

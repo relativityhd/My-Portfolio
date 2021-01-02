@@ -5,7 +5,7 @@
     <p>Verantwortlich für die Inhalte (gemäß § 5 TMG / § 55 II RStV)</p>
     <p>Tobias Hölzer</p>
     <p>Ernsthaldenstraße 49</p>
-    <p>10825 Berlin</p>
+    <p>70565 Stuttgart</p>
     <br />
     <h6>Kontakt</h6>
     <p>Telefon: 0179 7211240</p>
