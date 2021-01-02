@@ -36,8 +36,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - Veintiuno (GitHub, nicht gehostet, es gibt eine documentation!)
 - Mello (nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
 - #Password Generator (muss für Tim angepasst werden)
-- Scissors Paper Rock (nicht auf GitHub, nicht gehostet, als file!)
-- J&T Cryptions (als file?)
+- #Scissors Paper Rock
 - #Cryptions
 - #Simon Clicks
 - Platzhitsch (nicht auf GitHub, hosted @IBM)

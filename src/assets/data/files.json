@@ -4,6 +4,14 @@
     "code": "PA1",
     "date": "2020-08",
     "dateStart": "2020-06",
-    "link": "./docs/PA1 Tobias Hölzer.pdf"
+    "link": "./docs/PA1 Tobias Hölzer.pdf",
+    "important": true
+  },
+  {
+    "name": "Scissors Paper Rock",
+    "code": "SSP",
+    "date": "2017-05",
+    "dateStart": "2017-03",
+    "link": "./docs/scissors-paper-rock.zip"
   }
 ]
