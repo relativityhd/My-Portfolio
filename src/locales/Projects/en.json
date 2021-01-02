@@ -13,5 +13,10 @@
     "name": "React Presentation",
     "text": "For a presentation about the React Framework in class me and my friends Christopher Lohse, Philipp Wussow created this website which should show the class how easy it is to create a good looking website.",
     "alt": "Screenshot of the Presentation"
+  },
+  "CCT": {
+    "name": "Cupboard Configuration Tool (CCT)",
+    "text": "I developed the CCT together with my friends Christopher Lohse, Philipp Wussow, Ole Ofterdinger and Amon Schneider. This project was a project-simulation in class. Our teachers played as our customers and hired us to develop a Web-Shop for them. I nearly finished my road to be a full-stack web developer with this project. I learned a lot of new technologies like i18n or PWA.",
+    "alt": "Screenshot of the CCT"
   }
 }

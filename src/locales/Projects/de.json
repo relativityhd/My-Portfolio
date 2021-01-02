@@ -13,5 +13,10 @@
     "name": "React Präsentation",
     "text": "Meine Freunde Christopher Lohse, Philipp Wussow und ich haben diese Seite als Webseite für eine Präsentation über das Framework React entwickelt. Wir wollten zeigen wie einfach es mit Frameworks ist eine gutaussehende Website zu entwickeln.",
     "alt": "Screenshot der Präsentation"
+  },
+  "CCT": {
+    "name": "Cupboard Configuration Tool (CCT)",
+    "text": "Den CCT habe ich zusammen mit meinen Freunden Christopher Lohse, Philipp Wussow, Ole Ofterdinger und Amon Schneider entwickelt. Dieses Projekt entstant im Zuge einer Projektsimulation. Bei dieser Simulation hatten verschiedene Teams aus dem Kurs die Aufgabe einen Online-Shop zu entwickeln unter weiteren verschiedenen Bedingungen. Zum Beispiel, dass unsere Dozenten für die Projektdauer in die Kundenrolle wechselten. In diesem Projekt vervollständigte ich mein Wissen über Webentwicklung durch das erlernen neuer Technologieen wie zum Beispiel i18n oder PWA.",
+    "alt": "Screenshot des CCTs"
   }
 }
