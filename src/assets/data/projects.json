@@ -48,5 +48,14 @@
     "github": "https://github.com/relativityhd/ds_visualisation",
     "link": "https://relativityhd.github.io/ds_visualisation/",
     "tags": ["Data Science", "Visualization", "Material Design", "Plotly"]
+  },
+  {
+    "name": "My Portfolio",
+    "code": "MyPort",
+    "preview": "my-portfolio.png",
+    "date": "2021-01",
+    "github": "https://github.com/relativityhd/My-Portfolio",
+    "link": "https://tobiashoelzer-portfolio.eu-de.mybluemix.net/",
+    "tags": ["Vue", "Carbon Components", "i18n", "Design"]
   }
 ]

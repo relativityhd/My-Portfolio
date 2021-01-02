@@ -23,5 +23,10 @@
     "name": "Flights Dashboard",
     "text": "I developed this dashboard together with Philipp Wussow for a class exam. The dashboard takes data from 2015 american flights and visualize it. This was the first project where I visualized a map.",
     "alt": "Screenshot of the Dahboards"
+  },
+  "MyPort": {
+    "name": "My Portfolio",
+    "text": "Since my Homepage isn't build for business only purpose it isn't always the best choice to show it for job applications. Therefore I build this portfolio.",
+    "alt": "Screenshot of my Portfolios"
   }
 }

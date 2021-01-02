@@ -23,5 +23,10 @@
     "name": "Flights Dashboard",
     "text": "Zusammen mit Philipp Wussow habe ich dieses kleine Dashboard entwickelt, welches auf die Flugdaten aus Amerika im Jahre 2015 zugreift. Das Dashboard entstand im Zuge des Kurses 'Data Science Visualizations' als Prüfungsabgabe. Hier lernte ich vorallem mit Karten-Visualisierungen umzugehen.",
     "alt": "Screenshot des Dahboards"
+  },
+  "MyPort": {
+    "name": "Mein Portfolio",
+    "text": "Da ich meine Website als Privatperson aufziehen möchte ist diese nicht immer gut geeignet für Bewerbungen. Daher habe ich dieses Portfolio erstellt.",
+    "alt": "Screenshot meines Portfolios"
   }
 }
