@@ -70,9 +70,9 @@ export default {
         })
       )
       .sort((a, b) => {
-        const aTs = +new Date(a.date)
-        const bTs = +new Date(b.date)
-        return aTs <= bTs
+        const aTs = new Date(a.date).getTime()
+        const bTs = new Date(b.date).getTime()
+        return bTs - aTs
       })
     return {
       items,

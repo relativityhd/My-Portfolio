@@ -6,17 +6,17 @@
   },
   "MyHome": {
     "name": "Meine Homepage",
-    "text": "Meine Homepage habe entwickelt um mich mit ihrer Hilfe bei IBM für ein Duales Studium zu bewerben. Zum Glück habe ich den Job auch bekommen, vielleicht hat mir die Homepage dabei geholfen. Auf meiner Homepage stelle ich mich selbst der weiten Welt vor. Einen eigenen Blog habe ich dort auch, welchen ich selbst geschrieben habe. Die Website zu entwickeln war großartig, ich habe sehr viel über Webentwicklung lernen können. Außerdem konnte ich viel über Cloudentwicklung lernen, da ich die Homepage zuerst auf meinem Raspberry Pi und später auf der IBM Cloud gehostet habe.",
+    "text": "Meine Homepage habe ich entwickelt um mich mit ihrer Hilfe bei IBM für ein Duales Studium zu bewerben. Zum Glück habe ich den Job auch bekommen, vielleicht hat mir die Homepage dabei geholfen. Auf meiner Homepage stelle ich mich selbst der weiten Welt vor. Einen eigenen Blog habe ich dort auch, welchen ich selbst geschrieben habe. Die Website zu entwickeln war großartig, ich habe sehr viel über Webentwicklung lernen können. Außerdem konnte ich viel über Cloudentwicklung lernen, da ich die Homepage zuerst auf meinem Raspberry Pi und später auf der IBM Cloud gehostet habe.",
     "alt": "Screenshot meiner Homepage"
   },
   "ReactPrasi": {
     "name": "React Präsentation",
-    "text": "Meine Freunde Christopher Lohse, Philipp Wussow und ich haben diese Seite als Webseite für eine Präsentation über das Framework React entwickelt. Wir wollten zeigen wie einfach es mit Frameworks ist eine gutaussehende Website zu entwickeln.",
+    "text": "Meine Freunde Christopher Lohse, Philipp Wussow und ich haben diese Seite als Webseite für eine Präsentation über das Framework React entwickelt. Wir wollten zeigen wie einfach es ist mit Frameworks eine gutaussehende Website zu entwickeln.",
     "alt": "Screenshot der Präsentation"
   },
   "CCT": {
     "name": "Cupboard Configuration Tool (CCT)",
-    "text": "Den CCT habe ich zusammen mit meinen Freunden Christopher Lohse, Philipp Wussow, Ole Ofterdinger und Amon Schneider entwickelt. Dieses Projekt entstant im Zuge einer Projektsimulation. Bei dieser Simulation hatten verschiedene Teams aus dem Kurs die Aufgabe einen Online-Shop zu entwickeln unter weiteren verschiedenen Bedingungen. Zum Beispiel, dass unsere Dozenten für die Projektdauer in die Kundenrolle wechselten. In diesem Projekt vervollständigte ich mein Wissen über Webentwicklung durch das erlernen neuer Technologieen wie zum Beispiel i18n oder PWA.",
+    "text": "Den CCT habe ich zusammen mit meinen Freunden Christopher Lohse, Philipp Wussow, Ole Ofterdinger und Amon Schneider entwickelt. Dieses Projekt entstand im Zuge einer Projektsimulation. Bei dieser Simulation hatten verschiedene Teams aus dem Kurs die Aufgabe einen Online-Shop zu entwickeln unter weiteren verschiedenen Bedingungen. Zum Beispiel, dass unsere Dozenten für die Projektdauer in die Kundenrolle wechselten. In diesem Projekt vervollständigte ich mein Wissen über Webentwicklung durch das erlernen neuer Technologieen wie zum Beispiel i18n oder PWA.",
     "alt": "Screenshot des CCTs"
   },
   "DSVIZ": {
