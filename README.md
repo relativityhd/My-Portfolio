@@ -43,19 +43,19 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## My Work Projects
 
-- Interest Validator
-- Watson4PublicTenders (intern)
-- Watson4PGMP (intern)
-- Swarm Visualization (not working yet)
+- #Interest Validator
+- #Watson4PublicTenders (intern)
+- #Watson4PGMP (intern)
+- #Swarm Visualization (not working yet)
 
 ## My Other Work
 
-- #1. Praxisarbeit
-- #5. Pk (Präsi & Doc)
-- #MSA Präsi
+- 1. Praxisarbeit
+- 5. Pk (Präsi & Doc)
+- MSA Präsi
 
 ## Important Documents
 
-- Lebenslauf / CV
+- #Lebenslauf / CV
 - Abiturzeugnis
 - Biber Wettbewerb
