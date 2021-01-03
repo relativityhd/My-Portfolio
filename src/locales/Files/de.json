@@ -1,0 +1,18 @@
+{
+  "PA1": {
+    "name": "1. Praxis Arbeit",
+    "text": "Dies ist meine erste Wissenschaftliche Arbeit. Ich habe eine 3.6 dafür bekommen, also vielleicht war sie nicht allzu gut. Dafür habe ich aber sehr viel über das Wissenschaftliche Arbeiten und Vorgehen gelernt. Die Arbeit ging über das Thema Visualisierungen für Vertrauenswürdige Künstliche Intelligenzen."
+  },
+  "SSP": {
+    "name": "Schere Stein Papier",
+    "text": "Dies ist mein allererstes Software Projekt gewesen. In der 10. Klasse bekamen wir im Informatik Unterricht die Aufgabe eine Schere Stein Papier Spiel in Python (2!) zu programmieren. Dies machte mir soviel Spaß, dass ich in meiner Freizeit weitere Funktionen eingebaut habe, wie zum Beispiel zwei weitere Entitäten Echse und Spock. Dadurch wurde das Spiel zu Schere Stein Papier Echse Spock aus der TV Serie Big Bang Theory. Es sollte heute noch mit der Python Version 2.6 funktionieren. Ohne dieses Projekt wäre ich heute sicherlich nicht dort wo ich heute bin."
+  },
+  "5PK": {
+    "name": "5. Prüfungskomponente",
+    "text": "Die 5. Pk ist Teil des Berliner Abiturs, dabei müssen die Schüler eine wissenschaftlich erarbeitete Präsentation vor einem Prüfungskomitee halten. Dies ist meine Präsentation über das Thema Technokratie im Vergleich zur Demokratie."
+  },
+  "MSA": {
+    "name": "MSA",
+    "text": "Das MSA ist die Berliner Prüfung zur mittlere Reife. Damals hielt ich als Teil dieser Prüfung zusammen mit Jurek Urbach eine Präsentation über die Energiegewinnung von morgen."
+  }
+}

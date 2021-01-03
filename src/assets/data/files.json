@@ -4,6 +4,28 @@
     "code": "PA1",
     "date": "2020-08",
     "dateStart": "2020-06",
-    "link": "./docs/PA1 Tobias Hölzer.pdf"
+    "link": "./docs/PA1 Tobias Hölzer.pdf",
+    "important": true
+  },
+  {
+    "name": "Scissors Paper Rock",
+    "code": "SSP",
+    "date": "2017-05",
+    "dateStart": "2017-03",
+    "link": "./docs/scissors-paper-rock.zip"
+  },
+  {
+    "name": "5. Pk",
+    "code": "5PK",
+    "date": "2019-03",
+    "dateStart": "2018-11",
+    "link": "./docs/5pk.zip"
+  },
+  {
+    "name": "MSA",
+    "code": "MSA",
+    "date": "2017-02",
+    "dateStart": "2016-12",
+    "link": "./docs/MSA-Energieerzeugung_für_die_Welt_von_morgen.pptx"
   }
 ]

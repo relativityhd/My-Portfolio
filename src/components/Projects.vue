@@ -5,7 +5,7 @@
     </cv-link>
     <div class="project-info">
       <p>{{ dateStart ? `${$luxon(dateStart)} - ${$luxon(date)}` : $luxon(date) }}</p>
-      <cv-link class="project-link" :href="github" target="_blank">
+      <cv-link v-if="github" class="project-link" :href="github" target="_blank">
         <GitIcon />
       </cv-link>
     </div>

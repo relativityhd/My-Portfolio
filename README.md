@@ -26,27 +26,27 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## My Private Projects
 
-- My Homepage (GitLab@IBM, Hosted @IBM, must be moved to GitHub)
-- Portfolio (GitHub, Hosted @IBM)
-- Social Network Analysis (GitHub, Hosted by Christopher)
-- Cupboard Configuration Tool (GitHub, Hosted @IBM, fehlende API)
-- React Presentation (GitHub, Pages, nicht funktionierende Demo)
-- Rust Integrations for Node Benchmarks (GitHub, nicht gehostet, nicht vollständig, Artikel fehlen)
-- Airlines Visualisation (GitHub, Pages, MaterialIO ist broken)
-- Veintiuno (GitHub, nicht gehostet, muss teilweise übersetzt werden)
-- Mello (nicht auf GitHub, nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
-- Password Generator (nicht auf GitHub, nicht gehostet, muss Tim angepasst werden)
-- Scissors Paper Rock (nicht auf GitHub, nicht gehostet)
-- J&T Cryptions
-- Cryptions (nicht auf GitHub, nicht gehostet)
-- Simon Clicks (nicht auf GitHub, nicht gehostet, Hintergrund muss gehardcoded werden)
+- My Homepage
+- Portfolio
+- Social Network Analysis
+- React Presentation (falsch verlinkte Demo)
+- Cupboard Configuration Tool (fehlende API)
+- #Rust Integrations for Node Benchmarks (GitHub, nicht gehostet, nicht vollständig, Artikel fehlen)
+- Airlines Visualisation
+- #Veintiuno (GitHub, nicht gehostet, es gibt eine documentation!)
+- #Mello (nicht gehostet, muss überarbeitet werden, es gibt Docs & Präsentation!)
+- Password Generator (muss für Tim angepasst werden)
+- Scissors Paper Rock
+- Cryptions
+- Simon Clicks
+- #Platzhitsch (nicht auf GitHub, hosted @IBM)
 
 ## My Work Projects
 
-- Interest Validator
-- Watson4PublicTenders (intern)
-- Watson4PGMP (intern)
-- Swarm Visualization (not working yet)
+- #Interest Validator
+- #Watson4PublicTenders (intern)
+- #Watson4PGMP (intern)
+- #Swarm Visualization (not working yet)
 
 ## My Other Work
 
@@ -56,6 +56,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Important Documents
 
-- Lebenslauf / CV
+- #Lebenslauf / CV
 - Abiturzeugnis
 - Biber Wettbewerb

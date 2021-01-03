@@ -1,0 +1,797 @@
+<!DOCTYPE>
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    html{
+      font-family: Roboto;
+      overflow: hidden;
+    }
+    .game{
+      width: 100%;
+      margin: 3%;
+    }
+    .interface{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
+    .menuWrapper{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu{
+      padding: 1%;
+      border: solid 2px #e10;
+      border-radius: 5px;
+      overflow: hidden;
+      height: auto;
+      transition: all 0.3s ease-out;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px 5px #222;
+    }
+    #headline{
+      position: relative;
+      margin-top: 0;
+      display: block;
+      font-variant: small-caps;
+      font-weight: 400;
+      font-size: 50px;
+      text-align: center;
+    }
+    #start{
+      position: relative;
+      display: inline-block;
+    }
+    #settingsGUI{
+      position: relative;
+      display: inline-block;
+    }
+    .settings{
+      font-weight: 300;
+      font-size: 25px;
+      margin-left: 15px;
+      position: relative;
+      display: inline-block;
+    }
+    .randomSettings{
+      font-weight: 300;
+      font-size: 17px;
+      margin-left: 15px;
+      position: relative;
+      display: inline-block;
+    }
+    #settings{
+      position: relative;
+      overflow: hidden;
+      display: none;
+      transition: all 0.3s ease-out;
+      background-color: #fff;
+      margin-bottom: 5%;
+      padding-bottom: 5%;
+      border-bottom: solid 1px #333;
+    }
+    #randomSettings{
+      transition: all 0.3s ease-out;
+      margin-top: 10%;
+    }
+    .button{
+      display: block;
+      color: #000;
+      padding: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 150px;
+      box-shadow: 0;
+      transition: box-shadow 0.3s ease-out,
+                  transform 0.3s ease-out;
+      border-radius: 5px;
+      font-variant: small-caps;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      background-color: #fff;
+      -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+         -khtml-user-select: none; /* Konqueror HTML */
+           -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+    }
+    .button:hover{
+      transform: translate(0px,-1px);
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    }
+    .highlight{
+      background-color: #a60202;
+      color: white;
+    }
+    .check:checked{
+      background-color: #02a652;
+    }
+    #restart,
+    #setToAVG{
+      display: none;
+      position: relative;
+      overflow: hidden;
+      margin-top: 15%;
+      width: 120px;
+    }
+    #setToAVG{
+      color: #fff;
+      background-color: transparent;
+    }
+    #stop{
+      display: none;
+      position: relative;
+      overflow: hidden;
+      margin-top: 25%;
+    }
+    .info{
+      position: relative;
+      display: block;
+      height: 20px;
+      overflow: hidden;
+    }
+    #infos{
+      position: fixed;
+      left: 80%;
+      top: 20%;
+      padding: 1%;
+      border: solid 2px #e10;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: all 0.3s ease-out;
+      background: url('../img/simon-clicks.jpg') center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+      box-shadow: 0px 2px 5px 2px #333;
+    }
+    .var{
+      color: #f65252;
+      display: inline;
+    }
+    .noselect {
+      -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+         -khtml-user-select: none; /* Konqueror HTML */
+           -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+    }
+    /*#GUItimeClick{
+      top: 20%;
+    }
+    #GUItimeGame{
+      top: 25%;
+    }
+    #GUIobj{
+      top: 30%;
+    }
+    #GUImissed{
+      top: 35%;
+    }*/
+    .hide{
+      display: none;
+    }
+    .inline{
+      width: auto;
+      display: inline-block;
+    }
+    .pseudo{
+      position: absolute;
+      top: 500px;
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    }
+    .foreground{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+    .background{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      outline: solid 5px #333;
+      background: url('../img/simon-clicks.jpg') center no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .quantity {
+      display: inline;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button
+    {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number]
+    {
+      -moz-appearance: textfield;
+    }
+
+    .quantity input {
+      width: 35px;
+      height: 20x;
+      line-height: 1.65;
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      padding-left: 10px;
+      border: 0px solid #eee;
+    }
+
+    .quantity input:focus {
+      outline: 0;
+    }
+
+    .quantity-nav {
+      display: inline-block;
+      position: relative;
+      height: 19px;
+      top: 4px;
+    }
+
+    .quantity-button {
+      position: relative;
+      cursor: pointer;
+      border-left: 1px solid #eee;
+      width: 20px;
+      text-align: center;
+      color: #333;
+      font-size: 10px;
+      font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      
+      
+    }
+
+    .quantity-button.quantity-up {
+      position: absolute;
+      height: 50%;
+      top: 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .quantity-button.quantity-down {
+      position: absolute;
+      bottom: -1px;
+      height: 50%;
+    }
+    
+  </style>
+  <body>
+    <div class="game" id="game"></div>
+    <div class="foreground" id="foreground"></div>
+    <div class="background" id="background"></div>
+    <div class="interface" id="hud">
+      
+      <div id="infos">
+        <label class="info" id="GUItimeClick">
+          <p class="var" id="timeClick"></p> left to hit the Element!
+        </label>
+        <label class="info" id="GUItimeGame">
+          <p class="var" id="timeGame"></p> left!
+        </label>
+        <label class="info" id="GUItimeAVG">
+          <p class="var" id="timeAVG">-</p> avg hit time!
+        </label>
+        <label class="info" id="GUIobj">
+          <p class="var" id="obj"></p> Elements left...
+        </label>
+        <label class="info" id="GUImissed">
+          <p class="var" id="missed"></p> Elements missed...
+        </label>
+        <label class="info" id="GUIhitted">
+          <p class="var" id="hitted"></p> Elements hitted...
+        </label>
+        <label class="info" id="GUIall">
+          ...of <p class="var" id="all"></p> Elements!
+        </label>
+        <label class="button" id="stop" onclick="stop()">stop</label>
+        <label class="button" id="setToAVG" onclick="setToAVGTime()">set avg time</label>
+        <label class="button highlight" id="restart" onclick="clearView()">new game</label>
+      </div>
+      
+      <div class="menuWrapper">
+        <div class="menu" id="menu">
+          <div id="settings">
+            <label class="settings">
+              Objects:<div class="quantity"><input type="number" class="input" id="objectinput" value="10" min="1" max="999" step="1" onchange="validateInput(this, '1', '999', '10')"></div>
+            </label>
+            <label class="settings">
+              Time:<div class="quantity"><input type="number" class="input" id="timeinput" value="2.0" min="0.1" max="20" step="0.1" onchange="validateInput(this, '0.1', '20', '2.0')"></div>
+            </label><br>
+            <label class="settings button inline" id="setRandom" onclick="activate('setRandom', 'random')">
+              use random<input type="checkbox" class="input hide" id="random" onchange="show('randomSettings', 'random')">
+            </label>
+            <div id="randomSettings">
+              <label class="randomSettings">
+                Min Width:<div class="quantity"><input type="number" class="input" id="minWidth" value="20" min="5" max="300" step="1" onchange="validateInput(this, '5', '300', '20')"></div>
+              </label>
+              <label class="randomSettings">
+                Max Width:<div class="quantity"><input type="number" class="input" id="maxWidth" value="50" min="5" max="300" step="1" onchange="validateInput(this, '5', '300', '50')"></div>
+              </label>
+              <br>
+              <label class="randomSettings">
+                Min Height:<div class="quantity"><input type="number" class="input" id="minHeight" value="20" min="5" max="300" step="1" onchange="validateInput(this, '5', '300', '20')"></div>
+              </label>
+              <label class="randomSettings">
+                Max Height:<div class="quantity"><input type="number" class="input" id="maxHeight" value="50" min="5" max="300" step="1" onchange="validateInput(this, '5', '300', '50')"></div>
+              </label>
+              <br>
+              <label class="randomSettings">
+                Min Corner:<div class="quantity"><input type="number" class="input" id="minRadius" value="2" min="0" max="100" step="1" onchange="validateInput(this, '0', '100', '2')"></div>
+              </label>
+              <label class="randomSettings">
+                Max Corner:<div class="quantity"><input type="number" class="input" id="maxRadius" value="10" min="0" max="100" step="1" onchange="validateInput(this, '0', '100', '10')"></div>
+              </label>
+              <br>
+              <label class="randomSettings button check inline" id="setColor" onclick="activate('setColor', 'color')">
+                use colors<input type="checkbox" class="input hide" id="color">
+              </label>
+            <label class="settings button inline" id="setQuads" onclick="activate('setQuads', 'quads')">
+              use quads<input type="checkbox" class="input hide" id="quads" onchange="show('randomSettings', 'random')">
+            </label>
+            </div>
+          </div>
+          <h1 id="headline">simon clicks</h1>
+          <label class="button" id="settingsGUI">
+              settings<input type="checkbox" class="input hide" id="setSettings" onchange="show('settings', 'setSettings')">
+          </label>
+          <label class="button highlight" id="start" onclick="start()">start</label>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function gE(id) {
+      return document.getElementById(id);
+    }
+    
+    
+    function randomInt(min, max) {
+      return parseInt((Math.random() * (max - min + 1)) + min);
+    }
+    
+    
+    function randomHex() {
+      var hexas=["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "a", "b", "c", "d", "e", "f"];
+      var color="#";
+      for (var i=0; i<6; i++) {
+        color+=hexas[randomInt(0,15)];
+      }
+      return color;
+    }
+    
+    
+    function getSize() {
+      var myWidth = 0, myHeight = 0;
+      var isDocElemW=document.documentElement.clientWidth;
+      var isDocElemH=document.documentElement.clientHeight;
+      var isDocElemWH=isDocElemH||isDocElemW;
+      var isBodyWH=document.body.clientWidth || document.body.clientHeight;
+      if( typeof( window.innerWidth ) == 'number' ) {
+        //Non-IE
+        myWidth = window.innerWidth;
+        myHeight = window.innerHeight;
+      } else if( document.documentElement && isDocElemWH ) {
+        //IE 6+ in 'standards compliant mode'
+        myWidth = document.documentElement.clientWidth;
+        myHeight = document.documentElement.clientHeight;
+      } else if( document.body && isBodyWH) {
+        //IE 4 compatible
+        myWidth = document.body.clientWidth;
+        myHeight = document.body.clientHeight;
+      }
+      return {width:myWidth, height:myHeight};
+    }
+    
+    
+    function pToI(percent, M) {
+      return (M/100)*percent;
+    }
+    
+    var gameGUI=gE("game");
+    var headline=gE("headline");
+    var timeClickGUI=gE("timeClick");
+    var timeGameGUI=gE("timeGame");
+    var timeAVGGUI=gE("timeAVG");
+    var objGUI=gE("obj");
+    var menu=gE("menu")
+    var missedGUI=gE("missed");
+    var hittedGUI=gE("hitted");
+    var allGUI=gE("all")
+    var objInp=gE("objectinput");
+    var timeInp=gE("timeinput");
+    var infosGUI=gE("infos");
+    var settings=gE("settings");
+    var settingsGUI=gE("settingsGUI");
+    var setSettings=gE("setSettings");
+    var startGame=gE("start");
+    var stopGame=gE("stop");
+    var restart=gE("restart");
+    var setToAVGGUI=gE("setToAVG");
+    var background=gE("background");
+    var foreground=gE("foreground");
+    var rdmSettings=gE("randomSettings");
+    var randomInp=gE("random");
+    var quadsInp=gE("quads");
+    var colorInp=gE("color");
+    var minWidthInp=gE("minWidth");
+    var maxWidthInp=gE("maxWidth");
+    var minHeightInp=gE("minHeight");
+    var maxHeightInp=gE("maxHeight");
+    var minRadiusInp=gE("minRadius");
+    var maxRadiusInp=gE("maxRadius");
+    
+    var timeClick;
+    var timeGame;
+    var timeAVG;
+    var objs;
+    var objLeft;
+    var missed;
+    var hitted;
+    var random;
+    var color;
+    var minWidth;
+    var maxWidth;
+    var minHeight;
+    var maxHeight;
+    var minRadius;
+    var maxRadius;
+    var lastElem;
+    var pseudotop=500;
+    var numberInps=[""];
+    var clickTimes;
+    var timeAVG;
+    
+    function init(){
+      show("infos", true);
+      if (randomInp.checked){
+        show("randomSettings", false);
+        activate("setRandom", false);
+      }else{
+        show("randomSettings", true);
+        activate("setRandom", true);
+      }
+      if (setSettings.checked){
+        show("settings", false);
+      }else{
+        show("settings", true);
+      }
+      if(colorInp.checked){
+        activate("setColor", false);
+      }else{
+        activate("setColor", true);
+      }
+      if (quadsInp.checked){
+        activate("setQuads", false);
+      }else{
+        activate("setQuads", true);
+      }
+      
+      jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+      jQuery('.quantity').each(function() {
+        var spinner = jQuery(this),
+          input = spinner.find('input[type="number"]'),
+          btnUp = spinner.find('.quantity-up'),
+          btnDown = spinner.find('.quantity-down'),
+          min = input.attr('min'),
+          max = input.attr('max');
+
+        btnUp.click(function() {
+          var oldValue = parseFloat(input.val());
+          if (oldValue >= max) {
+            var newVal = oldValue;
+          } else {
+            var newVal = parseFloat(oldValue+ parseFloat(input.attr("step"))).toFixed(2);
+          }
+          spinner.find("input").val(newVal);
+          spinner.find("input").trigger("change");
+        });
+
+        btnDown.click(function() {
+          var oldValue = parseFloat(input.val());
+          if (oldValue <= min) {
+            var newVal = oldValue;
+          } else {
+            var newVal = parseFloat(oldValue - parseFloat(input.attr("step"))).toFixed(2);
+          }
+          spinner.find("input").val(newVal);
+          spinner.find("input").trigger("change");
+        });
+
+      });
+    }
+    
+    
+    function start() {
+      timeClick=parseFloat(timeInp.value);
+      timeGame=timeClick*parseInt(objInp.value);
+      objLeft=parseInt(objInp.value)+1;
+      objs=objLeft-1;
+      missed=-1;
+      hitted=0;
+      clickTimes=[];
+      random=randomInp.checked;
+      color=colorInp.checked;
+      minWidth=parseInt(minWidthInp.value);
+      maxWidth=parseInt(maxWidthInp.value);
+      minHeight=parseInt(minHeightInp.value);
+      maxHeight=parseInt(maxHeightInp.value);
+      minRadius=parseInt(minRadiusInp.value);
+      maxRadius=parseInt(maxRadiusInp.value);
+      click(false);
+      tick();
+      menu.style.display="none";
+      stopGame.style.display="block";
+      infosGUI.style.transition="all 0.3s ease-out";
+      show("infos", false);
+      allGUI.innerHTML=objs;
+    }
+    
+    
+    function stop() {
+      timeClick=0.1;
+      timeGame=0.1;
+      objLeft=1;
+      restart.style.display="inline-block";
+      setToAVGGUI.style.display="inline-block";
+      stopGame.style.display="none";
+      foreground.style.backgroundColor="rgba(0,0,0,0.3)";
+      foreground.style.display="block";
+      lastElem.style.cursor="inherit";
+      lastElem.removeEventListener("click", clickHit);
+      infosGUI.style.top="25%";
+      infosGUI.style.left="42.5%";
+      background.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+    
+    function clearView() {
+      show("infos", true);
+      if (randomInp.checked){
+        show("randomSettings", false);
+        activate("setRandom", false);
+      }else{
+        show("randomSettings", true);
+        activate("setRandom", true);
+      }
+      if (setSettings.checked){
+        show("settings", false);
+      }else{
+        show("settings", true);
+      }
+      if(colorInp.checked){
+        activate("setColor", false);
+      }else{
+        activate("setColor", true);
+      }
+      if (quadsInp.checked){
+        activate("setQuads", false);
+      }else{
+        activate("setQuads", true);
+      }
+      while (gameGUI.firstChild) {
+          gameGUI.removeChild(gameGUI.firstChild);
+      }
+      menu.style.display="block";
+      restart.style.display="none";
+      setToAVGGUI.style.display="none";
+      setToAVGGUI.style.backgroundColor="transparent";
+      setToAVGGUI.style.cursor="pointer";
+      setToAVGGUI.addEventListener("onclick", setToAVGTime);
+      foreground.style.backgroundColor="transparent";
+      foreground.style.display="none";
+      infosGUI.style.transition="all 0s";
+      infosGUI.style.top="20%";
+      infosGUI.style.left="80%";
+    }
+    
+    function clickHit(){
+      click(true);
+    }
+    
+    function click(hit) {
+      if (objLeft>0&&timeGame>=0.0){
+        if(hit) {
+          hitted++;
+          clickTimes.push(parseFloat(timeInp.value)-timeClick);
+          var allClickTimes=0;
+          for (var i=0;i<clickTimes.length;i++) {
+            allClickTimes+=clickTimes[i];
+          }
+          timeAVG=allClickTimes/clickTimes.length;
+          timeAVGGUI.innerHTML=timeAVG.toFixed(3);
+        }
+        objLeft--;
+        missed=(objs-objLeft)-hitted;
+        timeClick=parseFloat(timeInp.value);
+        timeGame=timeClick*parseInt(objLeft);
+        objGUI.innerHTML=objLeft;
+        hittedGUI.innerHTML=hitted;
+        missedGUI.innerHTML=missed;
+        if (objLeft<=0){
+          return stop();
+        }
+        for (var i=0;i<1;i++){
+          var newPseudo=document.createElement("div");
+          var e=document.createElement("div");
+          if (lastElem){
+            lastElem.style.cursor="inherit";
+            lastElem.removeEventListener("click", clickHit);
+          }
+          lastElem=e;
+          newPseudo.appendChild(e);
+          gameGUI.appendChild(newPseudo);
+          styleElem(e);
+          styleElem(newPseudo, true);
+          e.addEventListener("click", clickHit);
+          newPseudo.scrollIntoView({ 
+            behavior: 'smooth' 
+          });
+        }
+      }
+    }
+    
+    
+    function styleElem(e, isPseudo) {
+      if (isPseudo) {
+        var newTop=randomInt(0,getSize().height);
+        e.style.position="relative";
+        e.style.height="500px";
+        e.style.width="500px";
+        e.style.top=newTop+"px";
+      }else{
+        var minLeft=pToI(3, getSize().width);
+        var maxLeft=getSize().width-minLeft*10;
+        var newTop=randomInt(0,500);
+        e.style.position="relative";
+        e.style.cursor="pointer";
+        e.style.marginTop=getSize().height+"px";
+        e.style.marginBottom=pToI(3, getSize().width)+"px";
+        e.style.top=newTop+"px";
+        e.style.left=randomInt(minLeft, maxLeft)+"px";
+        e.style.height="1000px";
+        e.style.transition="all 0.2s";
+        if (random) {
+          if (quadsInp.checked) {
+            var length=randomInt(minWidth, maxHeight)+"px";
+            e.style.width=length;
+            e.style.height=length;
+          }else{
+            e.style.width=randomInt(minWidth, maxWidth)+"px";
+            e.style.height=randomInt(minHeight, maxHeight)+"px";
+          }
+          e.style.borderRadius=randomInt(minRadius, maxRadius)+"px";
+          if (color) {
+            e.style.backgroundColor=randomHex();
+          }else{
+            e.style.backgroundColor="red";
+          }
+        }else{
+          e.style.width="50px";
+          e.style.height="50px";
+          e.style.backgroundColor="red";
+          e.style.borderRadius="20px";
+        } 
+      }
+    }
+    
+    
+    function setToAVGTime(){
+      if (timeAVG!=null&&timeAVG!=undefined){
+        timeInp.value=timeAVG.toFixed(1);
+      }else{
+        timeInp.value=2;
+      }
+      setToAVGGUI.style.backgroundColor="#02a652";
+      setToAVGGUI.style.cursor="inherit";
+      setToAVGGUI.removeEventListener("onclick", setToAVGTime);
+    }
+    
+    
+    function show(id, status) {
+      var show=gE(id);
+      if (status!=true&&status!=false) {
+        var stat=gE(status)
+        var valid=stat.checked;
+        if (valid){
+          status=false;
+        }else{
+          status=true;
+        }
+      }
+      if (status) {
+        show.style.opacity="0";
+        setTimeout(function(){
+          show.style.display="none";
+        },300);
+      }else{
+        show.style.display="block";
+        setTimeout(function(){
+        show.style.opacity="1";
+        },10);
+      }
+    }
+    
+    
+    function activate(id, status) {
+      var show=gE(id);
+      if (status!=true&&status!=false) {
+        var stat=gE(status)
+        var valid=stat.checked;
+        if (valid){
+          status=false;
+        }else{
+          status=true;
+        }
+      }
+      if (status) {
+        show.style.backgroundColor="#fff";
+      }else{
+        show.style.backgroundColor="#02a652";
+      }
+    }
+    
+    function validateInput(e, min, max, standart) {
+      if (e.value==""){
+        e.value=parseFloat(standart);
+      }
+      if (parseFloat(e.value)<parseFloat(min)){
+        e.value=min;
+      }else if(parseFloat(e.value)>parseFloat(max)){
+        e.value=max;
+      }
+    }
+    
+    
+    function tick() {
+      timeClick-=0.1;
+      timeGame-=0.1;
+      if (timeClick.toFixed) {
+        timeClick=timeClick.toFixed(1);
+      }
+      if (timeGame.toFixed) {
+        timeGame=timeGame.toFixed(1);
+      }
+      timeClickGUI.innerHTML=timeClick+"s";
+      timeGameGUI.innerHTML=timeGame+"s";
+      if (timeGame>0.0) {
+        if (timeClick<=0.0) {
+          click(false);
+        }
+        setTimeout(tick, 100);
+      }else{
+        click(false);
+      }
+    }
+    
+    
+    init();
+  </script>
+<html>

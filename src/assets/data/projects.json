@@ -8,5 +8,101 @@
     "link": "https://dev.christopherlohse.de/SocialNetworkAnalysis/",
     "tags": ["Social Network Analysis", "Twitter Crawler", "Python", "Pandas"],
     "important": true
+  },
+  {
+    "name": "My Homepage",
+    "code": "MyHome",
+    "preview": "my-homepage.png",
+    "date": "2018-11",
+    "dateStart": "2018-09",
+    "github": "https://github.com/relativityhd/My-Homepage",
+    "link": "https://tobiashoelzer.dynu.net/",
+    "tags": ["Website", "NodeJS", "Material Design", "IBM Cloud"],
+    "important": true
+  },
+  {
+    "name": "React Presentation",
+    "code": "ReactPrasi",
+    "preview": "react-presentation.png",
+    "date": "2020-09",
+    "github": "https://github.com/relativityhd/web-programming-react",
+    "link": "https://relativityhd.github.io/web-programming-react/",
+    "tags": ["React", "Design", "Frameworks"]
+  },
+  {
+    "name": "Cupboard Limitless",
+    "code": "CCT",
+    "preview": "cct.png",
+    "date": "2020-10",
+    "dateStart": "2020-09",
+    "github": "https://github.com/relativityhd/CCT",
+    "link": "https://cablecard-cct.eu-de.mybluemix.net/",
+    "tags": ["Vue", "Carbon Components", "PWA", "i18n", "l10n", "3D Visualization"],
+    "important": true
+  },
+  {
+    "name": "Flights Dashboard",
+    "code": "DSVIZ",
+    "preview": "ds-viz.png",
+    "date": "2020-05",
+    "github": "https://github.com/relativityhd/ds_visualisation",
+    "link": "https://relativityhd.github.io/ds_visualisation/",
+    "tags": ["Data Science", "Visualization", "Material Design", "Plotly"]
+  },
+  {
+    "name": "My Portfolio",
+    "code": "MyPort",
+    "preview": "my-portfolio.png",
+    "date": "2021-01",
+    "github": "https://github.com/relativityhd/My-Portfolio",
+    "link": "https://tobiashoelzer-portfolio.eu-de.mybluemix.net/",
+    "tags": ["Vue", "Carbon Components", "i18n", "Design"]
+  },
+  {
+    "name": "Mello",
+    "code": "Mello",
+    "preview": "mello.png",
+    "date": "2018-06",
+    "dateStart": "2018-03",
+    "github": "https://github.com/relativityhd/mello-fork",
+    "link": "tbd",
+    "tags": ["NodeJS", "Design", "Social Media", "First Big Project"],
+    "important": true
+  },
+  {
+    "name": "Veintiuno",
+    "code": "21",
+    "preview": "veintiuno.jpg",
+    "date": "2020-05",
+    "dateStart": "2020-04",
+    "github": "https://github.com/relativityhd/veintiuno-fork",
+    "link": "tbd",
+    "tags": ["React", "Design", "Game", "Java", "SocketIO", "Material Design"],
+    "important": true
+  },
+  {
+    "name": "Simon clicks",
+    "code": "Click",
+    "preview": "simon-clicks.png",
+    "date": "2018-07",
+    "link": "/src/simon-clicks.html",
+    "tags": ["Design", "Game", "JS"]
+  },
+  {
+    "name": "Password Generator",
+    "code": "PW",
+    "preview": "pw.png",
+    "date": "2017-12",
+    "link": "/src/pw.html",
+    "tags": ["Security", "Material Design", "Crypto"],
+    "important": true
+  },
+  {
+    "name": "Cryptions",
+    "code": "Cryptions",
+    "preview": "cryptions.png",
+    "date": "2017-07",
+    "link": "/src/cryption.html",
+    "tags": ["Security", "Material Design", "Crypto"]
   }
 ]

@@ -2,5 +2,9 @@
   "Abi": {
     "name": "German Abitur (High School Graduation)",
     "text": "After 12 years of school I finally got by graduation at the Humboldt-Gymnasium in Berlin."
+  },
+  "Biber": {
+    "name": "1. Price Biber Contest",
+    "text": "In 10th grade I have gotten the first price in the Biber contest."
   }
 }

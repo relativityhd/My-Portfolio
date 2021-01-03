@@ -1,7 +1,57 @@
 {
   "SNA": {
     "name": "Tobis Twitter Network",
-    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    "alt": "Tis a picture"
+    "text": "This is a project about My Twitter Network. I worked on this project together with Christopher Lohse. The question we asked ourselves was: 'Which people (accounts) are influencing Tobis Feed the most?'. To answer this question we used methods of the Social Network Analysis. In this project I increased my Python skills and learned how to create a Social Network Analysis.",
+    "alt": "Social Network Graph"
+  },
+  "MyHome": {
+    "name": "My Homepage",
+    "text": "I build my Homepage to apply for an apprenticeship @ IBM. Gladly i got the job, maybe my Homepage has helped my a little bit out here. On my Homepage I present myself to everybode out there. I also wrote an own Blog-Engine and some articles on it. To build an own Homepage was great, I learned a lot about Web Development. Since I also hosted it on my Raspberry Pi and later on the IBM Cloud I also learned about the importance of Cloud Development.",
+    "alt": "Screenshot of my Homepage"
+  },
+  "ReactPrasi": {
+    "name": "React Presentation",
+    "text": "For a presentation about the React Framework in class me and my friends Christopher Lohse, Philipp Wussow created this website which should show the class how easy it is to create a good looking website.",
+    "alt": "Screenshot of the Presentation"
+  },
+  "CCT": {
+    "name": "Cupboard Configuration Tool (CCT)",
+    "text": "I developed the CCT together with my friends Christopher Lohse, Philipp Wussow, Ole Ofterdinger and Amon Schneider. This project was a project-simulation in class. Our teachers played as our customers and hired us to develop a Web-Shop for them. I nearly finished my road to be a full-stack web developer with this project. I learned a lot of new technologies like i18n or PWA.",
+    "alt": "Screenshot of the CCT"
+  },
+  "DSVIZ": {
+    "name": "Flights Dashboard",
+    "text": "I developed this dashboard together with Philipp Wussow for a class exam. The dashboard takes data from 2015 american flights and visualize it. This was the first project where I visualized a map.",
+    "alt": "Screenshot of the Dahboards"
+  },
+  "MyPort": {
+    "name": "My Portfolio",
+    "text": "Since my Homepage isn't build for business only purpose it isn't always the best choice to show it for job applications. Therefore I build this portfolio.",
+    "alt": "Screenshot of my Portfolios"
+  },
+  "Mello": {
+    "name": "Mello",
+    "text": "Mello was my first big project. In 11th class we had the task to create a software idea und implement it. Myself and my collegues Robert Cuzio, Kevin Komm and Hannah Boldt created together a Social Media Website and called it 'Mello'. The functionality of the website could be increased with modules, we created a simple framework without knowing it! This is also what our code base looks like today! We also created the complete Design from scratch. The 'docs' folder of the repository contains a project documentation and presentation.",
+    "alt": "Screenshot of Mello"
+  },
+  "21": {
+    "name": "Veintiuno Game",
+    "text": "Why it is called Veintiuno? I don't know. We just called it so. Together with Moritz Scheele, Nicole Günter, Philipp Wussow, Ole Ofterdinger, Nina Warneke and Christopher Lohse I developed this little game as an exam project. This was the first time I used a frontend Framework like React.",
+    "alt": "Screenshot of the Veintiuno Landing Page"
+  },
+  "Click": {
+    "name": "Simon Clicks",
+    "text": "I developed Simon clicks together with my friend Simon Hergersberg. We just had fun with some JS and CSS Code and thought us that what we just programmed could be a funny game. I sometimes used this game to improve my Hands-Eye-Coordination.",
+    "alt": "Screenshot of Simon Clicks"
+  },
+  "PW": {
+    "name": "My Password Generator",
+    "text": "No, i don't make my passwords public. This generator just generates a password after a specific schema which is easy to remember but hard to hack. However, a complete random Password would be more secure. I was able to use my knowledge about encryption techniques in this project. Also I learned a lot about password security.",
+    "alt": "Screenshot of the Password Generator"
+  },
+  "Cryptions": {
+    "name": "Cryptions",
+    "text": "This is a collection of some encryption methods which I implemented. One of them I developed together with my friend Janina Adamcic. The topic encryptions interested me in 2017 when I started to learn programming with Python. At this time I also started to create my Password Generator. I also wrote my high school exam about the topic, since I hat the topic in class in 2018.",
+    "alt": "Screenshot of the Cryptions Page"
   }
 }
