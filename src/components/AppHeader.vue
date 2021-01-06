@@ -129,6 +129,7 @@ export default {
 <style lang="scss">
 .logo {
   height: 24px;
+  margin-right: -5px;
 }
 
 /* #app-header {
