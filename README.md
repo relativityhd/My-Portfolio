@@ -56,6 +56,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Important Documents
 
-- #Lebenslauf / CV
+- Lebenslauf / CV
 - Abiturzeugnis
 - Biber Wettbewerb
