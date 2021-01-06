@@ -104,5 +104,15 @@
     "date": "2017-07",
     "link": "/src/cryption.html",
     "tags": ["Security", "Material Design", "Crypto"]
+  },
+  {
+    "name": "Platzhirsch",
+    "code": "Platzhirsch",
+    "preview": "platzhirsch.png",
+    "date": "2020-02",
+    "dateStart": "2019-12",
+    "link": "https://der-neue-platzhirsch.eu-gb.mybluemix.net/",
+    "tags": ["Customer Project", "NodeJS", "Design", "IBM Cloud", "SEO"],
+    "important": true
   }
 ]

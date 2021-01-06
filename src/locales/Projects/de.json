@@ -53,5 +53,10 @@
     "name": "Cryptions",
     "text": "Hier habe ich einige Verschlüsselungsmethoden zusammen getragen die ich nach und nach implementiert habe, unter anderem eine Verschlüsselung die ich mit meiner guten Freundin Janina Adamcic erfunden habe. Das Thema Verschlüsselungen hat mich zuerst 2017 interessiert als ich Zuhause programmieren mit Python lernte. In der Zeit legte ich auch die Grundsteine meines Passwort Generators. 2018 hatten wir das Thema dann im Unterricht näher behandelt, wodurch ich später unter anderem darüber mein Abitur schreiben konnte.",
     "alt": "Screenshot der Cryptions Seite"
+  },
+  "Platzhirsch": {
+    "name": "Der neue Platzhirsch",
+    "text": "Der neue Platzhirsch ein Restaurant in Berlin-Wedding. Zusammen mit Moritz Scheele habe ich diese Website für das Restaurant entwickelt. Heute wird sie relativ häufig aufgerufen dank SEO Optimierung.",
+    "alt": "Screenshot der Webseite"
   }
 }

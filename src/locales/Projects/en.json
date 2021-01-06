@@ -53,5 +53,10 @@
     "name": "Cryptions",
     "text": "This is a collection of some encryption methods which I implemented. One of them I developed together with my friend Janina Adamcic. The topic encryptions interested me in 2017 when I started to learn programming with Python. At this time I also started to create my Password Generator. I also wrote my high school exam about the topic, since I hat the topic in class in 2018.",
     "alt": "Screenshot of the Cryptions Page"
+  },
+  "Platzhirsch": {
+    "name": "Der neue Platzhirsch",
+    "text": "Der neue Platzhirsch is a restaurant in Berlin-Wedding. Together with my friend Moritz Scheele I developed this Website for the Restaurant. Today it has solid traffic which is increased with SEO.",
+    "alt": "Screenshot of the Webpage"
   }
 }
