@@ -62,5 +62,9 @@
   "IV": {
     "name": "Interest Validator",
     "text": "The Interest Validator is a program which I developed based on the Idea of my father Dirk Hölzer of an automatic interest testing tool for accounting networks like EY or PWC. This was my first big project in Python and I learned a lot about interfaces, concurrency and more."
+  },
+  "W4PT": {
+    "name": "Watson 4 Public Tenders",
+    "text": "In my first internship at IBM in the Digital Sales team I worked on the Watson 4 Public Tenders project where the Watson Natural Language Processing Services are used to categorize public tenders to automate intern processes. I trained Machine learning models and optimized the existing project."
   }
 }
