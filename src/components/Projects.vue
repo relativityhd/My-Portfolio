@@ -13,10 +13,10 @@
       <h1 class="project-name">
         <a class="project-link" :href="link" target="_blank">
           {{ $t(`Projects.${code}.name`) }}
-          <LinkIcon class="link-icon" />
+          <LinkIcon v-if="preview" class="link-icon" />
         </a>
       </h1>
-      <a class="project-link" :href="link" target="_blank">
+      <a v-if="preview" class="project-link" :href="link" target="_blank">
         <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" />
       </a>
       <div class="project-tags">
