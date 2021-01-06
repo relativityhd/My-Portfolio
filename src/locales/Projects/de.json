@@ -58,5 +58,9 @@
     "name": "Der neue Platzhirsch",
     "text": "Der neue Platzhirsch ein Restaurant in Berlin-Wedding. Zusammen mit Moritz Scheele habe ich diese Website für das Restaurant entwickelt. Heute wird sie relativ häufig aufgerufen dank SEO Optimierung.",
     "alt": "Screenshot der Webseite"
+  },
+  "IV": {
+    "name": "Interest Validator",
+    "text": "Der Interest Validator ist ein Programm was ich auf der Basis der Idee meines Vaters Dirk Hölzer entwickelt habe. Es ist ein Zinstesttool welches vorallem in Wirtschaftsprüfungen wie EY oder PWC eingesetzt wird. Dies war mein erstes großes Python Projekt und ich lernte viel über Interfaces, Threads und vieles mehr."
   }
 }

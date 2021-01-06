@@ -43,7 +43,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## My Work Projects
 
-- #Interest Validator
+- Interest Validator
 - #Watson4PublicTenders (intern)
 - #Watson4PGMP (intern)
 - #Swarm Visualization (not working yet)

@@ -58,5 +58,9 @@
     "name": "Der neue Platzhirsch",
     "text": "Der neue Platzhirsch is a restaurant in Berlin-Wedding. Together with my friend Moritz Scheele I developed this Website for the Restaurant. Today it has solid traffic which is increased with SEO.",
     "alt": "Screenshot of the Webpage"
+  },
+  "IV": {
+    "name": "Interest Validator",
+    "text": "The Interest Validator is a program which I developed based on the Idea of my father Dirk Hölzer of an automatic interest testing tool for accounting networks like EY or PWC. This was my first big project in Python and I learned a lot about interfaces, concurrency and more."
   }
 }
