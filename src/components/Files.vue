@@ -8,7 +8,10 @@
     </div>
     <div class="file-body">
       <h3 class="file-name">
-        <a class="file-link" :href="link" target="_blank">{{ $t(`Files.${code}.name`) }}</a>
+        <a class="file-link" :href="link" target="_blank">
+          {{ $t(`Files.${code}.name`) }}
+          <LinkIcon class="link-icon" />
+        </a>
       </h3>
       <p>{{ $t(`Files.${code}.text`) }}</p>
     </div>
@@ -17,6 +20,7 @@
 
 <script>
 import { CvLink } from '@carbon/vue/src/components/cv-link'
+import LinkIcon from '@carbon/icons-vue/es/launch/24'
 import FileIcon from '@carbon/icons-vue/es/document/32'
 
 export default {
@@ -28,7 +32,7 @@ export default {
     dateStart: String,
     link: String
   },
-  components: { CvLink, FileIcon }
+  components: { CvLink, LinkIcon, FileIcon }
 }
 </script>
 
@@ -129,5 +133,9 @@ export default {
 
 .file-name {
   margin-bottom: 16px;
+}
+
+.link-icon {
+  opacity: 0.65;
 }
 </style>

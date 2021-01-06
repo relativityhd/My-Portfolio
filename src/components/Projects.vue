@@ -11,7 +11,10 @@
     </div>
     <div class="project-body">
       <h1 class="project-name">
-        <a class="project-link" :href="link" target="_blank">{{ $t(`Projects.${code}.name`) }}</a>
+        <a class="project-link" :href="link" target="_blank">
+          {{ $t(`Projects.${code}.name`) }}
+          <LinkIcon class="link-icon" />
+        </a>
       </h1>
       <a class="project-link" :href="link" target="_blank">
         <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" />
@@ -27,6 +30,7 @@
 <script>
 import { CvLink } from '@carbon/vue/src/components/cv-link'
 import { CvTag } from '@carbon/vue/src/components/cv-tag'
+import LinkIcon from '@carbon/icons-vue/es/launch/32'
 import ProjectIcon from '@carbon/icons-vue/es/roadmap/32'
 import GitIcon from '@carbon/icons-vue/es/logo--github/32'
 
@@ -41,7 +45,7 @@ export default {
     link: String,
     tags: Array
   },
-  components: { CvLink, CvTag, ProjectIcon, GitIcon }
+  components: { CvLink, CvTag, LinkIcon, ProjectIcon, GitIcon }
 }
 </script>
 
@@ -147,5 +151,9 @@ export default {
   gap: 4px;
   margin-top: 4px;
   margin-bottom: 4px;
+}
+
+.link-icon {
+  opacity: 0.65;
 }
 </style>
