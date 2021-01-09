@@ -93,6 +93,15 @@ export default {
   flex-direction: column;
 }
 
+.file-body::after {
+  margin-top: 20px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $ui-03;
+}
+
 @media (min-width: 700px) {
   .file-body {
     margin-top: -52px;

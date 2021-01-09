@@ -111,6 +111,15 @@ export default {
   flex-direction: column;
 }
 
+.project-body::after {
+  margin-top: 20px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $ui-03;
+}
+
 .project-link {
   color: $text-01 !important;
   text-decoration: none;
