@@ -1,8 +1,12 @@
 <template>
   <div class="project-item">
-    <cv-link class="project-icon project-link" :href="link" target="_blank">
+    <cv-link v-if="link && link !== 'not-active'" class="project-icon project-link" :href="link" target="_blank">
       <ProjectIcon />
     </cv-link>
+    <div v-else class="project-icon">
+      <ProjectIcon />
+    </div>
+
     <div class="project-info">
       <p>{{ dateStart ? `${$luxon(dateStart)} - ${$luxon(date)}` : $luxon(date) }}</p>
       <cv-link v-if="github" class="project-link" :href="github" target="_blank">
@@ -10,18 +14,27 @@
       </cv-link>
     </div>
     <div class="project-body">
-      <h1 class="project-name">
+      <h1 v-if="link && link !== 'not-active'" class="project-name">
         <a class="project-link" :href="link" target="_blank">
           {{ $t(`Projects.${code}.name`) }}
           <LinkIcon v-if="preview" class="link-icon" />
         </a>
       </h1>
-      <a v-if="preview" class="project-link" :href="link" target="_blank">
+      <h1 v-else class="project-name">
+        {{ $t(`Projects.${code}.name`) }}
+      </h1>
+
+      <a v-if="preview && link && link !== 'not-active'" class="project-link" :href="link" target="_blank">
         <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" />
       </a>
+      <div class="project-preview" v-else-if="preview">
+        <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" />
+      </div>
+
       <div class="project-tags">
         <cv-tag v-for="tag in tags" :key="tag" :label="tag" kind="gray"></cv-tag>
         <cv-tag v-if="hostedAt" :label="`${$t('Projects.hostedAt')} @ ${hostedAt}`" kind="cool-gray"></cv-tag>
+        <cv-tag v-if="link === 'not-active'" :label="$t('Projects.notActive')" kind="warm-gray"></cv-tag>
         <cv-tooltip v-if="isInternal" alignment="center" direction="top" :tip="$t('Projects.internal')" />
       </div>
       <p>{{ $t(`Projects.${code}.text`) }}</p>
@@ -154,6 +167,10 @@ export default {
 
 .project-name {
   margin-bottom: 16px;
+}
+
+.project-preview img {
+  width: 100%;
 }
 
 .project-tags {
