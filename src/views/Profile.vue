@@ -24,6 +24,9 @@
           <a href="https://twitter.com/tobiashoelzer" target="_blank">
             <TwitterIcon />
           </a>
+          <a href="https://ibmdach.slack.com/team/WND3T9LEQ" target="_blank">
+            <SlackIcon />
+          </a>
         </div>
       </div>
     </div>
@@ -47,10 +50,11 @@ import GitHubIcon from '@carbon/icons-vue/es/logo--github/32'
 import LinkedInIcon from '@carbon/icons-vue/es/logo--linkedin/32'
 import MediumIcon from '@carbon/icons-vue/es/logo--medium/32'
 import TwitterIcon from '@carbon/icons-vue/es/logo--twitter/32'
+import SlackIcon from '@carbon/icons-vue/es/logo--slack/32'
 
 export default {
   name: 'Profile',
-  components: { GitHubIcon, LinkedInIcon, MediumIcon, TwitterIcon },
+  components: { GitHubIcon, LinkedInIcon, MediumIcon, TwitterIcon, SlackIcon },
   data() {
     var ageDifMs = Date.now() - new Date(2001, 1, 16).getTime()
     var ageDate = new Date(ageDifMs)
