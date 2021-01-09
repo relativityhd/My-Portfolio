@@ -1,13 +1,11 @@
 {
   "imprint-message": "Because I am german and the website is also hosted in Germany, the following imprint is only in german.",
   "show-mobile": "Open on mobile",
-  "qr-code-modal": "My Portfolio is also available as an 'Progressive Web App', that means you can install it on your mobile phone!",
-  "close-aria-label": "Close",
-  "qr-code-alt": "QR Code",
-  "filters": {
-    "showFiles": "Show files",
-    "showProjects": "Show projects",
-    "showEvents": "Show events",
-    "onlyImportant": "Only important"
-  }
+  "qr-code": {
+    "body": "My Portfolio is also available as an 'Progressive Web App', that means you can install it on your mobile phone!",
+    "alt": "QR Code",
+    "title": "Open on",
+    "label": "Scan the QR Code"
+  },
+  "close-aria-label": "Close"
 }
