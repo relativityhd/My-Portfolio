@@ -22,6 +22,7 @@
       <div class="project-tags">
         <cv-tag v-for="tag in tags" :key="tag" :label="tag" kind="gray"></cv-tag>
         <cv-tag v-if="hostedAt" :label="`${$t('Projects.hostedAt')} @ ${hostedAt}`" kind="cool-gray"></cv-tag>
+        <cv-tooltip v-if="isInternal" alignment="center" direction="top" :tip="$t('Projects.internal')" />
       </div>
       <p>{{ $t(`Projects.${code}.text`) }}</p>
     </div>
@@ -31,6 +32,7 @@
 <script>
 import { CvLink } from '@carbon/vue/src/components/cv-link'
 import { CvTag } from '@carbon/vue/src/components/cv-tag'
+import { CvTooltip } from '@carbon/vue/src/components/cv-tooltip'
 import LinkIcon from '@carbon/icons-vue/es/launch/32'
 import ProjectIcon from '@carbon/icons-vue/es/roadmap/32'
 import GitIcon from '@carbon/icons-vue/es/logo--github/32'
@@ -45,9 +47,10 @@ export default {
     github: String,
     link: String,
     tags: Array,
-    hostedAt: String
+    hostedAt: String,
+    isInternal: Boolean
   },
-  components: { CvLink, CvTag, LinkIcon, ProjectIcon, GitIcon }
+  components: { CvLink, CvTag, CvTooltip, LinkIcon, ProjectIcon, GitIcon }
 }
 </script>
 
