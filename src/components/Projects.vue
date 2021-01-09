@@ -21,6 +21,7 @@
       </a>
       <div class="project-tags">
         <cv-tag v-for="tag in tags" :key="tag" :label="tag" kind="gray"></cv-tag>
+        <cv-tag v-if="hostedAt" :label="`${$t('Projects.hostedAt')} @ ${hostedAt}`" kind="cool-gray"></cv-tag>
       </div>
       <p>{{ $t(`Projects.${code}.text`) }}</p>
     </div>
@@ -43,7 +44,8 @@ export default {
     dateStart: String,
     github: String,
     link: String,
-    tags: Array
+    tags: Array,
+    hostedAt: String
   },
   components: { CvLink, CvTag, LinkIcon, ProjectIcon, GitIcon }
 }

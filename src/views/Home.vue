@@ -23,6 +23,7 @@
           :github="i.github"
           :link="i.link"
           :tags="i.tags"
+          :hostedAt="i.hostedAt"
         />
         <File
           v-else-if="i.type === 'file'"

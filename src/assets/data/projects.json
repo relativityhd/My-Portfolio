@@ -7,7 +7,8 @@
     "github": "https://github.com/ChristopherLohse/SocialNetworkAnalysis",
     "link": "https://dev.christopherlohse.de/SocialNetworkAnalysis/",
     "tags": ["Social Network Analysis", "Twitter Crawler", "Python", "Pandas"],
-    "important": true
+    "important": true,
+    "hostedAt": "Strato"
   },
   {
     "name": "My Homepage",
@@ -18,7 +19,8 @@
     "github": "https://github.com/relativityhd/My-Homepage",
     "link": "https://tobiashoelzer.eu-de.mybluemix.net",
     "tags": ["Website", "NodeJS", "Material Design", "IBM Cloud"],
-    "important": true
+    "important": true,
+    "hostedAt": "IBM Cloud"
   },
   {
     "name": "React Presentation",
@@ -27,7 +29,8 @@
     "date": "2020-09",
     "github": "https://github.com/relativityhd/web-programming-react",
     "link": "https://relativityhd.github.io/web-programming-react/",
-    "tags": ["React", "Design", "Frameworks"]
+    "tags": ["React", "Design", "Frameworks"],
+    "hostedAt": "GitHub Pages"
   },
   {
     "name": "Cupboard Limitless",
@@ -38,7 +41,8 @@
     "github": "https://github.com/relativityhd/CCT",
     "link": "https://cablecard-cct.eu-de.mybluemix.net/",
     "tags": ["Vue", "Carbon Components", "PWA", "i18n", "l10n", "3D Visualization"],
-    "important": true
+    "important": true,
+    "hostedAt": "IBM Cloud"
   },
   {
     "name": "Flights Dashboard",
@@ -47,7 +51,8 @@
     "date": "2020-05",
     "github": "https://github.com/relativityhd/ds_visualisation",
     "link": "https://relativityhd.github.io/ds_visualisation/",
-    "tags": ["Data Science", "Visualization", "Material Design", "Plotly"]
+    "tags": ["Data Science", "Visualization", "Material Design", "Plotly"],
+    "hostedAt": "GitHub Pages"
   },
   {
     "name": "My Portfolio",
@@ -56,7 +61,8 @@
     "date": "2021-01",
     "github": "https://github.com/relativityhd/My-Portfolio",
     "link": "https://tobiashoelzer-portfolio.eu-de.mybluemix.net/",
-    "tags": ["Vue", "Carbon Components", "i18n", "Design"]
+    "tags": ["Vue", "Carbon Components", "i18n", "Design"],
+    "hostedAt": "IBM Cloud"
   },
   {
     "name": "Mello",
@@ -113,7 +119,8 @@
     "dateStart": "2019-12",
     "link": "https://der-neue-platzhirsch.eu-gb.mybluemix.net/",
     "tags": ["Customer Project", "NodeJS", "Design", "IBM Cloud", "SEO"],
-    "important": true
+    "important": true,
+    "hostedAt":"IBM Cloud"
   },
   {
     "name": "IV",

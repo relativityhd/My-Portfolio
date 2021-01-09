@@ -1,4 +1,5 @@
 {
+  "hostedAt": "Hosted",
   "SNA": {
     "name": "Tobis Twitter Network",
     "text": "This is a project about My Twitter Network. I worked on this project together with Christopher Lohse. The question we asked ourselves was: 'Which people (accounts) are influencing Tobis Feed the most?'. To answer this question we used methods of the Social Network Analysis. In this project I increased my Python skills and learned how to create a Social Network Analysis.",
