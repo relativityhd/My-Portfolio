@@ -16,7 +16,7 @@
     "date": "2018-11",
     "dateStart": "2018-09",
     "github": "https://github.com/relativityhd/My-Homepage",
-    "link": "https://tobiashoelzer.dynu.net/",
+    "link": "https://tobiashoelzer.eu-de.mybluemix.net",
     "tags": ["Website", "NodeJS", "Material Design", "IBM Cloud"],
     "important": true
   },
@@ -65,7 +65,7 @@
     "date": "2018-06",
     "dateStart": "2018-03",
     "github": "https://github.com/relativityhd/mello-fork",
-    "link": "tbd",
+    "link": "not-active",
     "tags": ["NodeJS", "Design", "Social Media", "First Big Project"],
     "important": true
   },
@@ -76,7 +76,7 @@
     "date": "2020-05",
     "dateStart": "2020-04",
     "github": "https://github.com/relativityhd/veintiuno-fork",
-    "link": "tbd",
+    "link": "not-active",
     "tags": ["React", "Design", "Game", "Java", "SocketIO", "Material Design"],
     "important": true
   },
@@ -104,5 +104,46 @@
     "date": "2017-07",
     "link": "/src/cryption.html",
     "tags": ["Security", "Material Design", "Crypto"]
+  },
+  {
+    "name": "Platzhirsch",
+    "code": "Platzhirsch",
+    "preview": "platzhirsch.png",
+    "date": "2020-02",
+    "dateStart": "2019-12",
+    "link": "https://der-neue-platzhirsch.eu-gb.mybluemix.net/",
+    "tags": ["Customer Project", "NodeJS", "Design", "IBM Cloud", "SEO"],
+    "important": true
+  },
+  {
+    "name": "IV",
+    "code": "IV",
+    "date": "2019-09",
+    "dateStart": "2019-03",
+    "tags": ["Python", "PyQt", "Excel", "Finance"],
+    "important": true
+  },
+  {
+    "name": "W4PT",
+    "code": "W4PT",
+    "date": "2020-02",
+    "dateStart": "2020-01",
+    "tags": ["NodeJS", "NLP", "AI"]
+  },
+  {
+    "name": "W4PGMP",
+    "code": "W4PGMP",
+    "date": "2020-02",
+    "dateStart": "2020-03",
+    "tags": ["NodeJS", "NLP", "AI", "Data Analytics", "Plotly", "Carbon Components"],
+    "important": true
+  },
+  {
+    "name": "SwarmViz",
+    "code": "SwarmViz",
+    "date": "2020-08",
+    "dateStart": "2020-06",
+    "tags": ["NestJS", "Vue", "Plotly", "Swarm Intelligence", "Trustful AI", "Visualization", "Carbon Components"],
+    "important": true
   }
 ]

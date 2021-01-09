@@ -39,14 +39,14 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - Scissors Paper Rock
 - Cryptions
 - Simon Clicks
-- #Platzhitsch (nicht auf GitHub, hosted @IBM)
+- Platzhirsch (nicht auf GitHub, hosted @IBM)
 
 ## My Work Projects
 
-- #Interest Validator
-- #Watson4PublicTenders (intern)
-- #Watson4PGMP (intern)
-- #Swarm Visualization (not working yet)
+- Interest Validator
+- Watson4PublicTenders (intern)
+- Watson4PGMP (intern)
+- Swarm Visualization (not working yet)
 
 ## My Other Work
 
@@ -56,6 +56,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Important Documents
 
-- #Lebenslauf / CV
+- Lebenslauf / CV
 - Abiturzeugnis
 - Biber Wettbewerb

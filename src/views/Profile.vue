@@ -3,7 +3,7 @@
     <div class="profile-card">
       <img class="profile-pic" src="../assets/images/profile-pic.jpg" :alt="$t('Profile.profile-pic-alt')" />
       <div class="profile-info">
-        <h1>Tobias Thomas Hölzer</h1>
+        <h1>Tobias Hölzer</h1>
         <h6>{{ $t('Profile.job') }}</h6>
         <hr />
         <p>{{ `${age} ${$t('Profile.age')} | ${$t('Profile.lives')}` }}</p>

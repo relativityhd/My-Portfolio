@@ -53,5 +53,26 @@
     "name": "Cryptions",
     "text": "Hier habe ich einige Verschlüsselungsmethoden zusammen getragen die ich nach und nach implementiert habe, unter anderem eine Verschlüsselung die ich mit meiner guten Freundin Janina Adamcic erfunden habe. Das Thema Verschlüsselungen hat mich zuerst 2017 interessiert als ich Zuhause programmieren mit Python lernte. In der Zeit legte ich auch die Grundsteine meines Passwort Generators. 2018 hatten wir das Thema dann im Unterricht näher behandelt, wodurch ich später unter anderem darüber mein Abitur schreiben konnte.",
     "alt": "Screenshot der Cryptions Seite"
+  },
+  "Platzhirsch": {
+    "name": "Der neue Platzhirsch",
+    "text": "Der neue Platzhirsch ein Restaurant in Berlin-Wedding. Zusammen mit Moritz Scheele habe ich diese Website für das Restaurant entwickelt. Heute wird sie relativ häufig aufgerufen dank SEO Optimierung.",
+    "alt": "Screenshot der Webseite"
+  },
+  "IV": {
+    "name": "Interest Validator",
+    "text": "Der Interest Validator ist ein Programm was ich auf der Basis der Idee meines Vaters Dirk Hölzer entwickelt habe. Es ist ein Zinstesttool welches vorallem in Wirtschaftsprüfungen wie EY oder PWC eingesetzt wird. Dies war mein erstes großes Python Projekt und ich lernte viel über Interfaces, Threads und vieles mehr."
+  },
+  "W4PT": {
+    "name": "Watson 4 Public Tenders",
+    "text": "In meinem ersten Praxiseinsatz bei IBM bei Digital Sales arbeitete ich am bestehendem Projekt Watson 4 Public Tenders mit, welches interne Prozesse mit Hilfe von Watson Natural Language Processing Services automatisiert. Dabei trainierte ich Machine Learning Modelle und optimierte das bestehende Programm."
+  },
+  "W4PGMP": {
+    "name": "Watson 4 PGMP",
+    "text": "Ähnlich wie beim Watson 4 Public Tenders nutzt der Watson 4 PGMP IBM Watson Natural Language Processing (NLP) Services. Ich entwickelte ein Dashboard welche auf die Daten des NLP Services zugreift und diese auswertet. In diesem Projekt nutzte ich zum ersten Mal intensiv die Grafikbibliothek Plotly, sowie Komponenten des IBM Carbon Designs."
+  },
+  "SwarmViz": {
+    "name": "Swarm Visualization",
+    "text": "Hierbei handelt es sich um mein Project zu meiner 1. Praxisarbeit. Im IBM Watson Center in München erstellte ich eine Visualisierung welche eine Schwarm Intelligenz erklären sollte. Dies soll dazu führen, dass Menschen mehr vertrauen in diese bekommen wenn sie diese besser verstehen können. Hierbei arbeitete ich mit den JavaScript Frameworks Nest und Vue, nutzte Plotly und Carbon Components für die Visualisierung und lernte sehr viel über Schnittstellen und Clean-Coding Best-Practices kennen."
   }
 }

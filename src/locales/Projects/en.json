@@ -53,5 +53,26 @@
     "name": "Cryptions",
     "text": "This is a collection of some encryption methods which I implemented. One of them I developed together with my friend Janina Adamcic. The topic encryptions interested me in 2017 when I started to learn programming with Python. At this time I also started to create my Password Generator. I also wrote my high school exam about the topic, since I hat the topic in class in 2018.",
     "alt": "Screenshot of the Cryptions Page"
+  },
+  "Platzhirsch": {
+    "name": "Der neue Platzhirsch",
+    "text": "Der neue Platzhirsch is a restaurant in Berlin-Wedding. Together with my friend Moritz Scheele I developed this Website for the Restaurant. Today it has solid traffic which is increased with SEO.",
+    "alt": "Screenshot of the Webpage"
+  },
+  "IV": {
+    "name": "Interest Validator",
+    "text": "The Interest Validator is a program which I developed based on the Idea of my father Dirk Hölzer of an automatic interest testing tool for accounting networks like EY or PWC. This was my first big project in Python and I learned a lot about interfaces, concurrency and more."
+  },
+  "W4PT": {
+    "name": "Watson 4 Public Tenders",
+    "text": "In my first internship at IBM in the Digital Sales team I worked on the Watson 4 Public Tenders project where the Watson Natural Language Processing Services are used to categorize public tenders to automate intern processes. I trained Machine learning models and optimized the existing project."
+  },
+  "W4PGMP": {
+    "name": "Watson 4 PGMP",
+    "text": "Similar to the Watson 4 Public Tenders the Watson 4 PGMP uses IBM Watson Natural Language Processing (NLP) Services. I developed a Dashboard which uses the analyzed data from the NLP. In this project I used Plotly for the first time aswell as IBM Carbon Components."
+  },
+  "SwarmViz": {
+    "name": "Swarm Visualization",
+    "text": "This is the project which I developed for my 1st practical thesis. In the IBM Watson Center in Munich I developed a visualization which should explain a swarm intelligence. With a better understanding of what the AI does the humans which use it should trust it more. I worked with the JavaScript frameworks Nest and Vue. For the Visualization I used Plotly and Carbon Components. Within the project I learned a lot about APIs and Clean-Coding best practices."
   }
 }

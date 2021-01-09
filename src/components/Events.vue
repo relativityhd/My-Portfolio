@@ -19,7 +19,10 @@
     </div>
     <div class="event-body">
       <h3 class="event-name">
-        <a class="event-link" :href="link" target="_blank">{{ $t(`Events.${code}.name`) }}</a>
+        <a class="event-link" :href="link" target="_blank">
+          {{ $t(`Events.${code}.name`) }}
+          <LinkIcon class="link-icon" />
+        </a>
       </h3>
       <p>{{ $t(`Events.${code}.text`) }}</p>
     </div>
@@ -28,6 +31,7 @@
 
 <script>
 import { CvLink } from '@carbon/vue/src/components/cv-link'
+import LinkIcon from '@carbon/icons-vue/es/launch/24'
 import EventIcon from '@carbon/icons-vue/es/star/32'
 
 export default {
@@ -38,7 +42,7 @@ export default {
     date: String,
     link: String
   },
-  components: { CvLink, EventIcon }
+  components: { CvLink, LinkIcon, EventIcon }
 }
 </script>
 
@@ -130,5 +134,9 @@ export default {
 
 .event-name {
   margin-bottom: 16px;
+}
+
+.link-icon {
+  opacity: 0.65;
 }
 </style>

@@ -27,5 +27,12 @@
     "date": "2017-02",
     "dateStart": "2016-12",
     "link": "./docs/MSA-Energieerzeugung_für_die_Welt_von_morgen.pptx"
+  },
+  {
+    "name": "CV",
+    "code": "CV",
+    "date": "2021-01",
+    "link": "./docs/cv.pdf",
+    "important": true
   }
 ]
