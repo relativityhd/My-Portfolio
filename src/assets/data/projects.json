@@ -135,7 +135,15 @@
     "code": "W4PGMP",
     "date": "2020-02",
     "dateStart": "2020-03",
-    "tags": ["NodeJS", "NLP", "AI", "Data Analytics", "Plotly"],
+    "tags": ["NodeJS", "NLP", "AI", "Data Analytics", "Plotly", "Carbon Components"],
+    "important": true
+  },
+  {
+    "name": "SwarmViz",
+    "code": "SwarmViz",
+    "date": "2020-08",
+    "dateStart": "2020-06",
+    "tags": ["NestJS", "Vue", "Plotly", "Swarm Intelligence", "Trustful AI", "Visualization", "Carbon Components"],
     "important": true
   }
 ]

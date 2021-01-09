@@ -70,5 +70,9 @@
   "W4PGMP": {
     "name": "Watson 4 PGMP",
     "text": "Ähnlich wie beim Watson 4 Public Tenders nutzt der Watson 4 PGMP IBM Watson Natural Language Processing (NLP) Services. Ich entwickelte ein Dashboard welche auf die Daten des NLP Services zugreift und diese auswertet. In diesem Projekt nutzte ich zum ersten Mal intensiv die Grafikbibliothek Plotly, sowie Komponenten des IBM Carbon Designs."
+  },
+  "SwarmViz": {
+    "name": "Swarm Visualization",
+    "text": "Hierbei handelt es sich um mein Project zu meiner 1. Praxisarbeit. Im IBM Watson Center in München erstellte ich eine Visualisierung welche eine Schwarm Intelligenz erklären sollte. Dies soll dazu führen, dass Menschen mehr vertrauen in diese bekommen wenn sie diese besser verstehen können. Hierbei arbeitete ich mit den JavaScript Frameworks Nest und Vue, nutzte Plotly und Carbon Components für die Visualisierung und lernte sehr viel über Schnittstellen und Clean-Coding Best-Practices kennen."
   }
 }
