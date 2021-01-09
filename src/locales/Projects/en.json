@@ -66,5 +66,9 @@
   "W4PT": {
     "name": "Watson 4 Public Tenders",
     "text": "In my first internship at IBM in the Digital Sales team I worked on the Watson 4 Public Tenders project where the Watson Natural Language Processing Services are used to categorize public tenders to automate intern processes. I trained Machine learning models and optimized the existing project."
+  },
+  "W4PGMP": {
+    "name": "Watson 4 PGMP",
+    "text": "Similar to the Watson 4 Public Tenders the Watson 4 PGMP uses IBM Watson Natural Language Processing (NLP) Services. I developed a Dashboard which uses the analyzed data from the NLP. In this project I used Plotly for the first time aswell as IBM Carbon Components."
   }
 }

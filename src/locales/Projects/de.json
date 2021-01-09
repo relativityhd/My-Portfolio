@@ -66,5 +66,9 @@
   "W4PT": {
     "name": "Watson 4 Public Tenders",
     "text": "In meinem ersten Praxiseinsatz bei IBM bei Digital Sales arbeitete ich am bestehendem Projekt Watson 4 Public Tenders mit, welches interne Prozesse mit Hilfe von Watson Natural Language Processing Services automatisiert. Dabei trainierte ich Machine Learning Modelle und optimierte das bestehende Programm."
+  },
+  "W4PGMP": {
+    "name": "Watson 4 PGMP",
+    "text": "Ähnlich wie beim Watson 4 Public Tenders nutzt der Watson 4 PGMP IBM Watson Natural Language Processing (NLP) Services. Ich entwickelte ein Dashboard welche auf die Daten des NLP Services zugreift und diese auswertet. In diesem Projekt nutzte ich zum ersten Mal intensiv die Grafikbibliothek Plotly, sowie Komponenten des IBM Carbon Designs."
   }
 }

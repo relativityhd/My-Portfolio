@@ -128,7 +128,14 @@
     "code": "W4PT",
     "date": "2020-02",
     "dateStart": "2020-01",
-    "tags": ["NodeJS", "NLP", "AI"],
+    "tags": ["NodeJS", "NLP", "AI"]
+  },
+  {
+    "name": "W4PGMP",
+    "code": "W4PGMP",
+    "date": "2020-02",
+    "dateStart": "2020-03",
+    "tags": ["NodeJS", "NLP", "AI", "Data Analytics", "Plotly"],
     "important": true
   }
 ]

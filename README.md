@@ -45,7 +45,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 - Interest Validator
 - Watson4PublicTenders (intern)
-- #Watson4PGMP (intern)
+- Watson4PGMP (intern)
 - #Swarm Visualization (not working yet)
 
 ## My Other Work
