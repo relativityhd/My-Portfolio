@@ -127,8 +127,8 @@
   },
   {
     "code": "W4PGMP",
-    "date": "2020-02",
-    "dateStart": "2020-03",
+    "date": "2020-03",
+    "dateStart": "2020-02",
     "tags": ["NodeJS", "NLP", "AI", "Data Analytics", "Plotly", "Carbon Components"],
     "important": true,
     "isInternal": true
