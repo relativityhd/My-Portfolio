@@ -95,6 +95,9 @@ export default {
       .sort((a, b) => {
         const aTs = new Date(a.date).getTime()
         const bTs = new Date(b.date).getTime()
+        if (typeof a.dateStart !== 'undefined' && typeof b.dateStart !== 'undefined' && aTs === bTs) {
+          return new Date(b.dateStart).getTime() - new Date(a.dateStart).getTime()
+        }
         return bTs - aTs
       })
     return {
