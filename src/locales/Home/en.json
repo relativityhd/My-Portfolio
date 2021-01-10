@@ -1,0 +1,13 @@
+{
+  "title": "Hi!",
+  "welcome": "This is my portfolio! Scroll through my projects in the gallery, take a look at my profile or see my skills.",
+  "filter": {
+    "btn": "Filter",
+    "title": "Apply a filter",
+    "label": "Filters can hide specific items",
+    "showFiles": "Files",
+    "showProjects": "Projects",
+    "showEvents": "Events",
+    "onlyImportant": "Only important"
+  }
+}

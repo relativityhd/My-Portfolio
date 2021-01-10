@@ -1,15 +1,13 @@
 [
   {
-    "name": "Abitur",
     "code": "Abi",
     "date": "2019-06-21",
-    "link": "./docs/Abiturzeugnis.pdf",
+    "link": "./docs/Highschool-Diploma-TobiasHölzer.pdf",
     "important": true
   },
   {
-    "name": "Biber",
     "code": "Biber",
     "date": "2017-03-04",
-    "link": "./docs/biber-wettbewerb.pdf"
+    "link": "./docs/Biber-Competition-TobiasHölzer.pdf"
   }
 ]

@@ -8,7 +8,7 @@
     </div>
 
     <div class="project-info">
-      <p>{{ dateStart ? `${$luxon(dateStart)} - ${$luxon(date)}` : $luxon(date) }}</p>
+      <p>{{ parsedDate }}</p>
       <cv-link v-if="github" class="project-link" :href="github" target="_blank">
         <GitIcon />
       </cv-link>
@@ -52,7 +52,6 @@ import GitIcon from '@carbon/icons-vue/es/logo--github/32'
 
 export default {
   props: {
-    name: String,
     code: String,
     preview: String,
     date: String,
@@ -63,7 +62,22 @@ export default {
     hostedAt: String,
     isInternal: Boolean
   },
-  components: { CvLink, CvTag, CvTooltip, LinkIcon, ProjectIcon, GitIcon }
+  components: { CvLink, CvTag, CvTooltip, LinkIcon, ProjectIcon, GitIcon },
+  computed: {
+    parsedDate: function() {
+      let dDate = new Date(this.date)
+      let dMonth = this.$t(`months[${dDate.getMonth()}]`)
+      let dYear = dDate.getFullYear()
+
+      if (this.dateStart) {
+        let dDateStart = new Date(this.dateStart)
+        let dMonthStart = this.$t(`months[${dDateStart.getMonth()}]`)
+        let dYearStart = dDateStart.getFullYear()
+        return `${dMonthStart} ${dYearStart} - ${dMonth} ${dYear}`
+      }
+      return `${dMonth} ${dYear}`
+    }
+  }
 }
 </script>
 

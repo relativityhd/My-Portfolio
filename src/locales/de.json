@@ -1,13 +1,12 @@
 {
   "imprint-message": "",
   "show-mobile": "Auf dem Handy öffnen",
-  "qr-code-modal": "Mein Portfolio ist auch als 'Progressive Web App' verfügbar, dass heißt du kannst es auch auf deinem Handy installieren!",
+  "qr": {
+    "body": "Mein Portfolio ist auch als 'Progressive Web App' verfügbar, dass heißt du kannst es auch auf deinem Handy installieren!",
+    "alt": "QR Code",
+    "title": "Auf dem Handy öffnen",
+    "label": "Scanne den QR Code"
+  },
   "close-aria-label": "Schließen",
-  "qr-code-alt": "QR Code",
-  "filters": {
-    "showFiles": "Dokumente anzeigen",
-    "showProjects": "Projekte anzeigen",
-    "showEvents": "Events anzeigen",
-    "onlyImportant": "Nur wichtige"
-  }
+  "months": [ "Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez" ]
 }

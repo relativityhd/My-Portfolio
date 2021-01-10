@@ -1,21 +1,46 @@
 <template>
   <div class="home">
-    <OpenMobile class="mobile-button" />
-    <div class="filter">
-      <cv-checkbox :label="$t('filters.showProjects')" value="showProjects" v-model="filter.showProjects"></cv-checkbox>
-      <cv-checkbox :label="$t('filters.showFiles')" value="showFiles" v-model="filter.showFiles"> </cv-checkbox>
-      <cv-checkbox :label="$t('filters.showEvents')" value="showEvents" v-model="filter.showEvents"> </cv-checkbox>
-      <cv-checkbox
-        :label="$t('filters.onlyImportant')"
-        value="showOnlyImportant"
-        v-model="filter.showOnlyImportant"
-      ></cv-checkbox>
+    <div class="opener-wrapper">
+      <div class="opener">
+        <div class="opener-box">
+          <h1>{{ $t('Home.title') }}</h1>
+          <p>{{ $t('Home.welcome') }}</p>
+          <div class="button-group">
+            <cv-button type="primary" @click="openSettingsModal" :icon="FilterIcon">
+              {{ $t('Home.filter.btn') }}
+            </cv-button>
+            <OpenMobile />
+          </div>
+          <cv-modal ref="settingsModal" class="settings-modale" :close-aria-label="$t('close-aria-label')" size="xs">
+            <template slot="label">{{ $t('Home.filter.label') }}</template>
+            <template slot="title">{{ $t('Home.filter.title') }}</template>
+            <template slot="content">
+              <div class="filter">
+                <cv-checkbox
+                  :label="$t('Home.filter.showProjects')"
+                  value="showProjects"
+                  v-model="filter.showProjects"
+                ></cv-checkbox>
+                <cv-checkbox :label="$t('Home.filter.showFiles')" value="showFiles" v-model="filter.showFiles">
+                </cv-checkbox>
+                <cv-checkbox :label="$t('Home.filter.showEvents')" value="showEvents" v-model="filter.showEvents">
+                </cv-checkbox>
+                <cv-checkbox
+                  :label="$t('Home.filter.onlyImportant')"
+                  value="showOnlyImportant"
+                  v-model="filter.showOnlyImportant"
+                ></cv-checkbox>
+              </div>
+            </template>
+          </cv-modal>
+        </div>
+      </div>
     </div>
+
     <div class="gallery">
-      <div v-for="i in filteredItems" :key="i.name">
+      <div v-for="i in filteredItems" :key="i.code">
         <Project
           v-if="i.type === 'project'"
-          :name="i.name"
           :code="i.code"
           :preview="i.preview"
           :date="i.date"
@@ -26,15 +51,8 @@
           :hostedAt="i.hostedAt"
           :isInternal="i.isInternal"
         />
-        <File
-          v-else-if="i.type === 'file'"
-          :name="i.name"
-          :code="i.code"
-          :date="i.date"
-          :dateStart="i.dateStart"
-          :link="i.link"
-        />
-        <Event v-else-if="i.type === 'event'" :name="i.name" :code="i.code" :date="i.date" :link="i.link" />
+        <File v-else-if="i.type === 'file'" :code="i.code" :date="i.date" :dateStart="i.dateStart" :link="i.link" />
+        <Event v-else-if="i.type === 'event'" :code="i.code" :date="i.date" :link="i.link" />
       </div>
     </div>
   </div>
@@ -49,10 +67,13 @@ import projects from '../assets/data/projects.json'
 import Event from '../components/Events'
 import events from '../assets/data/events.json'
 import { CvCheckbox } from '@carbon/vue/src/components/cv-checkbox'
+import { CvButton } from '@carbon/vue/src/components/cv-button'
+import { CvModal } from '@carbon/vue/src/components/cv-modal'
+import FilterIcon from '@carbon/icons-vue/es/filter--edit/32'
 
 export default {
   name: 'Home',
-  components: { CvCheckbox, OpenMobile, Project, File, Event },
+  components: { CvCheckbox, CvButton, CvModal, OpenMobile, Project, File, Event },
   data: () => {
     const items = files
       .map(f => {
@@ -74,6 +95,9 @@ export default {
       .sort((a, b) => {
         const aTs = new Date(a.date).getTime()
         const bTs = new Date(b.date).getTime()
+        if (typeof a.dateStart !== 'undefined' && typeof b.dateStart !== 'undefined' && aTs === bTs) {
+          return new Date(b.dateStart).getTime() - new Date(a.dateStart).getTime()
+        }
         return bTs - aTs
       })
     return {
@@ -83,7 +107,8 @@ export default {
         showProjects: true,
         showEvents: true,
         showOnlyImportant: false
-      }
+      },
+      FilterIcon
     }
   },
   computed: {
@@ -97,14 +122,50 @@ export default {
         )
       })
     }
+  },
+  methods: {
+    openSettingsModal() {
+      this.$refs.settingsModal.show()
+    }
   }
 }
 </script>
 
 <style lang="scss">
-.mobile-button {
+.opener-wrapper {
+  width: 98%;
+  max-width: 800px;
+  margin: -24px auto 0;
+}
+
+.opener {
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 16px 0 16px 20px;
+  margin-left: 16px;
+}
+
+.opener::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 2px;
+  content: '';
+  background-color: $ui-02;
+}
+
+.opener-box {
+  padding: 16px 32px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .filter {
@@ -115,8 +176,6 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   gap: 16px;
 }
 

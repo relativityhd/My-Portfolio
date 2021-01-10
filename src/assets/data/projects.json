@@ -1,6 +1,5 @@
 [
   {
-    "name": "Social Network Analysis",
     "code": "SNA",
     "preview": "sna.png",
     "date": "2020-11",
@@ -11,7 +10,6 @@
     "hostedAt": "GitHub Pages"
   },
   {
-    "name": "My Homepage",
     "code": "MyHome",
     "preview": "my-homepage.png",
     "date": "2018-11",
@@ -23,7 +21,6 @@
     "hostedAt": "IBM Cloud"
   },
   {
-    "name": "React Presentation",
     "code": "ReactPrasi",
     "preview": "react-presentation.png",
     "date": "2020-09",
@@ -33,7 +30,6 @@
     "hostedAt": "GitHub Pages"
   },
   {
-    "name": "Cupboard Limitless",
     "code": "CCT",
     "preview": "cct.png",
     "date": "2020-10",
@@ -45,7 +41,6 @@
     "hostedAt": "IBM Cloud"
   },
   {
-    "name": "Flights Dashboard",
     "code": "DSVIZ",
     "preview": "ds-viz.png",
     "date": "2020-05",
@@ -55,7 +50,6 @@
     "hostedAt": "GitHub Pages"
   },
   {
-    "name": "My Portfolio",
     "code": "MyPort",
     "preview": "my-portfolio.png",
     "date": "2021-01",
@@ -65,7 +59,6 @@
     "hostedAt": "IBM Cloud"
   },
   {
-    "name": "Mello",
     "code": "Mello",
     "preview": "mello.png",
     "date": "2018-06",
@@ -76,7 +69,6 @@
     "important": true
   },
   {
-    "name": "Veintiuno",
     "code": "21",
     "preview": "veintiuno.jpg",
     "date": "2020-05",
@@ -87,7 +79,6 @@
     "important": true
   },
   {
-    "name": "Simon clicks",
     "code": "Click",
     "preview": "simon-clicks.png",
     "date": "2018-07",
@@ -95,7 +86,6 @@
     "tags": ["Design", "Game", "JS"]
   },
   {
-    "name": "Password Generator",
     "code": "PW",
     "preview": "pw.png",
     "date": "2017-12",
@@ -104,7 +94,6 @@
     "important": true
   },
   {
-    "name": "Cryptions",
     "code": "Cryptions",
     "preview": "cryptions.png",
     "date": "2017-07",
@@ -112,7 +101,6 @@
     "tags": ["Security", "Material Design", "Crypto"]
   },
   {
-    "name": "Platzhirsch",
     "code": "Platzhirsch",
     "preview": "platzhirsch.png",
     "date": "2020-02",
@@ -123,7 +111,6 @@
     "hostedAt":"IBM Cloud"
   },
   {
-    "name": "IV",
     "code": "IV",
     "date": "2019-09",
     "dateStart": "2019-03",
@@ -132,7 +119,6 @@
     "isInternal": true
   },
   {
-    "name": "W4PT",
     "code": "W4PT",
     "date": "2020-02",
     "dateStart": "2020-01",
@@ -140,16 +126,14 @@
     "isInternal": true
   },
   {
-    "name": "W4PGMP",
     "code": "W4PGMP",
-    "date": "2020-02",
-    "dateStart": "2020-03",
+    "date": "2020-03",
+    "dateStart": "2020-02",
     "tags": ["NodeJS", "NLP", "AI", "Data Analytics", "Plotly", "Carbon Components"],
     "important": true,
     "isInternal": true
   },
   {
-    "name": "SwarmViz",
     "code": "SwarmViz",
     "date": "2020-08",
     "dateStart": "2020-06",

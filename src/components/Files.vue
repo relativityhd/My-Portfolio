@@ -4,7 +4,7 @@
       <FileIcon />
     </cv-link>
     <div class="file-info">
-      <p>{{ dateStart ? `${$luxon(dateStart)} - ${$luxon(date)}` : $luxon(date) }}</p>
+      <p>{{ parsedDate }}</p>
     </div>
     <div class="file-body">
       <h3 class="file-name">
@@ -25,14 +25,28 @@ import FileIcon from '@carbon/icons-vue/es/document/32'
 
 export default {
   props: {
-    name: String,
     code: String,
     preview: String,
     date: String,
     dateStart: String,
     link: String
   },
-  components: { CvLink, LinkIcon, FileIcon }
+  components: { CvLink, LinkIcon, FileIcon },
+  computed: {
+    parsedDate: function() {
+      let dDate = new Date(this.date)
+      let dMonth = this.$t(`months[${dDate.getMonth()}]`)
+      let dYear = dDate.getFullYear()
+
+      if (this.dateStart) {
+        let dDateStart = new Date(this.dateStart)
+        let dMonthStart = this.$t(`months[${dDateStart.getMonth()}]`)
+        let dYearStart = dDateStart.getFullYear()
+        return `${dMonthStart} ${dYearStart} - ${dMonth} ${dYear}`
+      }
+      return `${dMonth} ${dYear}`
+    }
+  }
 }
 </script>
 
