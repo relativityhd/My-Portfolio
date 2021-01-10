@@ -1,0 +1,19 @@
+{
+  "profile-pic-alt": "Bild von mir",
+  "job": "Dualer Student für Data Science @ IBM",
+  "lives": "Stuttgart, Deutschland",
+  "age": "Jahre alt",
+  "welcome": "Hi. Ich bin Tobias, ein Programmierer und zukünftiger Informatiker. Zurzeit studiere ich Wirtschaftsinformatik mit Fokus auf Data Science und arbeite bei IBM.",
+  "middleSchool": {
+    "title": "Mittelstufe",
+    "text": "Im Alter von 15 Jahren programmierte ich das erste mal in der Schule. I startete mit einem einfachen Schere Stein Papier Spiel in Python 2 und entwickelte es zu einem leicht zu benutzendem Kommandzeilen Spiel: 'Schere Stein Papier Echse Spock' wie das Spiel in der TV Serie Big Bang Theory. Nachdem ich das Spiel programmierte began ich zusammen mit einer Freundin an einfachen Verschlüsselungsalgroithmen zu arbeiten und entwickelte eigene. Die sind zwar nicht super sicher aber ich hatte meinen Spaß."
+  },
+  "highSchool": {
+    "title": "Oberstufe",
+    "text": "Mit 16 wechselte ich die Schule. Für die letzten zwei Jahre meines Schullebens ging ich auf das Humboldt-Gymnasium in Berlin. Dort besuchte ich den Informatik Kurs in dem ich die Grundlagen der Informatik kennenlernte. Danke unserem Lehrer Herrn Pelz haben wir sogar eine Projektsimulation durchgeführt in der ich mit drei Freunden zusammen eine Social Media Seite entwickelt habe. Während dieser Zeit hatte ich meine Anfänge mit JavaScript, NodeJS und Web Development. Ich implementierte und entwickelte weitere Verschlüsselungsmethoden, einen Passwort Generator, ein paar einfache JavaScript Games und andere Dinge."
+  },
+  "university": {
+    "title": "Dualer Student @ IBM",
+    "text": "Nachdem ich mein Abitur mit 1.4 absolviert habe zog ich von Berlin nach Stuttgart um dort mein Duales Studium für Wirtschaftsinformatik mit Fokus auf Data Science bei dem Tech-Giganten IBM anzutreten. Als dualer Student wechseln sich 3 Jahre lang 3 Monate Arbeit und 3 Monate Studium ab. An der Hochschule habe ich viele Projekt Simulationen absolviert, bei IBM konnte ich jedoch an echten Projekten mitwirken und mit den neuesten Technologieen arbeiten."
+  }
+}
