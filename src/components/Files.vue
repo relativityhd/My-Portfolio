@@ -25,7 +25,6 @@ import FileIcon from '@carbon/icons-vue/es/document/32'
 
 export default {
   props: {
-    name: String,
     code: String,
     preview: String,
     date: String,

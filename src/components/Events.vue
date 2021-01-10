@@ -36,7 +36,6 @@ import EventIcon from '@carbon/icons-vue/es/star/32'
 
 export default {
   props: {
-    name: String,
     code: String,
     preview: String,
     date: String,

@@ -1,6 +1,5 @@
 [
   {
-    "name": "1. Praxisarbeit",
     "code": "PA1",
     "date": "2020-08",
     "dateStart": "2020-06",
@@ -8,28 +7,24 @@
     "important": true
   },
   {
-    "name": "Scissors Paper Rock",
     "code": "SSP",
     "date": "2017-05",
     "dateStart": "2017-03",
     "link": "./docs/Scissors-Paper-Rock-Game-TobiasHölzer.zip"
   },
   {
-    "name": "5. Pk",
     "code": "5PK",
     "date": "2019-03",
     "dateStart": "2018-11",
     "link": "./docs/5th-Examcomponent-TobiasHölzer.zip"
   },
   {
-    "name": "MSA",
     "code": "MSA",
     "date": "2017-02",
     "dateStart": "2016-12",
     "link": "./docs/MSA-Presentation-TobiasHölzer.pptx"
   },
   {
-    "name": "CV",
     "code": "CV",
     "date": "2021-01",
     "link": "./docs/CV-TobiasHölzer.pdf",

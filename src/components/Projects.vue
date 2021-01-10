@@ -52,7 +52,6 @@ import GitIcon from '@carbon/icons-vue/es/logo--github/32'
 
 export default {
   props: {
-    name: String,
     code: String,
     preview: String,
     date: String,

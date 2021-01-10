@@ -38,10 +38,9 @@
     </div>
 
     <div class="gallery">
-      <div v-for="i in filteredItems" :key="i.name">
+      <div v-for="i in filteredItems" :key="i.code">
         <Project
           v-if="i.type === 'project'"
-          :name="i.name"
           :code="i.code"
           :preview="i.preview"
           :date="i.date"
@@ -52,15 +51,8 @@
           :hostedAt="i.hostedAt"
           :isInternal="i.isInternal"
         />
-        <File
-          v-else-if="i.type === 'file'"
-          :name="i.name"
-          :code="i.code"
-          :date="i.date"
-          :dateStart="i.dateStart"
-          :link="i.link"
-        />
-        <Event v-else-if="i.type === 'event'" :name="i.name" :code="i.code" :date="i.date" :link="i.link" />
+        <File v-else-if="i.type === 'file'" :code="i.code" :date="i.date" :dateStart="i.dateStart" :link="i.link" />
+        <Event v-else-if="i.type === 'event'" :code="i.code" :date="i.date" :link="i.link" />
       </div>
     </div>
   </div>
