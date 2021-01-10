@@ -4,18 +4,7 @@
       <EventIcon />
     </cv-link>
     <div class="event-info">
-      <p>
-        {{
-          $luxon(date, {
-            input: {
-              format: 'yyyy-MM-dd'
-            },
-            output: {
-              format: 'dd MMM yyyy'
-            }
-          })
-        }}
-      </p>
+      <p>{{ parsedDate }}</p>
     </div>
     <div class="event-body">
       <h3 class="event-name">
@@ -41,7 +30,16 @@ export default {
     date: String,
     link: String
   },
-  components: { CvLink, LinkIcon, EventIcon }
+  components: { CvLink, LinkIcon, EventIcon },
+  computed: {
+    parsedDate() {
+      let dDate = new Date(this.date)
+      let dDay = dDate.getDate()
+      let dMonth = this.$t(`months[${dDate.getMonth()}]`)
+      let dYear = dDate.getFullYear()
+      return `${dDay} ${dMonth} ${dYear}`
+    }
+  }
 }
 </script>
 

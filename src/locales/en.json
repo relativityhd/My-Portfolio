@@ -7,5 +7,6 @@
     "title": "Open on",
     "label": "Scan the QR Code"
   },
-  "close-aria-label": "Close"
+  "close-aria-label": "Close",
+  "months": [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dez" ]
 }

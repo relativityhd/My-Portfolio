@@ -7,5 +7,6 @@
     "title": "Auf dem Handy öffnen",
     "label": "Scanne den QR Code"
   },
-  "close-aria-label": "Schließen"
+  "close-aria-label": "Schließen",
+  "months": [ "Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez" ]
 }
