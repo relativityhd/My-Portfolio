@@ -1,0 +1,69 @@
+[
+  {
+    "code": "prog-langs",
+    "skills": [
+      {"code": "js", "lvl": 5},
+      {"code": "ts", "lvl": 2},
+      {"code": "python", "lvl": 3},
+      {"code": "rust", "lvl": 2},
+      {"code": "c", "lvl": 1},
+      {"code": "haskell", "lvl": 1},
+      {"code": "java", "lvl": 2},
+      {"code": "sql", "lvl": 2}
+    ]
+  },
+  {
+    "code": "frontend",
+    "skills": [
+      {"code": "css", "lvl": 3},
+      {"code": "vue", "lvl": 4},
+      {"code": "react", "lvl": 3},
+      {"code": "material", "lvl": 4},
+      {"code": "carbon", "lvl": 5},
+      {"code": "responsive", "lvl": 4},
+      {"code": "i18n", "lvl": 4},
+      {"code": "l10n", "lvl": 3},
+      {"code": "a11y", "lvl": 1},
+      {"code": "ssr", "lvl": 4},
+      {"code": "dynamic-content", "lvl": 3},
+      {"code": "pwa", "lvl": 3}
+    ]
+  },
+  {
+    "code": "backend",
+    "skills": [
+      {"code": "node", "lvl": 5},
+      {"code": "nest", "lvl": 2},
+      {"code": "express", "lvl": 5},
+      {"code": "cloudant-db", "lvl": 4},
+      {"code": "mongo-db", "lvl": 3},
+      {"code": "rest-api", "lvl": 3},
+      {"code": "web-sockets", "lvl": 4}
+    ]
+  },
+  {
+    "code": "cloud",
+    "skills": [
+      {"code": "ibmcloud", "lvl": 3},
+      {"code": "docker", "lvl": 2},
+      {"code": "k8s", "lvl": 1},
+      {"code": "cicd", "lvl": 3},
+      {"code": "testing", "lvl": 2}
+    ]
+  },
+  {
+    "code": "cs",
+    "skills": [
+      {"code": "ai", "lvl": 2},
+      {"code": "ml", "lvl": 2},
+      {"code": "data-science", "lvl": 2},
+      {"code": "data-visualization", "lvl": 3},
+      {"code": "arch", "lvl": 1},
+      {"code": "cryption", "lvl": 2},
+      {"code": "security", "lvl": 1},
+      {"code": "json-db", "lvl": 4},
+      {"code": "relational-db", "lvl": 3},
+      {"code": "seo", "lvl": 2}
+    ]
+  }
+]
