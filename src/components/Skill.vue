@@ -1,9 +1,15 @@
 <template>
   <div class="skill">
-    <h6 class="skill-name">{{ $t(`Stats.${group}.${code}`) }}</h6>
+    <div class="skill-name">
+      <h6>{{ $t(`Stats.${group}.${code}`) }}</h6>
+    </div>
     <div class="skill-bar">
       <div :class="`skill-bar-${lvl}`"></div>
-      <h6 class="skill-lvl">{{ lvl }}</h6>
+      <LvlIcon1 class="skill-lvl" v-if="lvl === 1" />
+      <LvlIcon2 class="skill-lvl" v-else-if="lvl === 2" />
+      <LvlIcon3 class="skill-lvl" v-else-if="lvl === 3" />
+      <LvlIcon4 class="skill-lvl" v-else-if="lvl === 4" />
+      <LvlIcon5 class="skill-lvl" v-else-if="lvl === 5" />
     </div>
   </div>
 </template>
@@ -15,11 +21,18 @@ export default {
     group: String,
     code: String,
     lvl: Number
+  },
+  components: {
+    LvlIcon1: () => import(`@carbon/icons-vue/es/number--1/32`),
+    LvlIcon2: () => import(`@carbon/icons-vue/es/number--2/32`),
+    LvlIcon3: () => import(`@carbon/icons-vue/es/number--3/32`),
+    LvlIcon4: () => import(`@carbon/icons-vue/es/number--4/32`),
+    LvlIcon5: () => import(`@carbon/icons-vue/es/number--5/32`)
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 .skill {
   display: flex;
   flex-direction: column;
@@ -30,19 +43,22 @@ export default {
 }
 
 .skill-name {
-  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .skill-bar {
-  width: calc(100% - 125px);
+  width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 2px;
-  min-width: calc(700px - 125px);
+  height: 40px;
+  align-items: center;
 }
 
 .skill-lvl {
-  width: 10px;
+  width: 32px;
+  height: 32px;
 }
 
 @media (min-width: 700px) {
@@ -52,7 +68,14 @@ export default {
     justify-content: flex-start;
   }
   .skill-name {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     text-align: right;
+  }
+  .skill-bar {
+    width: calc(100% - 145px);
   }
 }
 
@@ -79,31 +102,31 @@ export default {
 }
 
 .skill-bar-1 {
-  width: calc(20% - 12px);
+  width: calc(20% - 32px);
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, #f6f2ff 0%, #d9fbfb 100%);
 }
 
 .skill-bar-2 {
-  width: calc(40% - 12px);
+  width: calc(40% - 32px);
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, #f6f2ff 0%, #d9fbfb 50%, #9ef0f0 100%);
 }
 
 .skill-bar-3 {
-  width: calc(60% - 12px);
+  width: calc(60% - 32px);
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, #f6f2ff 0%, #d9fbfb 33%, #9ef0f0 67%, #3ddbd9 100%);
 }
 
 .skill-bar-4 {
-  width: calc(80% - 12px);
+  width: calc(80% - 32px);
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, #f6f2ff 0%, #d9fbfb 25%, #9ef0f0 50%, #3ddbd9 75%, #08bdba 100%);
 }
 
 .skill-bar-5 {
-  width: calc(100% - 12px);
+  width: calc(100% - 32px);
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, #f6f2ff 0%, #d9fbfb 20%, #9ef0f0 40%, #3ddbd9 60%, #08bdba 80%, #009d9a 100%);
 }
