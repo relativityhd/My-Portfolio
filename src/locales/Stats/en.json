@@ -1,4 +1,7 @@
 {
+  "title": "My Skills",
+  "describtion": "Below you can see a list of my skills in computer science. I rated my skills from 1, which means I am a beginner in this topic, to 5, which means that I developed my skills to a professional standart. But since I rated them by myself these rating may be bias, e.g. through the Dunning Kruger effect.",
+  "dunning-kruger": "Read more about the Dunning-Kruger effect. (Wikipedia)",
   "prog-langs": {
     "title": "Programming languages",
     "js": "Java Script",
@@ -51,7 +54,7 @@
     "ai": "Artificial Intelligence",
     "ml": "Machine Learning",
     "data-science": "Data Science",
-    "data-visualization": "Daten Visualization",
+    "data-visualization": "Data Visualization",
     "arch": "Software Architecture",
     "cryption": "Cryptography",
     "security": "IT Security",
