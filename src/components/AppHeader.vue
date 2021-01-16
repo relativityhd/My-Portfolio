@@ -15,11 +15,11 @@
       </cv-header-menu-item>
     </cv-header-nav>
 
-    <div class="actions">
+    <template v-slot:header-global>
       <cv-header-global-action aria-label="Languages" aria-controls="language-panel" ref="translateIcon">
         <Translate20 />
       </cv-header-global-action>
-    </div>
+    </template>
 
     <template v-slot:left-panels>
       <cv-side-nav id="side-nav" ref="sideNav" fixed>
@@ -132,47 +132,7 @@ export default {
   margin-right: -5px;
 }
 
-/* #app-header {
-  background-color: $interactive-01;
-} */
-
-.actions {
-  display: flex;
-  flex: 1 1;
-  justify-content: flex-end;
-  height: 100%;
+#app-header {
+  width: 100vw;
 }
-
-/* .bx--header__action:hover,
-.bx--header__menu-item:hover {
-  background-color: $hover-primary !important;
-}
-
-.bx--header__action:active,
-.bx--header__menu-item:active,
-a.bx--side-nav__link[aria-current='page']::before,
-a.bx--side-nav__link--current::before {
-  background-color: $active-primary !important;
-}
-
-a.bx--header__menu-item[aria-current='page']::after,
-.bx--header__menu-item--current::after {
-  border-bottom-color: $active-primary;
-}
-.bx--switcher__item-link--selected,
-.bx--switcher__item-link:hover {
-  background-color: $interactive-03 !important;
-}
-.bx--header-panel {
-  background-color: $interactive-02;
-  overflow-y: auto;
-}
-
-.bx--switcher__item-link--selected {
-  background-color: $active-primary;
-}
-
-.bx--switcher__item-link:hover:not(.bx--switcher__item-link--selected) {
-  background-color: $hover-primary;
-} */
 </style>
