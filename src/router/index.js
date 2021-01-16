@@ -22,6 +22,14 @@ const routes = [
     }
   },
   {
+    path: '/stats',
+    name: 'Stats',
+    component: () => import('../views/Stats.vue'),
+    meta: {
+      title: 'Stats'
+    }
+  },
+  {
     path: '/imprint',
     name: 'Imprint',
     component: () => import('../views/Imprint.vue'),

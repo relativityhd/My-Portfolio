@@ -1,0 +1,65 @@
+{
+  "title": "Meine Skills",
+  "describtion": "Unten habe ich meine IT-Fähigkeiten aufgelistet. Diese habe ich von 1 bis 5 bewertet. Hierbei heißt 1, dass ich noch Anfänger auf dem Gebiet bin und 5, dass ich diesen Skill schon professionell beherrsche. Da ich selbst diese Bewertungen vorgenommen habe sind diese natürlich nicht Vorurteilsfrei, zum Beispiel könnten sie dem Dunning-Kruger-Effekt oder ähnlichen unterliegen.",
+  "dunning-kruger": "Lies mehr über den Dunning-Kruger-Effekt. (Wikipedia)",
+  "prog-langs": {
+    "title": "Programmiersprachen",
+    "js": "Java Script",
+    "ts": "Type Script",
+    "python": "Python 3",
+    "rust": "Rust",
+    "c": "C",
+    "haskell": "Haskell",
+    "java": "Java",
+    "sql": "SQL"
+  },
+  "frontend": {
+    "title": "Frontend",
+    "css": "CSS",
+    "material": "Material IO",
+    "carbon": "Carbon Design",
+    "responsive": "Responsive Design",
+    "i18n": "Internationalisation",
+    "l10n": "Localisation",
+    "a11y": "Accessibility",
+    "ssr": "Server Side Rendering",
+    "dynamic-content": "Dynamischer Inhalt",
+    "pwa": "Progressive Webapp"
+  },
+  "backend": {
+    "title": "Backend",
+    "node": "NodeJS",
+    "cloudant-db": "Cloudant DB",
+    "mongo-db": "Mongo DB",
+    "rest-api": "RESTful API Design",
+    "web-sockets": "Web Sockets"
+  },
+  "frameworks": {
+    "title": "Frameworks",
+    "nest": "Nest",
+    "express": "Express",
+    "vue": "Vue",
+    "react": "React"
+  },
+  "cloud": {
+    "title": "Cloud Entwicklung",
+    "ibmcloud": "IBM Cloud",
+    "docker": "Docker",
+    "k8s": "Kubernetes",
+    "cicd": "CI / CD",
+    "testing": "Testing"
+  },
+  "cs": {
+    "title": "Informatik",
+    "ai": "Künstliche Intelligenz",
+    "ml": "Machinelles Lernen",
+    "data-science": "Data Science",
+    "data-visualization": "Daten Visualisierung",
+    "arch": "Software Architektur",
+    "cryption": "Kryptographie",
+    "security": "IT Sicherheit",
+    "non-rel-db": "Nicht relationale Datenbanken",
+    "rel-db": "Relationale Datenbanken",
+    "seo": "Search Engine Optimierung"
+  }
+}

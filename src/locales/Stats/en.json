@@ -1,0 +1,65 @@
+{
+  "title": "My Skills",
+  "describtion": "Below you can see a list of my skills in computer science. I rated my skills from 1, which means I am a beginner in this topic, to 5, which means that I developed my skills to a professional standart. But since I rated them by myself these rating may be bias, e.g. through the Dunning Kruger effect.",
+  "dunning-kruger": "Read more about the Dunning-Kruger effect. (Wikipedia)",
+  "prog-langs": {
+    "title": "Programming languages",
+    "js": "Java Script",
+    "ts": "Type Script",
+    "python": "Python 3",
+    "rust": "Rust",
+    "c": "C",
+    "haskell": "Haskell",
+    "java": "Java",
+    "sql": "SQL"
+  },
+  "frontend": {
+    "title": "Frontend",
+    "css": "CSS",
+    "material": "Material IO",
+    "carbon": "Carbon Design",
+    "responsive": "Responsive Design",
+    "i18n": "Internationalisation",
+    "l10n": "Localisation",
+    "a11y": "Accessibility",
+    "ssr": "Server Side Rendering",
+    "dynamic-content": "Dynamic Content",
+    "pwa": "Progressive Webapp"
+  },
+  "backend": {
+    "title": "Backend",
+    "node": "NodeJS",
+    "cloudant-db": "Cloudant DB",
+    "mongo-db": "Mongo DB",
+    "rest-api": "RESTful API Design",
+    "web-sockets": "Web Sockets"
+  },
+  "frameworks": {
+    "title": "Frameworks",
+    "nest": "Nest",
+    "express": "Express",
+    "vue": "Vue",
+    "react": "React"
+  },
+  "cloud": {
+    "title": "Cloud Development",
+    "ibmcloud": "IBM Cloud",
+    "docker": "Docker",
+    "k8s": "Kubernetes",
+    "cicd": "CI / CD",
+    "testing": "Testing"
+  },
+  "cs": {
+    "title": "Computer Science",
+    "ai": "Artificial Intelligence",
+    "ml": "Machine Learning",
+    "data-science": "Data Science",
+    "data-visualization": "Data Visualization",
+    "arch": "Software Architecture",
+    "cryption": "Cryptography",
+    "security": "IT Security",
+    "non-rel-db": "Non relational Databases",
+    "rel-db": "Relational Databases",
+    "seo": "Search Engine Optimisation"
+  }
+}
