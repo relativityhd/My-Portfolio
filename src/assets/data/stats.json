@@ -16,8 +16,6 @@
     "code": "frontend",
     "skills": [
       {"code": "css", "lvl": 3},
-      {"code": "vue", "lvl": 4},
-      {"code": "react", "lvl": 3},
       {"code": "material", "lvl": 4},
       {"code": "carbon", "lvl": 5},
       {"code": "responsive", "lvl": 4},
@@ -33,12 +31,19 @@
     "code": "backend",
     "skills": [
       {"code": "node", "lvl": 5},
-      {"code": "nest", "lvl": 2},
-      {"code": "express", "lvl": 5},
       {"code": "cloudant-db", "lvl": 4},
       {"code": "mongo-db", "lvl": 3},
       {"code": "rest-api", "lvl": 3},
       {"code": "web-sockets", "lvl": 4}
+    ]
+  },
+  {
+    "code": "frameworks",
+    "skills": [
+      {"code": "vue", "lvl": 4},
+      {"code": "react", "lvl": 3},
+      {"code": "nest", "lvl": 2},
+      {"code": "express", "lvl": 5}
     ]
   },
   {
@@ -61,8 +66,8 @@
       {"code": "arch", "lvl": 1},
       {"code": "cryption", "lvl": 2},
       {"code": "security", "lvl": 1},
-      {"code": "json-db", "lvl": 4},
-      {"code": "relational-db", "lvl": 3},
+      {"code": "non-rel-db", "lvl": 4},
+      {"code": "rel-db", "lvl": 3},
       {"code": "seo", "lvl": 2}
     ]
   }

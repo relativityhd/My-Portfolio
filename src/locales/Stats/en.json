@@ -1,0 +1,61 @@
+{
+  "prog-langs": {
+    "title": "Programming languages",
+    "js": "Java Script",
+    "ts": "Type Script",
+    "python": "Python 3",
+    "rust": "Rust",
+    "c": "C",
+    "haskell": "Haskell",
+    "java": "Java",
+    "sql": "SQL"
+  },
+  "frontend": {
+    "title": "Frontend",
+    "css": "CSS",
+    "material": "Material IO",
+    "carbon": "Carbon Design",
+    "responsive": "Responsive Design",
+    "i18n": "Internationalisation",
+    "l10n": "Localisation",
+    "a11y": "Accessibility",
+    "ssr": "Server Side Rendering",
+    "dynamic-content": "Dynamic Content",
+    "pwa": "Progressive Webapp"
+  },
+  "backend": {
+    "title": "Backend",
+    "node": "NodeJS",
+    "cloudant-db": "Cloudant DB",
+    "mongo-db": "Mongo DB",
+    "rest-api": "RESTful API Design",
+    "web-sockets": "Web Sockets"
+  },
+  "frameworks": {
+    "title": "Frameworks",
+    "nest": "Nest",
+    "express": "Express",
+    "vue": "Vue",
+    "react": "React"
+  },
+  "cloud": {
+    "title": "Cloud Development",
+    "ibmcloud": "IBM Cloud",
+    "docker": "Docker",
+    "k8s": "Kubernetes",
+    "cicd": "CI / CD",
+    "testing": "Testing"
+  },
+  "cs": {
+    "title": "Computer Science",
+    "ai": "Artificial Intelligence",
+    "ml": "Machine Learning",
+    "data-science": "Data Science",
+    "data-visualization": "Daten Visualization",
+    "arch": "Software Architecture",
+    "cryption": "Cryptography",
+    "non-rel-db": "Non relational Databases",
+    "rel-db": "Relational Databases",
+    "seo": "Search Engine Optimisation"
+  }
+}
