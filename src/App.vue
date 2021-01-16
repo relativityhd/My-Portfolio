@@ -46,6 +46,10 @@ html,
 body {
   background-color: $ui-background;
   color: $text-01;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 #app-view {
