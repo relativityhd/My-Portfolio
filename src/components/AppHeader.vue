@@ -92,6 +92,7 @@ export default {
     let links = [
       { name: 'App.home', to: '/' },
       { name: 'App.profile', to: '/profile' },
+      { name: 'App.stats', to: '/stats' },
       { name: 'App.imprint', to: '/imprint' }
     ]
     links.forEach(link => {
