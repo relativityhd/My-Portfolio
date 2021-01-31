@@ -1,11 +1,11 @@
 {
   "PA1": {
-    "name": "1. Practical Thesis",
-    "text": "This is my first scientific work. I received a 3.6 so maybe it wasn't that good. But I learned a lot about scientific work. My topic was Visualization for Trustful Artificial Intelligence."
+    "name": "1. Project Thesis",
+    "text": "This is my first scientific paper through which I learned a lot about the scientific process. My topic was 'UI / UX requirements for explainable and trustful AI systems'."
   },
   "SSP": {
-    "name": "Scissors Paper Rock",
-    "text": "This is my very first Software Project. In 10th grade in school we had the job to programm a simple scissors paper rock game in Python (2!). To program this made so much fun that I added more and more functionality in my freetime to it, e.g. I added the entities Lizzard and Spock to it so it became the Scissors Paper Rock Lizzard Spock from the TV Show Big Bang Theory. It should still work with Python Version 2.6. I think that without this project I wouldn't be there where I am today."
+    "name": "Rock Paper Scissors",
+    "text": "This is my very first Software Project. In 10th grade in school we had the task to code a simple scissors paper rock game in Python (2!). I had so much fun coding this, that I continued to add more and more functionality in my freetime e.g. the entities Lizzard and Spock in order to create Rock Paper Scissors Lizzard Spock game from the TV Show Big Bang Theory. It should still work with Python Version 2.6. I think that without this project I wouldn't be where I am today."
   },
   "5PK": {
     "name": "5. Component of Highschool Exam",
@@ -13,7 +13,7 @@
   },
   "MSA": {
     "name": "MSA",
-    "text": "The MSA is the Berliner Middle School Exams. In 10th grade I held this presentation together with Jurek Urbach about the energy production of tomorrow as one of the MSA exams."
+    "text": "The MSA are the Berliner Middle School Exams. In 10th grade I held this presentation together with Jurek Urbach about 'The energy production of tomorrow' as one of the MSA exams."
   },
   "CV": {
     "name": "CV",

@@ -4,67 +4,67 @@
   "notActive": "Currently not available",
   "SNA": {
     "name": "Tobis Twitter Network",
-    "text": "This is a project about My Twitter Network. I worked on this project together with Christopher Lohse. The question we asked ourselves was: 'Which people (accounts) are influencing Tobis Feed the most?'. To answer this question we used methods of the Social Network Analysis. In this project I increased my Python skills and learned how to create a Social Network Analysis.",
+    "text": "This is a project about my Twitter network. I worked on this together with Christopher Lohse. The question we asked ourselves was: 'Which people are influencing Tobis Feed the most?'. Here I increased my Python skills and learned how to create a social network analysis.",
     "alt": "Social Network Graph"
   },
   "MyHome": {
     "name": "My Homepage",
-    "text": "I build my Homepage to apply for an apprenticeship @ IBM. Gladly i got the job, maybe my Homepage has helped my a little bit out here. On my Homepage I present myself to everybode out there. I also wrote an own Blog-Engine and some articles on it. To build an own Homepage was great, I learned a lot about Web Development. Since I also hosted it on my Raspberry Pi and later on the IBM Cloud I also learned about the importance of Cloud Development.",
+    "text": "I build my Homepage to apply for an apprenticeship @ IBM. I am glad to say that I got the job and who knows, maybe my Homepage was the deciding factor. On it I present myself to everybody out there. I also wrote an own Blog-Engine and some posts on it. Building this was great and I learned a lot about Web Development and Cloud Development, since I also hosted it on my Raspberry Pi and later on the IBM Cloud.",
     "alt": "Screenshot of my Homepage"
   },
   "ReactPrasi": {
     "name": "React Presentation",
-    "text": "For a presentation about the React Framework in class me and my friends Christopher Lohse, Philipp Wussow created this website which should show the class how easy it is to create a good looking website.",
+    "text": "During a lecture about Web Development my friends Christopher Lohse, Philipp Wussow and I created this website to showcase how easy it is to create a good looking website.",
     "alt": "Screenshot of the Presentation"
   },
   "CCT": {
     "name": "Cupboard Configuration Tool (CCT)",
-    "text": "I developed the CCT together with my friends Christopher Lohse, Philipp Wussow, Ole Ofterdinger and Amon Schneider. This project was a project-simulation in class. Our teachers played as our customers and hired us to develop a Web-Shop for them. I nearly finished my road to be a full-stack web developer with this project. I learned a lot of new technologies like i18n or PWA.",
+    "text": "I developed the CCT together with my friends Christopher Lohse, Philipp Wussow, Ole Ofterdinger and Amon Schneider. This project was a university simulation. Our lecturers posed as our customers and hired us to develop a Web-Shop for them. I worked on this project full-stack and learned a lot of new technologies like internationalization or progressive web apps.",
     "alt": "Screenshot of the CCT"
   },
   "DSVIZ": {
     "name": "Flights Dashboard",
-    "text": "I developed this dashboard together with Philipp Wussow for a class exam. The dashboard takes data from 2015 american flights and visualize it. This was the first project where I visualized a map.",
+    "text": "I developed this dashboard together with Philipp Wussow for a university exam. It takes data american flights 2015 and visualizes it. This was the first project where I visualized a map.",
     "alt": "Screenshot of the Dahboards"
   },
   "MyPort": {
     "name": "My Portfolio",
-    "text": "Since my Homepage isn't build for business only purpose it isn't always the best choice to show it for job applications. Therefore I build this portfolio.",
+    "text": "Since my Homepage isn't build for business purposes only, it isn't always the best choice to use it for job applications. I therefore build this portfolio.",
     "alt": "Screenshot of my Portfolios"
   },
   "Mello": {
     "name": "Mello",
-    "text": "Mello was my first big project. In 11th class we had the task to create a software idea und implement it. Myself and my collegues Robert Cuzio, Kevin Komm and Hannah Boldt created together a Social Media Website and called it 'Mello'. The functionality of the website could be increased with modules, we created a simple framework without knowing it! This is also what our code base looks like today! We also created the complete Design from scratch. The 'docs' folder of the repository contains a project documentation and presentation.",
+    "text": "Mello was my first big project. In 11th grade we had the task to create a software idea und implement it. My peers Robert Cuzio, Kevin Komm, Hannah Boldt and I created a social media website and called it 'Mello'. The user can increase the functionality of the website by adding more modules to it. That means that we created a simple framework without knowing it. We also created the complete Design from scratch.",
     "alt": "Screenshot of Mello"
   },
   "21": {
     "name": "Veintiuno Game",
-    "text": "Why it is called Veintiuno? I don't know. We just called it so. Together with Moritz Scheele, Nicole Günter, Philipp Wussow, Ole Ofterdinger, Nina Warneke and Christopher Lohse I developed this little game as an exam project. This was the first time I used a frontend Framework like React.",
+    "text": "Why did we called Veintiuno? I don't know. Together with Moritz Scheele, Nicole Günter, Philipp Wussow, Ole Ofterdinger, Nina Warneke and Christopher Lohse I developed this little game as an exam project. This was the first time I used a frontend Framework like React.",
     "alt": "Screenshot of the Veintiuno Landing Page"
   },
   "Click": {
     "name": "Simon Clicks",
-    "text": "I developed Simon clicks together with my friend Simon Hergersberg. We just had fun with some JS and CSS Code and thought us that what we just programmed could be a funny game. I sometimes used this game to improve my Hands-Eye-Coordination.",
+    "text": "Together with my friend Simon Hergersberg I developed this mini-game. We just had fun with some JS and CSS code. I sometimes use this game to improve my hand-eye coordination.",
     "alt": "Screenshot of Simon Clicks"
   },
   "PW": {
     "name": "My Password Generator",
-    "text": "No, i don't make my passwords public. This generator just generates a password after a specific schema which is easy to remember but hard to hack. However, a complete random Password would be more secure. I was able to use my knowledge about encryption techniques in this project. Also I learned a lot about password security.",
+    "text": "No, you can't see my passwords there. This generator just generates a password after a specific algorithm which is easy to remember but hard to hack. However, a complete random Password would be more secure. I was able to use my knowledge about encryption techniques in this project. I also learned a lot about password security.",
     "alt": "Screenshot of the Password Generator"
   },
   "Cryptions": {
     "name": "Cryptions",
-    "text": "This is a collection of some encryption methods which I implemented. One of them I developed together with my friend Janina Adamcic. The topic encryptions interested me in 2017 when I started to learn programming with Python. At this time I also started to create my Password Generator. I also wrote my high school exam about the topic, since I hat the topic in class in 2018.",
+    "text": "This is a collection of some encryption methods which I implemented. One of them I developed together with my friend Janina Adamcic. The topic encryptions started to interest me in 2017 when I started to learn Python. At this time I also started to create my Password Generator.",
     "alt": "Screenshot of the Cryptions Page"
   },
   "Platzhirsch": {
     "name": "Der neue Platzhirsch",
-    "text": "Der neue Platzhirsch is a restaurant in Berlin-Wedding. Together with my friend Moritz Scheele I developed this Website for the Restaurant. Today it has solid traffic which is increased with SEO.",
+    "text": "'Der neue Platzhirsch' is a restaurant in Berlin-Wedding. Together with my friend Moritz Scheele I developed this Website for the Restaurant. The Websites traffic is increased with Search Engine Optimization.",
     "alt": "Screenshot of the Webpage"
   },
   "IV": {
     "name": "Interest Validator",
-    "text": "The Interest Validator is a program which I developed based on the Idea of my father Dirk Hölzer of an automatic interest testing tool for accounting networks like EY or PWC. This was my first big project in Python and I learned a lot about interfaces, concurrency and more."
+    "text": "The Interest Validator is an application which I developed based on the idea of my father Dirk Hölzer of an automatic interest testing tool for accounting certifiers like EY or PWC. This was my first big project in Python and I learned a lot about user interfaces, concurrency and more."
   },
   "W4PT": {
     "name": "Watson 4 Public Tenders",
@@ -75,7 +75,7 @@
     "text": "Similar to the Watson 4 Public Tenders the Watson 4 PGMP uses IBM Watson Natural Language Processing (NLP) Services. I developed a Dashboard which uses the analyzed data from the NLP. In this project I used Plotly for the first time aswell as IBM Carbon Components."
   },
   "SwarmViz": {
-    "name": "Swarm Visualization",
-    "text": "This is the project which I developed for my 1st practical thesis. In the IBM Watson Center in Munich I developed a visualization which should explain a swarm intelligence. With a better understanding of what the AI does the humans which use it should trust it more. I worked with the JavaScript frameworks Nest and Vue. For the Visualization I used Plotly and Carbon Components. Within the project I learned a lot about APIs and Clean-Coding best practices."
+    "name": "Swarm AI Visualization",
+    "text": "In the IBM Watson Center in Munich I developed a visualization which explains a swarm intelligence easily. This enables humans to place trust in AI. For this I used Plotly, Carbon Components and worked with the JavaScript frameworks Nest and Vue. Within the project I learned a lot about APIs and Clean-Coding best practices."
   }
 }

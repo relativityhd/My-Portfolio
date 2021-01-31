@@ -34,7 +34,7 @@
   },
   "Mello": {
     "name": "Mello",
-    "text": "Mello war mein erstes großes Software Projekt. Im Informatik Unterricht der 11. Klasse hatten wir die aufgabe uns eine Idee für eine Software auszudenken und diese dann umzusetzen. Zusammen mit Robert Cuzio, Kevin Komm und Hannah Boldt entwickelten wir eine Social Media Website und nannten sie 'Mello'. Die Funktionen der Website konnten durch Module erweitert werden. Wir bauten also sozusagen ein kleines eigenes Framework! Ohne zu wissen was ein Framework ist. Entsprechend gealtert ist die Code-Basis heute. Das Design ist ebenfalls komplett selbst gemacht. Im Ordner 'docs' des Repositories haben wir auch eine Projektdokumentation und Präsentation hinterlassen.",
+    "text": "Mello war mein erstes großes Software Projekt. Im Informatik Unterricht der 11. Klasse hatten wir die aufgabe uns eine Idee für eine Software auszudenken und diese dann umzusetzen. Zusammen mit Robert Cuzio, Kevin Komm und Hannah Boldt entwickelten wir eine Social Media Website und nannten sie 'Mello'. Die Funktionen der Website konnten durch Module erweitert werden. Wir bauten also sozusagen ein kleines eigenes Framework! Ohne zu wissen was ein Framework ist. Entsprechend gealtert ist die Code-Basis heute. Das Design ist ebenfalls komplett selbst gemacht. ",
     "alt": "Screenshot von Mello"
   },
   "21": {
@@ -75,7 +75,7 @@
     "text": "Ähnlich wie beim Watson 4 Public Tenders nutzt der Watson 4 PGMP IBM Watson Natural Language Processing (NLP) Services. Ich entwickelte ein Dashboard welche auf die Daten des NLP Services zugreift und diese auswertet. In diesem Projekt nutzte ich zum ersten Mal intensiv die Grafikbibliothek Plotly, sowie Komponenten des IBM Carbon Designs."
   },
   "SwarmViz": {
-    "name": "Swarm Visualization",
+    "name": "Swarm KI Visualization",
     "text": "Hierbei handelt es sich um mein Project zu meiner 1. Praxisarbeit. Im IBM Watson Center in München erstellte ich eine Visualisierung welche eine Schwarm Intelligenz erklären sollte. Dies soll dazu führen, dass Menschen mehr vertrauen in diese bekommen wenn sie diese besser verstehen können. Hierbei arbeitete ich mit den JavaScript Frameworks Nest und Vue, nutzte Plotly und Carbon Components für die Visualisierung und lernte sehr viel über Schnittstellen und Clean-Coding Best-Practices kennen."
   }
 }

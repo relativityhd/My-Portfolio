@@ -15,7 +15,7 @@
   {
     "code": "frontend",
     "skills": [
-      {"code": "css", "lvl": 3},
+      {"code": "css", "lvl": 4},
       {"code": "material", "lvl": 4},
       {"code": "carbon", "lvl": 5},
       {"code": "responsive", "lvl": 4},
@@ -64,9 +64,9 @@
       {"code": "data-science", "lvl": 2},
       {"code": "data-visualization", "lvl": 3},
       {"code": "arch", "lvl": 1},
-      {"code": "cryption", "lvl": 2},
+      {"code": "cryption", "lvl": 1},
       {"code": "security", "lvl": 1},
-      {"code": "non-rel-db", "lvl": 4},
+      {"code": "non-rel-db", "lvl": 3},
       {"code": "rel-db", "lvl": 3},
       {"code": "seo", "lvl": 2}
     ]

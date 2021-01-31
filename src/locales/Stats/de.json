@@ -1,7 +1,6 @@
 {
   "title": "Meine Skills",
-  "describtion": "Unten habe ich meine IT-Fähigkeiten aufgelistet. Diese habe ich von 1 bis 5 bewertet. Hierbei heißt 1, dass ich noch Anfänger auf dem Gebiet bin und 5, dass ich diesen Skill schon professionell beherrsche. Da ich selbst diese Bewertungen vorgenommen habe sind diese natürlich nicht Vorurteilsfrei, zum Beispiel könnten sie dem Dunning-Kruger-Effekt oder ähnlichen unterliegen.",
-  "dunning-kruger": "Lies mehr über den Dunning-Kruger-Effekt. (Wikipedia)",
+  "describtion": "Unten habe ich meine Fähigkeiten aufgelistet. Diese habe ich von 1 bis 5 bewertet. Hierbei heißt 1, dass ich noch Anfänger auf dem Gebiet bin und 5, dass ich diesen Skill schon professionell beherrsche. Da ich selbst diese Bewertungen vorgenommen habe sind diese natürlich nicht Vorurteilsfrei.",
   "prog-langs": {
     "title": "Programmiersprachen",
     "js": "Java Script",

@@ -1,19 +1,19 @@
 {
   "profile-pic-alt": "Picture of myself",
-  "job": "Cooperate Student for Data Science @ IBM",
+  "job": "Corporate Student for Data Science @ IBM",
   "lives": "Stuttgart, Germany",
   "age": "Years old",
-  "welcome": "Hey. I am Tobias, a german programmer and future computer scientist. Currently I am studying business informatics for data science and working @ IBM.",
+  "welcome": "Hey. I am Tobias, a german programmer and future computer scientist. Currently I am a corporate student and studying business informatics for data science @IBM.",
   "middleSchool": {
-    "title": "Middle School",
-    "text": "At the Age of 15 I began to program in school. I started with a simple Scissors-Paper-Rock game in Python 2 and developed it to an nice usable command line game: 'Scissors-Paper-Rock-Lizzard-Spock' like the game in the TV sitcom Big-Bang-Theory. After my first game I worked together with a friend of mine on simple encryption algorithms and developed new ones. They aren't very secure but I had my fun."
+    "title": "9th and 10th grade",
+    "text": "At the Age of 15 I began to code in school. I started with a simple Rock-Paper-Scissors game in Python 2 and developed it to a nice usable command line game: 'Rock-Paper-Scissors-Lizzard-Spock' from the TV sitcom Big-Bang-Theory. I also developed simple new encryption algorithms with a friend of mine. They aren't very secure but I had my fun."
   },
   "highSchool": {
     "title": "High School",
-    "text": "With 16 I went the last two years of school to the Humboldt-Gymnasium in Berlin to make my Abitur (High School Graduation). I visited the Computer Science class where I learned all the fundamentals of IT. Thanks to Mr. Pelz, our teacher, we also had a project simulation where I developed together with three friends our own Social Media Website. In this time I had my beginnings with JavaScript, NodeJS and Web Development. I developed more cryption methods and a password generator, some very simple JS Games and more."
+    "text": "In 11th grade I switched to the Humboldt-Gymnasium in Berlin to make my Abitur (High School Graduation). I completed the Computer Science class, where I learned all the fundamentals of IT. Thanks to our teacher Mr. Pelz we also had a project simulation, together with three friends I developed our own Social Media Website. During this time I started using JavaScript and NodeJS. I developed more encryption methods, a password generator, some very simple JS Games and more."
   },
   "university": {
-    "title": "Cooperate Student @ IBM",
-    "text": "After I finished school I moved to Stuttgart in the south of Germany to start my cooperate study for Business Informatics with focus on Data Science at the tech giant IBM. As a Cooperate Student I study for three mont, then work for three month and then repeat this six semester long. At my university we had lot of software projects and project simulations, but at IBM I worked for the first time in my life on real projects with the newest technologies."
+    "title": "Corporate Student @ IBM",
+    "text": "After I finished school I moved to Stuttgart in the south of Germany to start my corporate study of Business Informatics with focus on Data Science at the tech giant IBM. Within my studies I worked on a lot of software project simulations. However, at IBM I had the chance to work on real projects with the newest technologies."
   }
 }
