@@ -1,12 +1,13 @@
-@import '~@carbon/themes/scss/themes.scss';
-$carbon--theme: $carbon--theme--g90;
-@include carbon--theme();
+// Carbon Theme
+@import './theme';
 
 // Feature flags
 $css--font-face: true;
 $css--plex: true;
+
 // Global styles
 @import '~carbon-components/scss/globals/scss/css--font-face';
+
 // Carbon components
 @import '~carbon-components/scss/components/button/button';
 @import '~carbon-components/scss/components/link/link';
@@ -14,4 +15,4 @@ $css--plex: true;
 @import '~carbon-components/scss/components/modal/modal';
 @import '~carbon-components/scss/components/checkbox/checkbox';
 @import '~carbon-components/scss/components/tag/tag';
-@import '~carbon-components/scss/components/tooltip/tooltip'
+@import '~carbon-components/scss/components/tooltip/tooltip';

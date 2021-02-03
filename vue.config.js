@@ -1,3 +1,4 @@
+const path = require('path')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
@@ -15,10 +16,7 @@ module.exports = {
   css: {
     loaderOptions: {
       scss: {
-        prependData: `
-        @import '~@carbon/themes/scss/themes.scss';
-        $carbon--theme: $carbon--theme--g90;
-        @include carbon--theme();`
+        prependData: `@import "${path.resolve(__dirname, 'src/assets/styles/_theme.scss')}";`
       }
     }
   },
