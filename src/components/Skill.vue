@@ -33,6 +33,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/styles/_theme.scss';
+
 .skill {
   display: flex;
   flex-direction: column;

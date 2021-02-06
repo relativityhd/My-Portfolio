@@ -44,6 +44,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/styles/_theme.scss';
+
 .event-item::before {
   position: absolute;
   top: 0;

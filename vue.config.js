@@ -1,4 +1,3 @@
-const path = require('path')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
@@ -11,13 +10,6 @@ module.exports = {
       fallbackLocale: 'en',
       localeDir: 'locales',
       enableInSFC: false
-    }
-  },
-  css: {
-    loaderOptions: {
-      scss: {
-        prependData: `@import "${path.resolve(__dirname, 'src/assets/styles/_theme.scss').replace(/\\/g, '/')}";`
-      }
     }
   },
   chainWebpack: config => {

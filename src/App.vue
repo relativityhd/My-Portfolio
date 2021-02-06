@@ -41,6 +41,7 @@ export default {
 
 <style lang="scss">
 @import './assets/styles/_carbon-precompile.css';
+@import './assets/styles/_theme.scss';
 
 #app {
   background-color: $ui-background;

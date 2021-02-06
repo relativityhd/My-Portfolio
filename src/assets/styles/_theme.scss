@@ -15,7 +15,7 @@ $feature-flags: map-merge(
 }
 
 // toggle dark theme with class on body
-// Run: document.querySelector('body').classList.toggle('bx--dark-theme')
+// Run: document.querySelector('body').classList.toggle('bx--white-theme')
 body.bx--white-theme {
   @include carbon--theme($carbon--theme--g10, true);
 }

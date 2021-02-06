@@ -26,6 +26,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/styles/_theme.scss';
+
 .skill-wrapper::after {
   margin-bottom: 20px;
   content: '';

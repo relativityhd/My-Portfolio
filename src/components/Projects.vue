@@ -82,6 +82,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/styles/_theme.scss';
+
 .project-item::before {
   position: absolute;
   top: 0;
