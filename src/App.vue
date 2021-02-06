@@ -45,7 +45,7 @@ export default {
 #app {
   background-color: $ui-background;
   color: $text-01;
-  width: 100vw;
+  // width: 100vw; Doesn't work on windows
   margin: 0;
   padding: 0;
   overflow-x: hidden;

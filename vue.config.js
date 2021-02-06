@@ -16,7 +16,7 @@ module.exports = {
   css: {
     loaderOptions: {
       scss: {
-        prependData: `@import "${path.resolve(__dirname, 'src/assets/styles/_theme.scss')}";`
+        prependData: `@import "${path.resolve(__dirname, 'src/assets/styles/_theme.scss').replace(/\\/g, '/')}";`
       }
     }
   },
