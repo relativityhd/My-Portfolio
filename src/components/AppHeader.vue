@@ -16,6 +16,9 @@
     </cv-header-nav>
 
     <template v-slot:header-global>
+      <cv-header-global-action aria-label="Switch Theme" @click="toggleTheme">
+        <Theme20 />
+      </cv-header-global-action>
       <cv-header-global-action aria-label="Languages" aria-controls="language-panel" ref="translateIcon">
         <Translate20 />
       </cv-header-global-action>
@@ -51,6 +54,7 @@
 
 <script>
 import Translate20 from '@carbon/icons-vue/es/translate/20'
+import Theme20 from '@carbon/icons-vue/es/brightness-contrast/20'
 
 import {
   CvHeader,
@@ -86,7 +90,8 @@ export default {
     CvSwitcher,
     CvSwitcherItem,
     CvSwitcherItemLink,
-    Translate20
+    Translate20,
+    Theme20
   },
   data() {
     let links = [
@@ -122,6 +127,9 @@ export default {
       this.links.forEach(link => {
         link.active = link.to === to.fullPath
       })
+    },
+    toggleTheme() {
+      this.$store.dispatch('setTheme', !this.$store.state.isDark)
     }
   }
 }

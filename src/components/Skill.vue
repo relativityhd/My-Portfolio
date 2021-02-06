@@ -132,23 +132,23 @@ export default {
 }
 
 // White Theme
-body.bx--white-theme .skill-bar-1 {
+#app.bx--white-theme .skill-bar-1 {
   background: linear-gradient(90deg, #1c0f30 0%, #081a1c 100%);
 }
 
-body.bx--white-theme .skill-bar-2 {
+#app.bx--white-theme .skill-bar-2 {
   background: linear-gradient(90deg, #1c0f30 0%, #081a1c 50%, #022b30 100%);
 }
 
-body.bx--white-theme .skill-bar-3 {
+#app.bx--white-theme .skill-bar-3 {
   background: linear-gradient(90deg, #1c0f30 0%, #081a1c 33%, #022b30 67%, #004144 100%);
 }
 
-body.bx--white-theme .skill-bar-4 {
+#app.bx--white-theme .skill-bar-4 {
   background: linear-gradient(90deg, #1c0f30 0%, #081a1c 25%, #022b30 50%, #004144 75%, #005d5d 100%);
 }
 
-body.bx--white-theme .skill-bar-5 {
+#app.bx--white-theme .skill-bar-5 {
   background: linear-gradient(90deg, #1c0f30 0%, #081a1c 20%, #022b30 40%, #004144 60%, #005d5d 80%, #007d79 100%);
 }
 </style>

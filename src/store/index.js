@@ -24,6 +24,8 @@ export default new Vuex.Store({
   state: {
     isMobile: checkIfTabletOrMobile(),
     mobile: window.innerWidth <= 800,
+    theme: 'bx--dark-theme',
+    isDark: true,
     lang: 'en',
     languages: [
       { isoCode: 'de', name: 'Deutsch', selected: false },
@@ -44,6 +46,10 @@ export default new Vuex.Store({
       state.languages.forEach(language => {
         language.selected = language.isoCode === lang
       })
+    },
+    setTheme({ state }, dark) {
+      state.theme = dark ? 'bx--dark-theme' : 'bx--white-theme'
+      state.isDark = dark
     }
   },
   modules: {}
