@@ -156,7 +156,7 @@ export default {
   display: block;
   width: 2px;
   content: '';
-  background-color: $ui-02;
+  background-color: $text-03;
 }
 
 .opener-box {

@@ -61,7 +61,7 @@ export default {
   display: block;
   width: 2px;
   content: '';
-  background-color: $ui-02;
+  background-color: $text-03;
 }
 
 .file-item {
@@ -115,7 +115,7 @@ export default {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: $ui-03;
+  background-color: $ui-04;
 }
 
 @media (min-width: 700px) {
