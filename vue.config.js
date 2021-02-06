@@ -12,16 +12,6 @@ module.exports = {
       enableInSFC: false
     }
   },
-  css: {
-    loaderOptions: {
-      scss: {
-        prependData: `
-        @import '~@carbon/themes/scss/themes.scss';
-        $carbon--theme: $carbon--theme--g90;
-        @include carbon--theme();`
-      }
-    }
-  },
   chainWebpack: config => {
     config.plugins.delete('optimize-css')
   },

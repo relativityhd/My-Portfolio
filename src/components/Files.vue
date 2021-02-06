@@ -51,6 +51,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/styles/_theme.scss';
+
 .file-item::before {
   position: absolute;
   top: 0;
@@ -59,7 +61,7 @@ export default {
   display: block;
   width: 2px;
   content: '';
-  background-color: $ui-02;
+  background-color: $text-03;
 }
 
 .file-item {
@@ -113,7 +115,7 @@ export default {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: $ui-03;
+  background-color: $ui-04;
 }
 
 @media (min-width: 700px) {

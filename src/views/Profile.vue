@@ -65,6 +65,8 @@ export default {
 }
 </script>
 <style lang="scss">
+@import '../assets/styles/_theme.scss';
+
 .profile {
   width: 98%;
   max-width: 800px;

@@ -132,6 +132,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/styles/_theme.scss';
+
 .opener-wrapper {
   width: 98%;
   max-width: 800px;
@@ -154,7 +156,7 @@ export default {
   display: block;
   width: 2px;
   content: '';
-  background-color: $ui-02;
+  background-color: $text-03;
 }
 
 .opener-box {

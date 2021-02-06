@@ -26,13 +26,15 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/styles/_theme.scss';
+
 .skill-wrapper::after {
   margin-bottom: 20px;
   content: '';
   display: block;
   width: 100%;
   height: 1px;
-  background-color: $ui-03;
+  background-color: $ui-04;
 }
 
 .skill-wrapper {

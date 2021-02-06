@@ -11,5 +11,7 @@
     "body": "A new version of my Portfolio is available. You can update later or reaload the page to use the new version. :)",
     "later": "Update later",
     "now": "Reload page"
-  }
+  },
+  "dark": "Dark",
+  "light": "Light"
 }

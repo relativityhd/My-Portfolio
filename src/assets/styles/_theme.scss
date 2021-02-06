@@ -1,0 +1,21 @@
+@import '~@carbon/themes/scss/themes.scss';
+@import '~carbon-components/scss/globals/scss/import-once';
+@import '~carbon-components/scss/globals/scss/feature-flags';
+
+$feature-flags: map-merge(
+  $feature-flags,
+  (
+    'enable-css-custom-properties': true
+  )
+);
+
+// Use the gray 90 theme as default
+:root {
+  @include carbon--theme($carbon--theme--g90, true);
+}
+
+// toggle dark theme with class on #app
+// Run: document.querySelector('#app').classList.toggle('bx--white-theme')
+#app.bx--white-theme {
+  @include carbon--theme($carbon--theme--g10, true);
+}
