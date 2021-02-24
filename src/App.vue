@@ -12,6 +12,12 @@ import AppUpdate from './components/AppUpdate'
 
 export default {
   name: 'App',
+  metaInfo() {
+    return {
+      title: 'Tobias Hölzer - Portfolio',
+      meta: [{ name: 'description', content: 'My personal Portfolio' }]
+    }
+  },
   components: {
     AppHeader,
     AppUpdate
