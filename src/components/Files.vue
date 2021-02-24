@@ -1,6 +1,6 @@
 <template>
   <div class="file-item">
-    <cv-link class="file-icon file-link" :href="link" target="_blank">
+    <cv-link class="file-icon file-link" :href="link" target="_blank" rel="noreferrer">
       <FileIcon />
     </cv-link>
     <div class="file-info">
@@ -8,7 +8,7 @@
     </div>
     <div class="file-body">
       <h3 class="file-name">
-        <a class="file-link" :href="link" target="_blank">
+        <a class="file-link" :href="link" target="_blank" rel="noreferrer">
           {{ $t(`Files.${code}.name`) }}
           <LinkIcon class="link-icon" />
         </a>

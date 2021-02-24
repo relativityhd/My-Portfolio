@@ -1,6 +1,6 @@
 <template>
   <div class="event-item">
-    <cv-link class="event-icon event-link" :href="link" target="_blank">
+    <cv-link class="event-icon event-link" :href="link" target="_blank" rel="noreferrer">
       <EventIcon />
     </cv-link>
     <div class="event-info">
@@ -8,7 +8,7 @@
     </div>
     <div class="event-body">
       <h3 class="event-name">
-        <a class="event-link" :href="link" target="_blank">
+        <a class="event-link" :href="link" target="_blank" rel="noreferrer">
           {{ $t(`Events.${code}.name`) }}
           <LinkIcon class="link-icon" />
         </a>
