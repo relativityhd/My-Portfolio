@@ -10,3 +10,4 @@ applications:
     force_https: true
     env:
       FORCE_HTTPS: true
+    pushstate: enabled
