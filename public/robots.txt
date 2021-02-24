@@ -8,4 +8,4 @@ Disallow: /src/
 User-agent: *
 Allow: /
 
-Sitemap: https://tobiashoelzer-portfolio.eu-de.mybluemix.net//sitemap.xml
+Sitemap: https://tobiashoelzer-portfolio.eu-de.mybluemix.net/sitemap.xml
