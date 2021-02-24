@@ -11,3 +11,5 @@ applications:
     env:
       FORCE_HTTPS: true
     pushstate: enabled
+    status_codes:
+      404: ./dist/index.html

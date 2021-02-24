@@ -1,2 +1,4 @@
 pushstate: enabled
 force_https: true
+status_codes:
+  404: ./dist/index.html
