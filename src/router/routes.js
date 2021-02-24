@@ -6,7 +6,7 @@ export const routes = [
     meta: {
       title: 'Gallery',
       sitemap: {
-        lastmod: 'February 24, 2021',
+        lastmod: new Date(),
         priority: 1,
         changefreq: 'monthly'
       }
@@ -19,7 +19,7 @@ export const routes = [
     meta: {
       title: 'Profile',
       sitemap: {
-        lastmod: 'February 24, 2021',
+        lastmod: new Date(),
         priority: 0.8,
         changefreq: 'yearly'
       }
@@ -32,7 +32,7 @@ export const routes = [
     meta: {
       title: 'Stats',
       sitemap: {
-        lastmod: 'February 24, 2021',
+        lastmod: new Date(),
         priority: 0.7,
         changefreq: 'yearly'
       }
@@ -45,7 +45,7 @@ export const routes = [
     meta: {
       title: 'Imprint',
       sitemap: {
-        lastmod: 'February 24, 2021',
+        lastmod: new Date(),
         priority: 0,
         changefreq: 'never'
       }
