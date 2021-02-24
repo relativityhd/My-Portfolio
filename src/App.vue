@@ -16,7 +16,7 @@ export default {
     return {
       title: 'Tobias Hölzer - Portfolio',
       meta: [
-        { name: 'description', content: 'My personal Portfolio' },
+        { name: 'description', content: this.$t('Home.welcome') },
         { name: 'google-site-verification', content: 'ImEnCTNqAoSvo17jsp6UFzrgXKUnYKcH4knUo-NzG58' }
       ]
     }
