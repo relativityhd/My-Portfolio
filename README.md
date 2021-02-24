@@ -4,7 +4,7 @@ My personal Portfolio / Business Homepage. Made with ♥ and Vue.js
 
 ## Vue Commands
 
-``` bash
+```bash
 # Install Dependencies
 $ npm install
 $ npm run sass:precompile

@@ -1,10 +1,10 @@
 ---
 applications:
-- name: my-portfolio
-  path: ./dist
-  buildpacks:
-    - https://github.com/cloudfoundry/staticfile-buildpack.git
-  routes:
-    - route: tobiashoelzer-portfolio.eu-de.mybluemix.net
-  memory: 128M
-  FORCE_HTTPS: true
+  - name: my-portfolio
+    path: ./dist
+    buildpacks:
+      - https://github.com/cloudfoundry/staticfile-buildpack.git
+    routes:
+      - route: tobiashoelzer-portfolio.eu-de.mybluemix.net
+    memory: 128M
+    FORCE_HTTPS: true
