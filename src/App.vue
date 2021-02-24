@@ -15,7 +15,10 @@ export default {
   metaInfo() {
     return {
       title: 'Tobias Hölzer - Portfolio',
-      meta: [{ name: 'description', content: 'My personal Portfolio' }]
+      meta: [
+        { name: 'description', content: 'My personal Portfolio' },
+        { name: 'google-site-verification', content: 'ImEnCTNqAoSvo17jsp6UFzrgXKUnYKcH4knUo-NzG58' }
+      ]
     }
   },
   components: {
