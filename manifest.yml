@@ -7,4 +7,6 @@ applications:
     routes:
       - route: tobiashoelzer-portfolio.eu-de.mybluemix.net
     memory: 128M
-    FORCE_HTTPS: true
+    force_https: true
+    env:
+      FORCE_HTTPS: true
