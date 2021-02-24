@@ -1,12 +1,15 @@
-import Home from '../views/Home.vue'
-
 export const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: () => import('../views/Home.vue'),
     meta: {
-      title: 'Gallery'
+      title: 'Gallery',
+      sitemap: {
+        lastmod: 'February 24, 2021',
+        priority: 1,
+        changefreq: 'monthly'
+      }
     }
   },
   {
@@ -14,7 +17,12 @@ export const routes = [
     name: 'Profile',
     component: () => import('../views/Profile.vue'),
     meta: {
-      title: 'Profile'
+      title: 'Profile',
+      sitemap: {
+        lastmod: 'February 24, 2021',
+        priority: 0.8,
+        changefreq: 'yearly'
+      }
     }
   },
   {
@@ -22,7 +30,12 @@ export const routes = [
     name: 'Stats',
     component: () => import('../views/Stats.vue'),
     meta: {
-      title: 'Stats'
+      title: 'Stats',
+      sitemap: {
+        lastmod: 'February 24, 2021',
+        priority: 0.7,
+        changefreq: 'yearly'
+      }
     }
   },
   {
@@ -30,7 +43,12 @@ export const routes = [
     name: 'Imprint',
     component: () => import('../views/Imprint.vue'),
     meta: {
-      title: 'Imprint'
+      title: 'Imprint',
+      sitemap: {
+        lastmod: 'February 24, 2021',
+        priority: 0,
+        changefreq: 'never'
+      }
     }
   }
 ]
