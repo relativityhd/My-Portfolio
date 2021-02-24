@@ -1,3 +1,4 @@
+const { routes } = require('esm')(module)('./src/router/routes.js')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
@@ -10,6 +11,12 @@ module.exports = {
       fallbackLocale: 'en',
       localeDir: 'locales',
       enableInSFC: false
+    },
+    sitemap: {
+      pretty: true,
+      outputDir: './dist',
+      baseURL: 'https://tobiashoelzer-portfolio.eu-de.mybluemix.net',
+      routes
     }
   },
   chainWebpack: config => {

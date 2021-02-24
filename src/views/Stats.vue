@@ -14,6 +14,12 @@ import stats from '../assets/data/stats.json'
 
 export default {
   name: 'stats',
+  metaInfo() {
+    return {
+      title: `Tobias Hölzer - ${this.$t('App.stats')}`,
+      meta: [{ name: 'description', content: this.$t('Stats.meta') }]
+    }
+  },
   components: { SkillGroup },
   data: () => {
     return {

@@ -1,6 +1,7 @@
 {
   "title": "Meine Skills",
   "describtion": "Unten habe ich meine Fähigkeiten aufgelistet. Diese habe ich von 1 bis 5 bewertet. Hierbei heißt 1, dass ich noch Anfänger auf dem Gebiet bin und 5, dass ich diesen Skill schon professionell beherrsche. Da ich selbst diese Bewertungen vorgenommen habe sind diese natürlich nicht Vorurteilsfrei.",
+  "meta": "Hier habe ich meine Skills aufgelistet und von 0 bis 5 selbst eingeschätzt.",
   "prog-langs": {
     "title": "Programmiersprachen",
     "js": "Java Script",

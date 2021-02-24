@@ -54,6 +54,12 @@ import SlackIcon from '@carbon/icons-vue/es/logo--slack/32'
 
 export default {
   name: 'Profile',
+  metaInfo() {
+    return {
+      title: `Tobias Hölzer - ${this.$t('App.profile')}`,
+      meta: [{ name: 'description', content: this.$t('Profile.welcome') }]
+    }
+  },
   components: { GitHubIcon, LinkedInIcon, MediumIcon, TwitterIcon, SlackIcon },
   data() {
     var ageDifMs = Date.now() - new Date(2001, 1, 16).getTime()

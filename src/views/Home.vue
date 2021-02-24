@@ -73,6 +73,12 @@ import FilterIcon from '@carbon/icons-vue/es/filter--edit/32'
 
 export default {
   name: 'Home',
+  metaInfo() {
+    return {
+      title: `Tobias Hölzer - ${this.$t('App.home')}`,
+      meta: [{ name: 'description', content: this.$t('Home.welcome') }]
+    }
+  },
   components: { CvCheckbox, CvButton, CvModal, OpenMobile, Project, File, Event },
   data: () => {
     const items = files

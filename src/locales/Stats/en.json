@@ -1,6 +1,7 @@
 {
   "title": "My Skills",
   "describtion": "Below you can see a list of my skills. I rated my skills from 1, which means I am a beginner in this topic, to 5, which means that I developed my skills to a professional standart. But since I rated them by myself these rating may be biased.",
+  "meta": "I rated my skills from 1 to 5 and listed them here.",
   "prog-langs": {
     "title": "Programming languages",
     "js": "Java Script",

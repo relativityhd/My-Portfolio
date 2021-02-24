@@ -1,6 +1,12 @@
 <template>
   <div class="project-item">
-    <cv-link v-if="link && link !== 'not-active'" class="project-icon project-link" :href="link" target="_blank">
+    <cv-link
+      v-if="link && link !== 'not-active'"
+      class="project-icon project-link"
+      :href="link"
+      target="_blank"
+      rel="noreferrer"
+    >
       <ProjectIcon />
     </cv-link>
     <div v-else class="project-icon">
@@ -9,13 +15,13 @@
 
     <div class="project-info">
       <p>{{ parsedDate }}</p>
-      <cv-link v-if="github" class="project-link" :href="github" target="_blank">
+      <cv-link v-if="github" class="project-link" :href="github" target="_blank" rel="noreferrer">
         <GitIcon />
       </cv-link>
     </div>
     <div class="project-body">
       <h1 v-if="link && link !== 'not-active'" class="project-name">
-        <a class="project-link" :href="link" target="_blank">
+        <a class="project-link" :href="link" target="_blank" rel="noreferrer">
           {{ $t(`Projects.${code}.name`) }}
           <LinkIcon v-if="preview" class="link-icon" />
         </a>
@@ -24,11 +30,17 @@
         {{ $t(`Projects.${code}.name`) }}
       </h1>
 
-      <a v-if="preview && link && link !== 'not-active'" class="project-link" :href="link" target="_blank">
+      <a
+        v-if="preview && link && link !== 'not-active'"
+        class="project-link"
+        :href="link"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" />
       </a>
       <div class="project-preview" v-else-if="preview">
-        <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" />
+        <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" width="100%" height="auto" />
       </div>
 
       <div class="project-tags">
