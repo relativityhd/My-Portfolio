@@ -12,19 +12,19 @@
           <a href="mailto:tobias.hoelzer@ibm.com">tobias.hoelzer@ibm.com</a>
         </p>
         <div class="profile-social">
-          <a href="https://github.com/relativityhd" target="_blank">
+          <a href="https://github.com/relativityhd" target="_blank" rel="noreferrer">
             <GitHubIcon />
           </a>
-          <a href="https://de.linkedin.com/in/tobias-h%C3%B6lzer-281b72193" target="_blank">
+          <a href="https://de.linkedin.com/in/tobias-h%C3%B6lzer-281b72193" target="_blank" rel="noreferrer">
             <LinkedInIcon />
           </a>
-          <a href="https://medium.com/@tobiast.h.50" target="_blank">
+          <a href="https://medium.com/@tobiast.h.50" target="_blank" rel="noreferrer">
             <MediumIcon />
           </a>
-          <a href="https://twitter.com/tobiashoelzer" target="_blank">
+          <a href="https://twitter.com/tobiashoelzer" target="_blank" rel="noreferrer">
             <TwitterIcon />
           </a>
-          <a href="https://ibmdach.slack.com/team/WND3T9LEQ" target="_blank">
+          <a href="https://ibmdach.slack.com/team/WND3T9LEQ" target="_blank" rel="noreferrer">
             <SlackIcon />
           </a>
         </div>
