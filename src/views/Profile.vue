@@ -62,7 +62,7 @@ export default {
   },
   components: { GitHubIcon, LinkedInIcon, MediumIcon, TwitterIcon, SlackIcon },
   data() {
-    var ageDifMs = Date.now() - new Date(2001, 1, 16).getTime()
+    var ageDifMs = Date.now() - new Date(2001, 6, 16).getTime()
     var ageDate = new Date(ageDifMs)
     return {
       age: Math.abs(ageDate.getUTCFullYear() - 1970)
