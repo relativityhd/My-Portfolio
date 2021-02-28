@@ -19,9 +19,6 @@ module.exports = {
       routes
     }
   },
-  chainWebpack: config => {
-    config.plugins.delete('optimize-css')
-  },
   pwa: {
     name: 'My Portfolio',
     themeColor: '#161616',
