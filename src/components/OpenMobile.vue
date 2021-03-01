@@ -6,7 +6,7 @@
       <template slot="content">
         <p>{{ $t('qr-code.body') }}</p>
         <br />
-        <img width="100%" src="../assets/images/qr-code.png" :alt="$t('qr-code.alt')" />
+        <img width="256" height="256" src="../assets/images/qr-code.png" :alt="$t('qr-code.alt')" />
       </template>
     </cv-modal>
     <cv-button kind="secondary" @click="openQRModal" :icon="MobileIcon">

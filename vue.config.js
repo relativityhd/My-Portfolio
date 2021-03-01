@@ -20,7 +20,10 @@ module.exports = {
     }
   },
   chainWebpack: config => {
-    config.plugins.delete('optimize-css')
+    config.plugin('html').tap(args => {
+      args[0].title = 'Tobias Hölzer - Portfolio'
+      return args
+    })
   },
   pwa: {
     name: 'My Portfolio',

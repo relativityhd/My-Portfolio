@@ -1,7 +1,13 @@
 <template>
   <div class="profile">
     <div class="profile-card">
-      <img class="profile-pic" src="../assets/images/profile-pic.jpg" :alt="$t('Profile.profile-pic-alt')" />
+      <img
+        class="profile-pic"
+        src="../assets/images/profile-pic.jpg"
+        :alt="$t('Profile.profile-pic-alt')"
+        height="200"
+        width="200"
+      />
       <div class="profile-info">
         <h1>Tobias Hölzer</h1>
         <h6>{{ $t('Profile.job') }}</h6>
@@ -12,19 +18,19 @@
           <a href="mailto:tobias.hoelzer@ibm.com">tobias.hoelzer@ibm.com</a>
         </p>
         <div class="profile-social">
-          <a href="https://github.com/relativityhd" target="_blank">
+          <a href="https://github.com/relativityhd" target="_blank" rel="noreferrer">
             <GitHubIcon />
           </a>
-          <a href="https://de.linkedin.com/in/tobias-h%C3%B6lzer-281b72193" target="_blank">
+          <a href="https://de.linkedin.com/in/tobias-h%C3%B6lzer-281b72193" target="_blank" rel="noreferrer">
             <LinkedInIcon />
           </a>
-          <a href="https://medium.com/@tobiast.h.50" target="_blank">
+          <a href="https://medium.com/@tobiast.h.50" target="_blank" rel="noreferrer">
             <MediumIcon />
           </a>
-          <a href="https://twitter.com/tobiashoelzer" target="_blank">
+          <a href="https://twitter.com/tobiashoelzer" target="_blank" rel="noreferrer">
             <TwitterIcon />
           </a>
-          <a href="https://ibmdach.slack.com/team/WND3T9LEQ" target="_blank">
+          <a href="https://ibmdach.slack.com/team/WND3T9LEQ" target="_blank" rel="noreferrer">
             <SlackIcon />
           </a>
         </div>
@@ -62,7 +68,7 @@ export default {
   },
   components: { GitHubIcon, LinkedInIcon, MediumIcon, TwitterIcon, SlackIcon },
   data() {
-    var ageDifMs = Date.now() - new Date(2001, 1, 16).getTime()
+    var ageDifMs = Date.now() - new Date(2001, 6, 16).getTime()
     var ageDate = new Date(ageDifMs)
     return {
       age: Math.abs(ageDate.getUTCFullYear() - 1970)

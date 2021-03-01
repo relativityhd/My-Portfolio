@@ -37,10 +37,10 @@
         target="_blank"
         rel="noreferrer"
       >
-        <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" />
+        <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" width="800" height="400" />
       </a>
       <div class="project-preview" v-else-if="preview">
-        <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" width="100%" height="auto" />
+        <img :src="`./img/projects/${preview}`" :alt="$t(`Projects.${code}.alt`)" width="800" height="400" />
       </div>
 
       <div class="project-tags">
@@ -168,6 +168,7 @@ export default {
 
 .project-link img {
   width: 100%;
+  height: auto;
 }
 
 .project-link:hover {
