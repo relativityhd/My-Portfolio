@@ -33,7 +33,7 @@ export const routes = [
       title: 'Stats',
       sitemap: {
         lastmod: new Date(),
-        priority: 0.7,
+        priority: 0.3,
         changefreq: 'yearly'
       }
     }
