@@ -4,6 +4,9 @@
 // Feature flags
 $css--font-face: true;
 $css--plex: true;
+$css--reset: true;
+$css-body: true;
+$carbon--font-display: swap;
 
 // Global styles
 @import '~carbon-components/scss/globals/scss/css--font-face';
