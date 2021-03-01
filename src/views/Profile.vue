@@ -1,7 +1,13 @@
 <template>
   <div class="profile">
     <div class="profile-card">
-      <img class="profile-pic" src="../assets/images/profile-pic.jpg" :alt="$t('Profile.profile-pic-alt')" />
+      <img
+        class="profile-pic"
+        src="../assets/images/profile-pic.jpg"
+        :alt="$t('Profile.profile-pic-alt')"
+        height="200"
+        width="200"
+      />
       <div class="profile-info">
         <h1>Tobias Hölzer</h1>
         <h6>{{ $t('Profile.job') }}</h6>

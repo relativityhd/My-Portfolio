@@ -5,7 +5,7 @@
       {{ $t('App.skipto') }}
     </cv-skip-to-content>
     <cv-header-name to="/" prefix="Portfolio">
-      <img class="logo" src="@/assets/images/logo-72x72.png" alt="Logo" />
+      <img class="logo" src="@/assets/images/logo-72x72.png" alt="Logo" width="24" height="24" />
       obias Hölzer
     </cv-header-name>
 
