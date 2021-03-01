@@ -19,6 +19,12 @@ module.exports = {
       routes
     }
   },
+  chainWebpack: config => {
+    config.plugin('html').tap(args => {
+      args[0].title = 'Tobias Hölzer - Portfolio'
+      return args
+    })
+  },
   pwa: {
     name: 'My Portfolio',
     themeColor: '#161616',
