@@ -200,6 +200,7 @@ export default {
 
 .project-preview img {
   width: 100%;
+  height: auto;
 }
 
 .project-tags {
