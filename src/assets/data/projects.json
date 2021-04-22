@@ -140,5 +140,13 @@
     "tags": ["NestJS", "Vue", "Plotly", "Swarm Intelligence", "Trustful AI", "Visualization", "Carbon Components"],
     "important": true,
     "isInternal": true
+  },
+  {
+    "code": "DataExploration",
+    "preview": "data-explo.png",
+    "date": "2021-04",
+    "github": "https://github.com/relativityhd/win-rate-prediction",
+    "link": "not-active",
+    "tags": ["Data Analytics", "PyTorch", "Python", "Pandas", "AI"]
   }
 ]
