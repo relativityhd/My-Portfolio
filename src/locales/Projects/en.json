@@ -77,5 +77,9 @@
   "SwarmViz": {
     "name": "Swarm AI Visualization",
     "text": "In the IBM Watson Center in Munich I developed a visualization which explains a swarm intelligence easily. This enables humans to place trust in AI. For this I used Plotly, Carbon Components and worked with the JavaScript frameworks Nest and Vue. Within the project I learned a lot about APIs and Clean-Coding best practices."
+  },
+  "DataExploration": {
+    "name": "Data Exploration Project",
+    "text": "In the Data Exploration Project Philipp Wussow, Ole Ofterdigner, Amon Schneider, Hajdar Razawi and I worked on a 'Win Rate' prediction model for the video game League of Legends. This prediction model should help e-sport analysts making their predictions about coming games. This project was part of our 'Data Exploration' lecture at our university."
   }
 }

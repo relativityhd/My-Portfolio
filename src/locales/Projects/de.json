@@ -77,5 +77,9 @@
   "SwarmViz": {
     "name": "Swarm KI Visualization",
     "text": "Hierbei handelt es sich um mein Project zu meiner 1. Praxisarbeit. Im IBM Watson Center in München erstellte ich eine Visualisierung welche eine Schwarm Intelligenz erklären sollte. Dies soll dazu führen, dass Menschen mehr vertrauen in diese bekommen wenn sie diese besser verstehen können. Hierbei arbeitete ich mit den JavaScript Frameworks Nest und Vue, nutzte Plotly und Carbon Components für die Visualisierung und lernte sehr viel über Schnittstellen und Clean-Coding Best-Practices kennen."
+  },
+  "DataExploration": {
+    "name": "Data Exploration Projekt",
+    "text": "Im Data Exploration Projekt haben Philipp Wussow, Ole Ofterdigner, Amon Schneider, Hajdar Razawi und ich an einem Model für die Vorhersage von 'Win Rates' der Spieler des Spiels League of Legends. Dieses Model soll E-Sport Analysten dabei helfen vorhersagen über zukünftige Spiele zu machen. Das Projekt war Teil unseres Hochschulkurses 'Data Exploration'."
   }
 }
