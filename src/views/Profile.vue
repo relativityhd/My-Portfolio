@@ -123,6 +123,10 @@ export default {
 .profile-emails a,
 .profile-emails a:visited {
   color: $text-01 !important;
+
+  -webkit-transition: color $theme-transition-time $theme-transition-type;
+  -ms-transition: color $theme-transition-time $theme-transition-type;
+  transition: color $theme-transition-time $theme-transition-type;
 }
 
 .profile-social a:hover,

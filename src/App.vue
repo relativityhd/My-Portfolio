@@ -75,6 +75,13 @@ export default {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+
+  -webkit-transition: background-color $theme-transition-time $theme-transition-type,
+    color $theme-transition-time $theme-transition-type;
+  -ms-transition: background-color $theme-transition-time $theme-transition-type,
+    color $theme-transition-time $theme-transition-type;
+  transition: background-color $theme-transition-time $theme-transition-type,
+    color $theme-transition-time $theme-transition-type;
 }
 
 #app-view {
