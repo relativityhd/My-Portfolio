@@ -35,6 +35,10 @@ export default {
   width: 100%;
   height: 1px;
   background-color: $ui-04;
+
+  -webkit-transition: background-color $theme-transition-time $theme-transition-type;
+  -ms-transition: background-color $theme-transition-time $theme-transition-type;
+  transition: background-color $theme-transition-time $theme-transition-type;
 }
 
 .skill-wrapper {

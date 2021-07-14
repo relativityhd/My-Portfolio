@@ -55,6 +55,10 @@ export default {
   width: 2px;
   content: '';
   background-color: $text-03;
+
+  -webkit-transition: background-color $theme-transition-time $theme-transition-type;
+  -ms-transition: background-color $theme-transition-time $theme-transition-type;
+  transition: background-color $theme-transition-time $theme-transition-type;
 }
 
 .event-item {
@@ -79,7 +83,15 @@ export default {
   justify-content: center;
   flex-shrink: 0;
   background-color: $ui-background;
-  border: 4px solid $ui-background;
+  border: 4px solid;
+  border-color: $ui-background;
+
+  -webkit-transition: background-color $theme-transition-time $theme-transition-type,
+    border-color $theme-transition-time $theme-transition-type;
+  -ms-transition: background-color $theme-transition-time $theme-transition-type,
+    border-color $theme-transition-time $theme-transition-type;
+  transition: background-color $theme-transition-time $theme-transition-type,
+    border-color $theme-transition-time $theme-transition-type;
 }
 
 .event-info {
@@ -109,6 +121,10 @@ export default {
   width: 100%;
   height: 1px;
   background-color: $ui-04;
+
+  -webkit-transition: background-color $theme-transition-time $theme-transition-type;
+  -ms-transition: background-color $theme-transition-time $theme-transition-type;
+  transition: background-color $theme-transition-time $theme-transition-type;
 }
 
 @media (min-width: 700px) {
@@ -120,6 +136,10 @@ export default {
 .event-link {
   color: $text-01 !important;
   text-decoration: none;
+
+  -webkit-transition: color $theme-transition-time $theme-transition-type;
+  -ms-transition: color $theme-transition-time $theme-transition-type;
+  transition: color $theme-transition-time $theme-transition-type;
 }
 
 .event-link img {

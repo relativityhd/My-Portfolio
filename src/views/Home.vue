@@ -163,6 +163,10 @@ export default {
   width: 2px;
   content: '';
   background-color: $text-03;
+
+  -webkit-transition: background-color $theme-transition-time $theme-transition-type;
+  -ms-transition: background-color $theme-transition-time $theme-transition-type;
+  transition: background-color $theme-transition-time $theme-transition-type;
 }
 
 .opener-box {
