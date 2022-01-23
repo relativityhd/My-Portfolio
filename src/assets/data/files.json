@@ -29,5 +29,12 @@
     "date": "2021-07",
     "link": "./docs/CV-TobiasHoelzer.pdf",
     "important": true
+  },
+  {
+    "code": "PA2",
+    "date": "2021-11",
+    "dateStart": "2021-09",
+    "link": "./docs/2nd-Practical-Thesis-TobiasHoelzer.pdf",
+    "important": true
   }
 ]

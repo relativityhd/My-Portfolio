@@ -18,5 +18,9 @@
   "CV": {
     "name": "CV",
     "text": "My current CV, version from 14th July 2021."
+  },
+  "PA2": {
+    "name": "2. Project Thesis",
+    "text": "I wrote my second scientific paper about Entity-Linking and AI. This time I was able to use my gained knowledge about scientific methods. Unfortunately my proposed machine learning model was not able to solve the Entity-Linking problem."
   }
 }

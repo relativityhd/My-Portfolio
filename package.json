@@ -50,13 +50,13 @@
     "vue-template-compiler": "^2.6.11",
     "webpack-bundle-analyzer": "^4.3.0"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
   "lint-staged": {
     "*.{js,jsx,vue}": [
       "vue-cli-service lint",
       "git add"
     ]
+  },
+  "volta": {
+    "node": "14.18.3"
   }
 }

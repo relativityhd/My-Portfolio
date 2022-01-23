@@ -18,5 +18,9 @@
   "CV": {
     "name": "CV",
     "text": "Mein aktueller Lebenslauf, Version vom 14. Juli 2021."
+  },
+  "PA2": {
+    "name": "2. Praxis Arbeit",
+    "text": "Meine zweite Wissenschaftliche Arbeit schrieb ich über Entity-Linking und konnte hier zum ersten Mal meine erlernten Kenntnisse über wissenschaftliches Arbeiten anwenden. Während meiner Forschung über das Thema habe ich eine trainierbare KI entworfen, um das Problem des Entity-Linkings zu versuchen zu lösen. Leider konnte die AI das Problem nicht ausreichend gut lösen. Note: 2.0"
   }
 }
