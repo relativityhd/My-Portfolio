@@ -36,5 +36,12 @@
     "dateStart": "2021-09",
     "link": "./docs/2nd-Practical-Thesis-TobiasHoelzer.pdf",
     "important": true
+  },
+  {
+    "code": "BA",
+    "date": "2022-04",
+    "dateStart": "2022-02",
+    "link": "./docs/Bachelor-Thesis-TobiasHoelzer.pdf",
+    "important": true
   }
 ]

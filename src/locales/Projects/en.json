@@ -81,5 +81,29 @@
   "DataExploration": {
     "name": "Data Exploration Project",
     "text": "In the Data Exploration Project Philipp Wussow, Ole Ofterdigner, Amon Schneider, Hajdar Razawi and I worked on a 'Win Rate' prediction model for the video game League of Legends. This prediction model should help e-sport analysts making their predictions about coming games. This project was part of our 'Data Exploration' lecture at our university."
+  },
+  "ACCEL": {
+    "name": "Entity-Linking Model",
+    "text": "ACCEL is the entity linking model that I developed during my 4th practice assignment at IBM. I also wrote my 2nd practice paper about this model. The model can be trained with machine learning methods to solve the entity linking problem. This problem is a Natural Language Processing (NLP) problem, it describes the linking of an entity in a text with the corresponding database entry. Among other things, ACCEL uses the very strong BERT transformers from Google."
+  },
+  "TooManyTrees": {
+    "name": "Weather-Data analysis about deforestation in Europe",
+    "text": "In the course of my 5th practical assignment at IBM, I investigated the influence of droughts on forest dieback in Europe. Due to the short duration of the project, I was not able to deliver relevant results, but I learned a lot about data science in practice. At this time I decided to focus on environmental and climate issues."
+  },
+  "Tannder": {
+    "name": "Tannder",
+    "text": "For the subject Software Engineering my fellow students Philipp Wussow, Ole Ofterdinger, Amon Schneider and I developed the app 'Tannder'. The task was to develop a simple multiservice app using the JS framework Ionic. In the app, users can upload pictures of their Christmas trees and rate the Christmas trees of other users, resulting in a viewable ranking based on the official chess ELO system."
+  },
+  "FloodDetection": {
+    "name": "SotA Flood Detection Modell",
+    "text": "This project is the project for my bachelor thesis. I trained and optimized existing AI models and adapted them to the task of detecting floods and high tides on satellite data. For this purpose, I investigated various aspects of the models and the underlying training data such as normalization, hyperparameters or modalities. The final model performed better than existing research models, so I am very proud to have contributed to the State of the Art (SotA)."
+  },
+  "CEK": {
+    "name": "Car Evaluation Kit",
+    "text": "For the Formula Student Team DHBW Engineering I developed a tool for logging the application phase, which provides not only the logging but also the resulting calculation for engineers. This made it possible for us as a team to save 8 working hours per week when adjusting the driving dynamics of the race car. In addition, the logging data was organized and systematically stored, making it possible for us as a team to perform larger meta-analyses for the first time. During the development of the tool I used modern technologies like GraphqQL or TypeScript, which on the one hand allows the tool to be extended very quickly and on the other hand allowed me to further expand my Tec stack."
+  },
+  "eSleek": {
+    "name": "eSleek 22",
+    "text": "In my last year at the DHBW I was (am) part of the DHBW Engineering. The engineering is a student association which builds a real, electric race car and participates in Formula Student competitions worldwide. There I learned a lot about mechanical and electrical engineering for a computer scientist. Besides my main work package (the Car Evaluation Kit) I also developed new concepts for the storage of our measurement data, did vehicle dynamics data analysis with Matlab and helped my comrades with everyday tasks like the production of carbon parts."
   }
 }

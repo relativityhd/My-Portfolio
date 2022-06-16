@@ -148,5 +148,56 @@
     "github": "https://github.com/relativityhd/win-rate-prediction",
     "link": "not-active",
     "tags": ["Data Analytics", "PyTorch", "Python", "Pandas", "AI"]
+  },
+  {
+    "code": "ACCEL",
+    "preview": "accel.jpg",
+    "date": "2021-09",
+    "dateStart": "2022-06",
+    "tags": ["PyTorch", "Python", "NLP", "AI", "PyTorch Lightning", "Sustainability"],
+    "github": "https://github.com/relativityhd/ET4EL",
+    "important": true
+  },
+  {
+    "code": "TooManyTrees",
+    "preview": "toomanytrees.png",
+    "link": "/src/temperature-analysis.html",
+    "date": "2021-11",
+    "dateStart": "2021-10",
+    "tags": ["Data Analytics", "Python", "Plotly", "Sustainability"],
+    "important": true,
+    "isInternal": true
+  },
+  {
+    "code": "Tannder",
+    "date": "2022-01",
+    "github": "https://github.com/ole404/SoftwareEngineeringDHBW",
+    "tags": ["Website", "Mobile", "Ionic", "Angular"]
+  },
+  {
+    "code": "FloodDetection",
+    "preview": "flood-detection.png",
+    "date": "2022-04",
+    "dateStart": "2022-01",
+    "tags": ["AI", "Data Science", "Sustainability", "Visualization", "PyTorch Lightning", "Python", "Image Segmentation"],
+    "important": true
+  },
+  {
+    "code": "CEK",
+    "preview": "cek.png",
+    "date": "2022-02",
+    "dateStart": "2021-12",
+    "important": true,
+    "tags": ["TypeScript", "Vue", "Material Design", "NodeJS", "GraphQL", "Website"],
+    "hostedAt":"On-Prem Debian VM"
+  },
+  {
+    "code": "eSleek",
+    "preview": "eSleek22.jpg",
+    "date": "2022-05",
+    "dateStart": "2021-10",
+    "important": true,
+    "tags": ["Engineering", "Race Car", "Matlab", "Data Analytics"],
+    "link": "https://dhbw-engineering.de"
   }
 ]

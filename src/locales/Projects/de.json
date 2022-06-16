@@ -81,5 +81,29 @@
   "DataExploration": {
     "name": "Data Exploration Projekt",
     "text": "Im Data Exploration Projekt haben Philipp Wussow, Ole Ofterdigner, Amon Schneider, Hajdar Razawi und ich an einem Model für die Vorhersage von 'Win Rates' der Spieler des Spiels League of Legends. Dieses Model soll E-Sport Analysten dabei helfen vorhersagen über zukünftige Spiele zu machen. Das Projekt war Teil unseres Hochschulkurses 'Data Exploration'."
+  },
+  "ACCEL": {
+    "name": "Entity-Linking Modell",
+    "text": "ACCEL ist das Entity-Linking Modell, welches ich im Zuge meines 4. Praxiseinsatz bei IBM entwickelt habe. Über dieses Modell habe ich auch meine 2. Praxisarbeit geschrieben. Das Modell kann mit Methoden des maschinellen Lernens trainiert werden um das Problem des Entity-Linkings zu lösen. Bei diesem Problem handelt es sich um ein Problem des Natural-Language-Processing (NLP), es beschreibt die Verbindung einer Entität in einem Text mit dem entsprechendem Datenbankeintrag. Unter anderem nutzt ACCEL die sehr starken BERT-Transformer von Google."
+  },
+  "TooManyTrees": {
+    "name": "Wetter-Datenanalyse zum Waldsterben in Europa",
+    "text": "Im Zuge meines 5. Praxiseinsatzes bei IBM untersuchte ich den Einfluss von Dürren auf das Waldsterben in Europa. Aufgrund der kurzen Dauer des Projekts konnte ich keine relevanten Ergebnisse liefern, habe jedoch viel über Data-Science in der Praxis lernen können. Zu dieser Zeit entschied ich mich dazu auf Umwelt- und Klimathemen zu fokussieren."
+  },
+  "Tannder": {
+    "name": "Tannder",
+    "text": "Für das Fach Software-Engineering entwickelten meine Kommilitonen Philipp Wussow, Ole Ofterdinger, Amon Schneider und ich die App 'Tannder'. Aufgabe war es eine einfache Multiservice-App mit dem JS-Framework Ionic zu entwickeln. In der App können Nutzer Bilder von ihren Weihnachtsbäumen hochladen und die Weihnachtsbäumen von anderen Nutzern bewerten, wodurch ein einsehbares Ranking basierend auf dem offiziellem Schach-ELO-System entsteht."
+  },
+  "FloodDetection": {
+    "name": "SotA Flood Detection Modell",
+    "text": "Dieses Projekt ist das Projekt zu meiner Bachelorarbeit. Ich trainierte und optimierte bestehende KI-Modelle und passte sie auf die Aufgabe Fluten und Hochwasser auf Satelliten-Daten zu erkennen. Dazu untersuchte ich diverse Aspekte der Modelle und der grundliegenden Trainingsdaten wie zum Beispiel Normalisierung, Hyperparameter oder Modalitäten. Das finale Modell schnitt besser als bestehende Modelle der Forschung ab, ich bin daher sehr stolz zum State of the Art (SotA) beigetragen zu haben."
+  },
+  "CEK": {
+    "name": "Car Evaluation Kit",
+    "text": "Für das Formula Student Team DHBW Engineering habe ich ein Tool zur Protokollierung der Applikationsphase entwickelt, welches neben der Protokollierung auch daraus resultierende Berechnung für Ingenieure zur Verfügung stellt. Dadurch war es uns als Team möglich beim Einstellen von fahrdynamischen Eigenschaften des Rennautos möglich Wöchentlich 8 Arbeitsstunden einzusparen. Darüber hinaus wurden die Daten der Protokollierung geordnet und systematisch gespeichert, wodurch es größere Meta-Analysen für uns als Team zum ersten Mal möglich sind. Bei der Entwicklung des Tools habe ich moderne Technologieen wie GraphqQL oder TypeScript, wodurch zum einem das Tool sehr schnell erweitert werden kann und zum anderen ich meinen Tec-Stack weiter ausgebauen konnte."
+  },
+  "eSleek": {
+    "name": "eSleek 22",
+    "text": "In meinem letzten Jahr an der DHBW war (bin) ich Teil des DHBW Engineering. Das Engineering ist ein studentischer Verein welcher ein richtiges, elektrisches Rennauto baut und damit an Formula Student Wettbewerben weltweit teilnimmt. Dort lerte ich für einen Informatiker viel über Maschinenbaue und Elektrotechnik. Neben meinem Haupt-Arbeitspaket (das Car Evaluation Kit) habe ich auch neue Konzepte für die Speicherung unserer Messdaten entwickelt, Fahrdynamische Daten-Analysen mit Matlab getätigt und meinen Kameraden bei Alltäglichen Aufgaben wie der Fertigung von Carbon-Teilen geholfen."
   }
 }
