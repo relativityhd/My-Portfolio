@@ -22,5 +22,9 @@
   "PA2": {
     "name": "2. Project Thesis",
     "text": "I wrote my second scientific paper about Entity-Linking and AI. This time I was able to use my gained knowledge about scientific methods. Unfortunately my proposed machine learning model was not able to solve the Entity-Linking problem."
+  },
+  "BA": {
+    "name": "Bachelor Thesis",
+    "text": "I wrote my bachelor thesis on automatic flood detection using satellite data in spring 2022 at the IBM research lab in Zurich. My research included the comparison and optimization of different models based on machine learning. It was possible for me to outperform the accuracy of existing models in current research through the targeted application of optimizations."
   }
 }

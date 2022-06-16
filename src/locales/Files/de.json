@@ -21,6 +21,10 @@
   },
   "PA2": {
     "name": "2. Praxis Arbeit",
-    "text": "Meine zweite Wissenschaftliche Arbeit schrieb ich über Entity-Linking und konnte hier zum ersten Mal meine erlernten Kenntnisse über wissenschaftliches Arbeiten anwenden. Während meiner Forschung über das Thema habe ich eine trainierbare KI entworfen, um das Problem des Entity-Linkings zu versuchen zu lösen. Leider konnte die AI das Problem nicht ausreichend gut lösen. Note: 2.0"
+    "text": "Meine zweite Wissenschaftliche Arbeit schrieb ich über Entity-Linking und konnte hier zum ersten Mal meine erlernten Kenntnisse über wissenschaftliches Arbeiten anwenden. Während meiner Forschung über das Thema habe ich eine trainierbare KI entworfen, um das Problem des Entity-Linkings zu lösen. Leider konnte die KI das Problem nicht besser als bestehende Modelle in der Forschung lösen. Note: 2.0"
+  },
+  "BA": {
+    "name": "Bachelor Arbeit",
+    "text": "Ich schrieb meine Bachelorarbeit über die automatische Erkennung von Fluten und Überschwemmungen mit hilfe von Satellitendaten im Frühjahr 2022 im IBM Forschungslabor in Zürich. Meine Forschungen dazu beinhalten der Vergleich und Optimierung verschiedener Modelle basierend auf maschinellem Lernen. Es war mir durch gezielte Anwendung von Optimierungen möglich die Genauigkeit bestehender Modelle der aktuellen Forschung zu überbieten."
   }
 }
