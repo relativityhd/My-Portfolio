@@ -3,38 +3,40 @@
     "code": "prog-langs",
     "skills": [
       {"code": "js", "lvl": 5},
-      {"code": "ts", "lvl": 2},
-      {"code": "python", "lvl": 3},
+      {"code": "ts", "lvl": 3},
+      {"code": "python", "lvl": 5},
       {"code": "rust", "lvl": 2},
       {"code": "c", "lvl": 1},
       {"code": "haskell", "lvl": 1},
-      {"code": "java", "lvl": 2},
-      {"code": "sql", "lvl": 2}
+      {"code": "java", "lvl": 1},
+      {"code": "sql", "lvl": 3},
+      {"code": "matlab", "lvl": 2}
     ]
   },
   {
     "code": "frontend",
     "skills": [
-      {"code": "css", "lvl": 4},
+      {"code": "css", "lvl": 3},
       {"code": "material", "lvl": 4},
-      {"code": "carbon", "lvl": 5},
+      {"code": "carbon", "lvl": 4},
       {"code": "responsive", "lvl": 4},
-      {"code": "i18n", "lvl": 4},
+      {"code": "i18n", "lvl": 3},
       {"code": "l10n", "lvl": 3},
       {"code": "a11y", "lvl": 1},
       {"code": "ssr", "lvl": 4},
-      {"code": "dynamic-content", "lvl": 3},
-      {"code": "pwa", "lvl": 3}
+      {"code": "dynamic-content", "lvl": 4},
+      {"code": "pwa", "lvl": 4}
     ]
   },
   {
     "code": "backend",
     "skills": [
       {"code": "node", "lvl": 5},
-      {"code": "cloudant-db", "lvl": 4},
+      {"code": "cloudant-db", "lvl": 3},
       {"code": "mongo-db", "lvl": 3},
       {"code": "rest-api", "lvl": 3},
-      {"code": "web-sockets", "lvl": 4}
+      {"code": "web-sockets", "lvl": 4},
+      {"code": "graphql", "lvl": 3}
     ]
   },
   {
@@ -59,11 +61,11 @@
   {
     "code": "cs",
     "skills": [
-      {"code": "ai", "lvl": 2},
-      {"code": "ml", "lvl": 2},
-      {"code": "data-science", "lvl": 2},
-      {"code": "data-visualization", "lvl": 3},
-      {"code": "arch", "lvl": 1},
+      {"code": "ai", "lvl": 4},
+      {"code": "ml", "lvl": 4},
+      {"code": "data-science", "lvl": 3},
+      {"code": "data-visualization", "lvl": 4},
+      {"code": "arch", "lvl": 3},
       {"code": "cryption", "lvl": 1},
       {"code": "security", "lvl": 1},
       {"code": "non-rel-db", "lvl": 3},
