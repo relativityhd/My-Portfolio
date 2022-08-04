@@ -100,7 +100,7 @@
   },
   "CEK": {
     "name": "Car Evaluation Kit",
-    "text": "For the Formula Student Team DHBW Engineering I developed a tool for logging the application phase, which provides not only the logging but also the resulting calculation for engineers. This made it possible for us as a team to save 8 working hours per week when adjusting the driving dynamics of the race car. In addition, the logging data was organized and systematically stored, making it possible for us as a team to perform larger meta-analyses for the first time. During the development of the tool I used modern technologies like GraphqQL or TypeScript, which on the one hand allows the tool to be extended very quickly and on the other hand allowed me to further expand my Tec stack."
+    "text": "For the Formula Student Team DHBW Engineering I developed a tool for logging the application phase, which provides not only the logging but also the resulting calculation for engineers. This made it possible for us as a team to save 8 working hours per week when adjusting the driving dynamics of the race car. In addition, the logging data was organized and systematically stored, making it possible for us as a team to perform larger meta-analyses for the first time. During the development of the tool I used modern technologies like GraphqQL, Prisma and TypeScript, which on the one hand allows the tool to be extended safely and very quickly and on the other hand allowed me to further expand my tech-stack."
   },
   "eSleek": {
     "name": "eSleek 22",

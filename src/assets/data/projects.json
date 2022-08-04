@@ -188,7 +188,7 @@
     "date": "2022-02",
     "dateStart": "2021-12",
     "important": true,
-    "tags": ["TypeScript", "Vue", "Material Design", "NodeJS", "GraphQL", "Website"],
+    "tags": ["TypeScript", "Vue", "Material Design", "NodeJS", "GraphQL", "Website", "Prisma"],
     "hostedAt":"On-Prem Debian VM"
   },
   {

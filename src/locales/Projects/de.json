@@ -100,7 +100,7 @@
   },
   "CEK": {
     "name": "Car Evaluation Kit",
-    "text": "Für das Formula Student Team DHBW Engineering habe ich ein Tool zur Protokollierung der Applikationsphase entwickelt, welches neben der Protokollierung auch daraus resultierende Berechnung für Ingenieure zur Verfügung stellt. Dadurch war es uns als Team möglich beim Einstellen von fahrdynamischen Eigenschaften des Rennautos möglich Wöchentlich 8 Arbeitsstunden einzusparen. Darüber hinaus wurden die Daten der Protokollierung geordnet und systematisch gespeichert, wodurch es größere Meta-Analysen für uns als Team zum ersten Mal möglich sind. Bei der Entwicklung des Tools habe ich moderne Technologieen wie GraphqQL oder TypeScript, wodurch zum einem das Tool sehr schnell erweitert werden kann und zum anderen ich meinen Tec-Stack weiter ausgebauen konnte."
+    "text": "Für das Formula Student Team DHBW Engineering habe ich ein Tool zur Protokollierung der Applikationsphase entwickelt, welches neben der Protokollierung auch daraus resultierende Berechnung für Ingenieure zur Verfügung stellt. Dadurch war es uns als Team möglich beim Einstellen von fahrdynamischen Eigenschaften des Rennautos möglich Wöchentlich 8 Arbeitsstunden einzusparen. Darüber hinaus wurden die Daten der Protokollierung geordnet und systematisch gespeichert, wodurch es größere Meta-Analysen für uns als Team zum ersten Mal möglich sind. Bei der Entwicklung des Tools habe ich moderne Technologieen wie GraphqQL, Prisma und TypeScript genutzt, wodurch zum einem das Tool sehr schnell und sicher erweitert werden kann und zum anderen ich meinen Tech-Stack weiter ausgebauen konnte."
   },
   "eSleek": {
     "name": "eSleek 22",
