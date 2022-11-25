@@ -104,6 +104,6 @@
   },
   "eSleek": {
     "name": "eSleek 22",
-    "text": "In my last year at the DHBW I was (am) part of the DHBW Engineering. The engineering is a student association which builds a real, electric race car and participates in Formula Student competitions worldwide. There I learned a lot about mechanical and electrical engineering for a computer scientist. Besides my main work package (the Car Evaluation Kit) I also developed new concepts for the storage of our measurement data, did vehicle dynamics data analysis with Matlab and helped my comrades with everyday tasks like the production of carbon parts."
+    "text": "In my last year at the DHBW I was part of the DHBW Engineering. The engineering is a student association which builds a real, electric race car and participates in Formula Student competitions worldwide. There I learned a lot about mechanical and electrical engineering for a computer scientist. Besides my main work package (the Car Evaluation Kit) I also developed new concepts for the storage of our measurement data, did vehicle dynamics data analysis with Matlab, developed a localisation algorithm for the driverless-software and helped my comrades with everyday tasks like the production of carbon parts."
   }
 }
