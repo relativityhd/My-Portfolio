@@ -3,6 +3,22 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 module.exports = {
   configureWebpack: {
+    module: {
+
+        rules: [{
+            test: /\.s[ac]ss$/i,
+            use: [
+              {
+                loader: "sass-loader",
+                options: {
+                  sassOptions: {
+                    includePaths: ["node_modules/"],
+                  },
+                },
+              },
+            ],
+        }]
+    },
     plugins: [new BundleAnalyzerPlugin({ analyzerMode: 'disabled' })]
   },
   pluginOptions: {
@@ -15,7 +31,7 @@ module.exports = {
     sitemap: {
       pretty: true,
       outputDir: './dist',
-      baseURL: 'https://tobiashoelzer-portfolio.eu-de.mybluemix.net',
+      baseURL: 'https://tobiashoelzer.de',
       routes
     }
   },

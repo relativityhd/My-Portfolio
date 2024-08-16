@@ -8,7 +8,7 @@
     "build": "npm run sass:precompile && vue-cli-service build",
     "lint": "vue-cli-service lint && node .json-formatter.js",
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
-    "sass:precompile": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js ./src/assets/styles/_carbon.scss ./src/assets/styles/_carbon-precompile.css",
+    "sass:precompile": "sass --style=compressed --load-path=node_modules ./src/assets/styles/_carbon.scss ./src/assets/styles/_carbon-precompile.css",
     "sitemap": "vue-cli-service sitemap",
     "start": "npx serve -s dist"
   },
