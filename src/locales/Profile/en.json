@@ -1,9 +1,9 @@
 {
   "profile-pic-alt": "Picture of myself",
-  "job": "Corporate Student for Data Science @ IBM",
-  "lives": "Stuttgart, Germany",
+  "job": "Working Student @ Alfred-Wegener-Institut",
+  "lives": "Berlin, Germany",
   "age": "Years old",
-  "welcome": "Hey. I am Tobias, a german programmer and future computer scientist. Currently I am a corporate student and studying business informatics for data science @IBM.",
+  "welcome": "Hi! I am Tobias, a programmer and future climate scientist. Currently I am studying remote sensing at the University of Potsdam and researching permafrost at the Alfred Wegener Institute.",
   "middleSchool": {
     "title": "9th and 10th grade",
     "text": "At the Age of 15 I began to code in school. I started with a simple Rock-Paper-Scissors game in Python 2 and developed it to a nice usable command line game: 'Rock-Paper-Scissors-Lizzard-Spock' from the TV sitcom Big-Bang-Theory. I also developed simple new encryption algorithms with a friend of mine. They aren't very secure but I had my fun."

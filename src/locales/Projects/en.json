@@ -105,5 +105,25 @@
   "eSleek": {
     "name": "eSleek 22",
     "text": "In my last year at the DHBW I was part of the DHBW Engineering. The engineering is a student association which builds a real, electric race car and participates in Formula Student competitions worldwide. There I learned a lot about mechanical and electrical engineering for a computer scientist. Besides my main work package (the Car Evaluation Kit) I also developed new concepts for the storage of our measurement data, did vehicle dynamics data analysis with Matlab, developed a localisation algorithm for the driverless-software and helped my comrades with everyday tasks like the production of carbon parts."
+  },
+  "ChaoticCarbonNetworks": {
+    "name": "Identification of regions with a high responsiveness to anthropogenic carbon emissions",
+    "text": "Uni project in which I used complex networks to investigate which regions of the world react particularly strongly to anthropogenic carbon emissions. I generated a complex network based on two global datasets using the mutual information method and analyzed it for degree centrality and average link length. Grade: 1.0"
+  },
+  "Stopuhr": {
+    "name": "Stopuhr",
+    "text": "A Python library to measure the duration of code blocks in a pipeline. Very rudimentary, as it is just a simple wrapper around Python's 'time'. I wanted to test how to create and publish a Python library."
+  },
+  "DARTS": {
+    "name": "DARTS-nextgen",
+    "text": "DARTS-nextgen is an image segmentation pipeline to detect swamps in permafrost regions using satellite images. The project is part of my work at the Alfred Wegener Institute and originates from the work of Dr. Ingmar Nitze and Dr. Konrad Heidler. I have rewritten and optimized the pipeline to make it more scalable."
+  },
+  "SmartGeocubes": {
+    "name": "Smart Geocubes",
+    "text": "A Python library that makes it easier to download geodata. The library was created during my work on the DARTS-nextgen pipeline and was outsourced by me to support other projects as well."
+  },
+  "SpatStatProject": {
+    "name": "Risk-Based Mapping of Arsenic Contamination in Bangladesh: A Geostatistical Approach using Indicator Simulation and Kriging",
+    "text": "Uni project which I did together with my fellow students Florian Josephowitz and Ben Lefebvre for the course Spatial Statistics and Models at the University of Potsdam. We implemented our own kriging models in Python and applied them to a given data set on arsenic concentrations in Bangladesh."
   }
 }

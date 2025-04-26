@@ -105,5 +105,25 @@
   "eSleek": {
     "name": "eSleek 22",
     "text": "In meinem letzten Jahr an der DHBW war ich Teil des DHBW Engineering. Das Engineering ist ein studentischer Verein welcher ein richtiges, elektrisches Rennauto baut und damit an Formula Student Wettbewerben weltweit teilnimmt. Dort lernte ich für einen Informatiker viel über Maschinenbaue und Elektrotechnik. Neben meinem Haupt-Arbeitspaket (das Car Evaluation Kit) habe ich auch neue Konzepte für die Speicherung unserer Messdaten entwickelt, Fahrdynamische Daten-Analysen mit Matlab getätigt, einen Lokalisierungs-Algorithmus für den Driverless-Modus entwickelt und meinen Kameraden bei Alltäglichen Aufgaben wie der Fertigung von Carbon-Teilen geholfen."
+  },
+  "ChaoticCarbonNetworks": {
+    "name": "Identification of regions with a high responsiveness to anthropogenic carbon emissions",
+    "text": "Uni Projekt in welchem ich anhand von komplexen Netzwerken untersucht habe, welche Regionen auf der Welt besonders stark auf anthropogene Kohlenstoffemissionen reagieren. Dazu habe ich ein komplexes Netzwerk basierend auf zwei globalen Datensätzen mithilfe der Mutual-Information Methode generiert und auf Degree-Centrality und Average Link-Length untersucht. Note: 1.0"
+  },
+  "Stopuhr": {
+    "name": "Stopuhr",
+    "text": "Eine Python Bibliothek um die Dauer von Code-Blöcken in einer Pipeline zu messen. Sehr rudimentär, da es einfach nur ein einfacher Wrapper um Pythons 'time' ist. Ich wollte testen wie man eine Python Bibliothek erstellt und veröffentlich."
+  },
+  "DARTS": {
+    "name": "DARTS-nextgen",
+    "text": "DARTS-nextgen is an image segmentation pipeline to detect swamps in permafrost regions using satellite images. The project is part of my work at the Alfred Wegener Institute and originates from the work of Dr. Ingmar Nitze and Dr. Konrad Heidler. I have rewritten and optimized the pipeline to make it more scalable."
+  },
+  "SmartGeocubes": {
+    "name": "Smart Geocubes",
+    "text": "Eine Python Bibliothek mit welcher downloaden von Geodaten leichter möglich ist. Die Library ist wärend meiner Arbeit an der DARTS-nextgen Pipeline entstanden und wurde von mir ausgelagert um auch andere Projekte damit zu unterstüzen."
+  },
+  "SpatStatProject": {
+    "name": "Risk-Based Mapping of Arsenic Contamination in Bangladesh: A Geostatistical Approach using Indicator Simulation and Kriging",
+    "text": "Uni Projekt welches ich zusammen mit meinen Kommilitonen Florian Josephowitz und Ben Lefebvre für den Kurs Spatial Statistics and Models an der Uni Potsdam gemacht habe. Dabei haben wir eigene Kriging Modelle in Python implementiert und diese auf einen gegebenen Datensatz über Arsen-Konzentrationen in Bangladesch angewendet."
   }
 }

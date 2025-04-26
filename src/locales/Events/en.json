@@ -6,5 +6,9 @@
   "Biber": {
     "name": "1. Prize Biber Contest",
     "text": "In 10th grade I won the first prize in the Biber contest."
+  },
+  "Bachelor": {
+    "name": "Bachelor of Science",
+    "text": "After 3 years of studying at the Duale Hochschule Baden-Württemberg in Stuttgart, I completed my Bachelor of Science in Business Informatics / Data Science with an average grade of 1.5."
   }
 }

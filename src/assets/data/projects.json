@@ -4,10 +4,8 @@
     "preview": "sna.png",
     "date": "2020-11",
     "github": "https://github.com/ChristopherLohse/SocialNetworkAnalysis",
-    "link": "https://dev.christopherlohse.de/SocialNetworkAnalysis/",
     "tags": ["Social Network Analysis", "Twitter Crawler", "Python", "Pandas"],
-    "important": true,
-    "hostedAt": "GitHub Pages"
+    "important": true
   },
   {
     "code": "MyHome",
@@ -15,10 +13,10 @@
     "date": "2018-11",
     "dateStart": "2018-09",
     "github": "https://github.com/relativityhd/My-Homepage",
-    "link": "https://tobiashoelzer.eu-de.mybluemix.net",
+    "link": "not-active",
     "tags": ["Website", "NodeJS", "Material Design", "IBM Cloud"],
     "important": true,
-    "hostedAt": "IBM Cloud"
+    "hostedAt": "Strato"
   },
   {
     "code": "ReactPrasi",
@@ -35,10 +33,9 @@
     "date": "2020-10",
     "dateStart": "2020-09",
     "github": "https://github.com/relativityhd/CCT",
-    "link": "https://cablecard-cct.eu-de.mybluemix.net/",
+    "link": "not-active",
     "tags": ["Vue", "Carbon Components", "PWA", "i18n", "l10n", "3D Visualization"],
-    "important": true,
-    "hostedAt": "IBM Cloud"
+    "important": true
   },
   {
     "code": "DSVIZ",
@@ -54,9 +51,9 @@
     "preview": "my-portfolio.png",
     "date": "2021-01",
     "github": "https://github.com/relativityhd/My-Portfolio",
-    "link": "https://tobiashoelzer-portfolio.eu-de.mybluemix.net/",
+    "link": "https://tobiashoelzer.de",
     "tags": ["Vue", "Carbon Components", "i18n", "Design"],
-    "hostedAt": "IBM Cloud"
+    "hostedAt": "Strato"
   },
   {
     "code": "Mello",
@@ -105,10 +102,9 @@
     "preview": "platzhirsch.png",
     "date": "2020-02",
     "dateStart": "2019-12",
-    "link": "https://der-neue-platzhirsch.eu-gb.mybluemix.net/",
+    "link": "not-active",
     "tags": ["Customer Project", "NodeJS", "Design", "IBM Cloud", "SEO"],
-    "important": true,
-    "hostedAt":"IBM Cloud"
+    "important": true
   },
   {
     "code": "IV",
@@ -199,5 +195,44 @@
     "important": true,
     "tags": ["Engineering", "Race Car", "Matlab", "Data Analytics"],
     "link": "https://dhbw-engineering.de"
+  },
+  {
+    "code": "ChaoticCarbonNetworks",
+    "date": "2023-03",
+    "preview": "chaotic-carbon.png",
+    "github": "https://github.com/relativityhd/chaotic-carbon-networks",
+    "tags": ["Complex Networks", "Python", "Data Science", "Visualization"],
+    "link": "./docs/Identification_of_regions_with_a_high_responsiveness-NonLinear_Analysis-TobaisHoelzer.pdf"
+  },
+  {
+    "code": "Stopuhr",
+    "date": "2025-03",
+    "github": "https://github.com/relativityhd/stopuhr",
+    "tags": ["Open Source", "Python"],
+    "link": "https://relativityhd.github.io/stopuhr/"
+  },
+  {
+    "code": "SmartGeocubes",
+    "date": "2025-04",
+    "github": "https://github.com/relativityhd/smart-geocubes",
+    "tags": ["Data Engineering", "Zarr", "Python"],
+    "important": true,
+    "link": "https://relativityhd.github.io/smart-geocubes/"
+  },
+  {
+    "code": "SpatStatProject",
+    "date": "2025-03",
+    "github": "https://github.com/relativityhd/spatial-statistics-final-project",
+    "tags": ["Data Science", "Statistics", "Python", "Visualization"],
+    "link": "/src/spatial-statistics.html"
+  },
+  {
+    "code": "DARTS",
+    "date": "2025-04",
+    "dateStart": "2024-09",
+    "github": "https://github.com/awi-response/darts-nextgen",
+    "tags": ["AI", "Data Science", "Sustainability", "PyTorch Lightning", "Python", "Image Segmentation"],
+    "important": true,
+    "link": "https://awi-response.github.io/darts-nextgen/latest/"
   }
 ]

@@ -1,38 +1,42 @@
 <template>
   <div class="home">
+    <div class="profile">
+      <div class="profile-card">
+        <img
+          class="profile-pic"
+          src="../assets/images/profile-pic.jpg"
+          :alt="$t('Profile.profile-pic-alt')"
+          height="200"
+          width="200"
+        />
+        <div class="profile-info">
+          <h1>Tobias Hölzer</h1>
+          <h6>{{ $t('Profile.job') }}</h6>
+          <hr />
+          <p>{{ `${age} ${$t('Profile.age')} | ${$t('Profile.lives')}` }}</p>
+          <p class="profile-emails">
+            <a href="mailto:tobiashoelzer@hotmail.com">tobiashoelzer@hotmail.com</a> |
+            <a href="mailto:tobias.hoelzer@awi.de">tobias.hoelzer@awi.de</a>
+          </p>
+          <div class="profile-social">
+            <a href="https://github.com/relativityhd" target="_blank" rel="noreferrer">
+              <GitHubIcon />
+            </a>
+            <a href="https://de.linkedin.com/in/tobias-h%C3%B6lzer-281b72193" target="_blank" rel="noreferrer">
+              <LinkedInIcon />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-about">
+        <h3 class="profile-welcome">{{ $t('Profile.welcome') }}</h3>
+      </div>
+    </div>
     <div class="opener-wrapper">
       <div class="opener">
         <div class="opener-box">
           <h1>{{ $t('Home.title') }}</h1>
           <p>{{ $t('Home.welcome') }}</p>
-          <div class="button-group">
-            <cv-button type="primary" @click="openSettingsModal" :icon="FilterIcon">
-              {{ $t('Home.filter.btn') }}
-            </cv-button>
-            <OpenMobile />
-          </div>
-          <cv-modal ref="settingsModal" class="settings-modale" :close-aria-label="$t('close-aria-label')" size="xs">
-            <template slot="label">{{ $t('Home.filter.label') }}</template>
-            <template slot="title">{{ $t('Home.filter.title') }}</template>
-            <template slot="content">
-              <div class="filter">
-                <cv-checkbox
-                  :label="$t('Home.filter.showProjects')"
-                  value="showProjects"
-                  v-model="filter.showProjects"
-                ></cv-checkbox>
-                <cv-checkbox :label="$t('Home.filter.showFiles')" value="showFiles" v-model="filter.showFiles">
-                </cv-checkbox>
-                <cv-checkbox :label="$t('Home.filter.showEvents')" value="showEvents" v-model="filter.showEvents">
-                </cv-checkbox>
-                <cv-checkbox
-                  :label="$t('Home.filter.onlyImportant')"
-                  value="showOnlyImportant"
-                  v-model="filter.showOnlyImportant"
-                ></cv-checkbox>
-              </div>
-            </template>
-          </cv-modal>
         </div>
       </div>
     </div>
@@ -59,17 +63,15 @@
 </template>
 
 <script>
-import OpenMobile from '../components/OpenMobile'
 import File from '../components/Files'
 import files from '../assets/data/files.json'
 import Project from '../components/Projects'
 import projects from '../assets/data/projects.json'
 import Event from '../components/Events'
 import events from '../assets/data/events.json'
-import { CvCheckbox } from '@carbon/vue/src/components/cv-checkbox'
-import { CvButton } from '@carbon/vue/src/components/cv-button'
-import { CvModal } from '@carbon/vue/src/components/cv-modal'
 import FilterIcon from '@carbon/icons-vue/es/filter--edit/32'
+import GitHubIcon from '@carbon/icons-vue/es/logo--github/32'
+import LinkedInIcon from '@carbon/icons-vue/es/logo--linkedin/32'
 
 export default {
   name: 'Home',
@@ -79,7 +81,13 @@ export default {
       meta: [{ name: 'description', content: this.$t('Home.welcome') }]
     }
   },
-  components: { CvCheckbox, CvButton, CvModal, OpenMobile, Project, File, Event },
+  components: {
+    Project,
+    File,
+    Event,
+    GitHubIcon,
+    LinkedInIcon
+  },
   data: () => {
     const items = files
       .map(f => {
@@ -106,6 +114,8 @@ export default {
         }
         return bTs - aTs
       })
+    var ageDifMs = Date.now() - new Date(2001, 6, 16).getTime()
+    var ageDate = new Date(ageDifMs)
     return {
       items,
       filter: {
@@ -114,7 +124,8 @@ export default {
         showEvents: true,
         showOnlyImportant: false
       },
-      FilterIcon
+      FilterIcon,
+      age: Math.abs(ageDate.getUTCFullYear() - 1970)
     }
   },
   computed: {
@@ -200,5 +211,62 @@ export default {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.profile {
+  width: 90%;
+  max-width: 587px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.profile-about {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-info {
+  min-width: 300px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-social {
+  margin-top: 4px;
+}
+
+.profile-social a,
+.profile-social a:visited,
+.profile-emails a,
+.profile-emails a:visited {
+  color: $text-01 !important;
+
+  -webkit-transition: color $theme-transition-time $theme-transition-type;
+  -ms-transition: color $theme-transition-time $theme-transition-type;
+  transition: color $theme-transition-time $theme-transition-type;
+}
+
+.profile-social a:hover,
+.profile-emails a:hover {
+  opacity: 0.5 !important;
 }
 </style>

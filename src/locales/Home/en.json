@@ -1,6 +1,6 @@
 {
-  "title": "Hi!",
-  "welcome": "This is my portfolio! Scroll through my projects in the gallery, take a look at my profile or see my skills.",
+  "title": "Gallery",
+  "welcome": "This is my portfolio! Scroll through my projects in the gallery.",
   "filter": {
     "btn": "Filter",
     "title": "Apply a filter",

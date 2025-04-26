@@ -1,10 +1,14 @@
 {
   "Abi": {
     "name": "Abitur",
-    "text": "nach 12 Jahren Schule habe ich endlich meinen Schulabschluss an dem Humboldt-Gymnasium in Berlin mit einem Schnitt von 1.4 absolviert."
+    "text": "Nach 12 Jahren Schule habe ich endlich meinen Schulabschluss an dem Humboldt-Gymnasium in Berlin mit einem Schnitt von 1.4 absolviert."
   },
   "Biber": {
     "name": "1. Preis Biber Wettbewerb",
     "text": "In der 10. Klasse bekam ich den ersten Preis des Biber Informatik Wettbewerbs der 9. & 10. Klassen."
+  },
+  "Bachelor": {
+    "name": "Bachelor of Science",
+    "text": "Nach 3 Jahren Studium an der Dualen Hochschule Baden-Württemberg in Stuttgart habe ich meinen Bachelor of Science in Wirtschaftsinformatik / Data Science mit einem Schnitt von 1.5 abgeschlossen."
   }
 }

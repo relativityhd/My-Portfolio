@@ -2,12 +2,16 @@
   {
     "code": "Abi",
     "date": "2019-06-21",
-    "link": "./docs/Highschool-Diploma-TobiasHoelzer.pdf",
-    "important": true
+    "link": "./docs/Highschool-Diploma-TobiasHoelzer.pdf"
   },
   {
     "code": "Biber",
     "date": "2017-03-04",
     "link": "./docs/Biber-Competition-TobiasHoelzer.pdf"
+  },
+  {
+    "code": "Bachelor",
+    "date": "2022-09-30",
+    "link": "./docs/Bachelor-Diploma-TobiasHoelzer.pdf"
   }
 ]
