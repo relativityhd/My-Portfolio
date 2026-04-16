@@ -26,5 +26,9 @@
   "BA": {
     "name": "Bachelor Thesis",
     "text": "I wrote my bachelor thesis on automatic flood detection using satellite data in spring 2022 at the IBM research lab in Zurich. My research included the comparison and optimization of different models based on machine learning. It was possible for me to outperform the accuracy of existing models in current research through the targeted application of optimizations."
+  },
+  "MA": {
+    "name": "Master Thesis",
+    "text": "I wrote my master thesis on estimation of Retrogressive Thaw Slump occurrence across the Arctic on various spatial scales. By combining discrete global grid systems with novel machine learning methods and open satellite and climate data, I was able to investigate the influence of certain features across different resolutions while simultaniously solving spatial data alignment and feature selection."
   }
 }

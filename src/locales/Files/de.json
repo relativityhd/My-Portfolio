@@ -26,5 +26,9 @@
   "BA": {
     "name": "Bachelor Arbeit",
     "text": "Ich schrieb meine Bachelorarbeit über die automatische Erkennung von Fluten und Überschwemmungen mit hilfe von Satellitendaten im Frühjahr 2022 im IBM Forschungslabor in Zürich. Meine Forschungen dazu beinhalten der Vergleich und Optimierung verschiedener Modelle basierend auf maschinellem Lernen. Es war mir durch gezielte Anwendung von Optimierungen möglich die Genauigkeit bestehender Modelle der aktuellen Forschung zu überbieten."
+  },
+  "MA": {
+    "name": "Master Arbeit",
+    "text": "Meine Masterarbeit befasste sich mit der Abschätzung des Auftretens von Retrogressive Thaw-Slumps in der Arktis auf verschiedenen räumlichen Skalen. Durch die Kombination diskreter globaler Gittersysteme mit neuartigen Methoden des maschinellen Lernens sowie offenen Satelliten- und Klimadaten gelang es mir, den Einfluss bestimmter Merkmale bei unterschiedlichen Auflösungen zu untersuchen und gleichzeitig die Probleme der räumliche Datenabgleichung und die der Merkmalsauswahl zu lösen."
   }
 }

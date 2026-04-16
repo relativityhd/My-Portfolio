@@ -43,5 +43,12 @@
     "dateStart": "2022-02",
     "link": "./docs/Bachelor-Thesis-TobiasHoelzer.pdf",
     "important": true
+  },
+  {
+    "code": "MA",
+    "date": "2026-03",
+    "dateStart": "2025-11",
+    "link": "./docs/Master-Thesis-TobiasHoelzer.pdf",
+    "important": true
   }
 ]
