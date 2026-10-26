@@ -2,27 +2,15 @@
   <div class="imprint">
     <p>{{ $t('imprint-message') }}</p>
     <hr />
-    <p>Verantwortlich für die Inhalte (gemäß § 5 TMG / § 55 II RStV)</p>
+    <p>Verantwortlich für die Inhalte (gemäß § 5 DDG)</p>
     <p>Tobias Hölzer</p>
-    <p>Ernsthaldenstraße 49</p>
-    <p>70565 Stuttgart</p>
+    <p>Togostr. 24b</p>
+    <p>13351 Berlin</p>
     <br />
     <h6>Kontakt</h6>
-    <p>Telefon: 0179 7211240</p>
+    <p>Telefon: (+49) 0179 7211240</p>
     <p>Email: tobiashoelzer@hotmail.com</p>
     <hr />
-    <br />
-    <h6>Haftung für Inhalte</h6>
-    <p>
-      Die Inhalte meiner Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
-      Aktualität der Inhalte kann ich jedoch keine Gewährleistung übernehmen. Als Diensteanbieter bin ich gemäß § 7
-      Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG
-      bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
-      überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur
-      Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
-      Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung
-      möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.
-    </p>
     <br />
     <h6>Haftung für Links</h6>
     <p>
